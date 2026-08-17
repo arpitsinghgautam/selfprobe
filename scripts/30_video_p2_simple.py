@@ -26,12 +26,17 @@ from __future__ import annotations
 import asyncio
 import shutil
 import subprocess
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SLIDES = ROOT / "figures" / "slides_p2_simple"
 VIDEO = ROOT / "video" / "p2"
-AUDIO = VIDEO / "audio_simple"
+# Voice and output name are overridable so a re-voiced cut can be produced
+# without forking this script or clobbering the previous render.
+VOICE_OVERRIDE = sys.argv[1] if len(sys.argv) > 1 else None
+STEM = sys.argv[2] if len(sys.argv) > 2 else "selfprobe_simple"
+AUDIO = VIDEO / (f"audio_{STEM}" if VOICE_OVERRIDE else "audio_simple")
 
 # Same voice as both earlier decks, so a viewer who watches more than one of
 # these does not have to re-tune to a new reader.
@@ -45,9 +50,9 @@ VOICE_PREFERENCES = [
 # One entry per slide, in order. Keep in sync with 29_slides_p2_simple.py.
 NARRATION: list[str] = [
     # 1, title
+    "Hi, I am Arpit Singh Gautam, and this is my project for the Digital Minds Research Sprint. "
     "Where self-knowledge fails. We asked language models for the same preferences three "
-    "different ways, then planted a concept inside them and asked whether they noticed. "
-    "I am Arpit Singh Gautam.",
+    "different ways, then planted a concept inside them and asked whether they noticed.",
 
     # 2, the question
     "When a model tells you about itself, can you believe it? Claims about A-I welfare read "
@@ -146,6 +151,10 @@ async def pick_voice() -> str:
     import edge_tts
 
     available = {v["ShortName"] for v in await edge_tts.list_voices()}
+    if VOICE_OVERRIDE:
+        if VOICE_OVERRIDE not in available:
+            raise SystemExit(f"voice not available: {VOICE_OVERRIDE}")
+        return VOICE_OVERRIDE
     for v in VOICE_PREFERENCES:
         if v in available:
             return v
@@ -188,7 +197,7 @@ def build(ffmpeg: str, ffprobe: str, audios: list[Path]) -> Path:
     for i, (img, aud) in enumerate(zip(slides, audios), start=1):
         # Segment names carry the _simple suffix so a run of this script and a run
         # of 26_video_p2.py cannot tread on each other's intermediates.
-        seg = VIDEO / f"seg_simple_{i:02d}.mp4"
+        seg = VIDEO / f"seg_{STEM}_{i:02d}.mp4"
         # apad holds the slide 0.7s past the end of speech so it does not cut hard.
         # -shortest on its own is not enough here: the image input is infinite, and
         # the muxer queue lets the video stream run about three seconds past the
@@ -209,10 +218,10 @@ def build(ffmpeg: str, ffprobe: str, audios: list[Path]) -> Path:
         segments.append(seg)
         print(f"  segment {i:02d}  {d:5.1f}s")
 
-    listing = VIDEO / "segments_simple.txt"
+    listing = VIDEO / f"segments_{STEM}.txt"
     listing.write_text("".join(f"file '{s.name}'\n" for s in segments))
 
-    out = VIDEO / "selfprobe_simple.mp4"
+    out = VIDEO / f"{STEM}.mp4"
     subprocess.run(
         [ffmpeg, "-y", "-loglevel", "error", "-f", "concat", "-safe", "0",
          "-i", str(listing), "-c", "copy", str(out)],
