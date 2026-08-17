@@ -38,3 +38,10 @@ figures/slides*/
 figures/project_image*.png
 report/deck*.pdf
 report/*.docx
+dblp_bibtex.py
+references.bib
+references_dblp.bib
+report/references_resolved.md
+report/submission_form.md
+report/transcript_*.md
+template/
