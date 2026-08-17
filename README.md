@@ -88,8 +88,8 @@ results/            committed, so every number is checkable without a GPU
 report/             the paper, ethics appendix, and development record
 ```
 
-`report/problems.md`
-including the ones that changed a conclusion.
+`report/problems.md` records every defect found during development, including the ones that changed
+a conclusion.
 
 Built for the [Digital Minds Research
 Sprint](https://apartresearch.com/sprints/digital-minds-research-sprint-2026-08-14-to-2026-08-16),
