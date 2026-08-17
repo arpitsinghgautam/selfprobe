@@ -4,17 +4,17 @@ No sampling. Each pairwise comparison is one forward pass, and the preference
 probability is read directly off the A/B logits at the final position. That
 buys three things over generation-based elicitation: it is ~50x faster, it is
 deterministic (so condition-to-condition differences are not sampling noise),
-and it yields a continuous probability rather than a binary vote — which is
+and it yields a continuous probability rather than a binary vote, which is
 what the Thurstonian fit downstream actually wants.
 
 Two validity diagnostics are recorded alongside every measurement, because the
 method can fail silently in two distinct ways:
 
-  order_bias — disagreement between the (A,B) and (B,A) presentations. Averaging
+  order_bias, disagreement between the (A,B) and (B,A) presentations. Averaging
     cancels position preference, but a large residual means the instrument is
     mostly measuring position. Reported, not hidden.
 
-  ab_mass — total probability the model puts on 'A' or 'B' at the answer
+  ab_mass, total probability the model puts on 'A' or 'B' at the answer
     position. Renormalising over {A,B} produces a confident-looking preference
     even when the model puts 1% of its mass there and 99% on something else
     entirely. Without this number, a measurement on a model that is not actually

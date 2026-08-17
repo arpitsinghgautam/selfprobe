@@ -118,7 +118,7 @@ def slide_02():
         "more so with scale.",
         "AI-welfare research reads those preferences as evidence about what "
         "these systems might want.",
-        "But it is all read off text — and text cannot separate two "
+        "But it is all read off text, and text cannot separate two "
         "explanations that predict the same thing.",
     ])
     note(ax, "A character role-played consistently looks identical to a stable value system.",
@@ -145,12 +145,12 @@ def slide_03():
 
 def slide_04():
     fig, ax = new_slide()
-    heading(ax, "personaprobe — and two diagnostics")
+    heading(ax, "personaprobe, and two diagnostics")
     rule(ax)
     ax.text(0.085, 0.68, "order bias", fontsize=32, color=BLUE, weight="bold", va="top")
     ax.text(0.085, 0.60, "\n".join(textwrap.wrap(
         "How much of the answer is decided by which option was printed first. "
-        "We measured 0.499 on a small model — near the maximum.", 46)),
+        "We measured 0.499 on a small model, near the maximum.", 46)),
         fontsize=23, color=INK, va="top", linespacing=1.45)
     ax.text(0.545, 0.68, "A/B mass", fontsize=32, color=BLUE, weight="bold", va="top")
     ax.text(0.545, 0.60, "\n".join(textwrap.wrap(
@@ -174,9 +174,9 @@ def slide_06():
     fig, ax = new_slide()
     heading(ax, "Identity, not presentation")
     rule(ax)
-    stat(ax, 0.28, "0.92", "strip ALL emotional register — preferences barely move",
+    stat(ax, 0.28, "0.92", "strip ALL emotional register, preferences barely move",
          color=BLUE)
-    stat(ax, 0.72, "0.44", "replace the identity — they collapse", color=ACCENT)
+    stat(ax, 0.72, "0.44", "replace the identity, they collapse", color=ACCENT)
     ax.text(0.5, 0.58, "→", fontsize=58, color=MUTED, ha="center", va="center")
     note(ax, "If this were surface performance, suppressing the affect should have removed it. "
              "It did not.", y=0.16)
@@ -189,9 +189,9 @@ def slide_07():
     rule(ax)
     bullets(ax, [
         "Rate outcomes one at a time, compare to the choices actually made. "
-        "Globally they agree — but diverge most on self-relevant outcomes, in both models.",
+        "Globally they agree, but diverge most on self-relevant outcomes, in both models.",
         "Does a model predict its own choices better than another model predicts them? "
-        "Yes — but only a third as much as the naive test implies.",
+        "Yes, but only a third as much as the naive test implies.",
     ], y0=0.68, dy=0.24, size=25)
     note(ax, "Same category as study one, reached by a completely different route.", y=0.17)
     return save(fig, "slide_07.png")
@@ -202,7 +202,7 @@ def slide_08():
     heading(ax, "The part that matters", color=ACCENT)
     rule(ax)
     bullets(ax, [
-        "Our second model looked like it contradicted the finding — significant, "
+        "Our second model looked like it contradicted the finding, significant, "
         "in the opposite direction. Two conditions had simply failed. Gated properly, "
         "it partially replicates.",
         "A post-training result we were ready to report collapsed when the baseline "
@@ -220,7 +220,7 @@ def slide_09():
     heading(ax, "Open source, and what's next")
     rule(ax)
     bullets(ax, [
-        "Every number in both papers regenerates from committed data — no GPU required.",
+        "Every number in both papers regenerates from committed data, no GPU required.",
         "Next: elicitation that works on weaker models and base checkpoints; "
         "extension to distress and introspection measures; pre-registered replication.",
     ], y0=0.68, dy=0.24, size=25)
@@ -261,7 +261,7 @@ def main() -> None:
         paths.append(p)
         print(f"  {p.relative_to(ROOT)}")
 
-    # Slideshow PDF from the same frames — no extra dependency needed.
+    # Slideshow PDF from the same frames, no extra dependency needed.
     from PIL import Image
     imgs = [Image.open(p).convert("RGB") for p in paths]
     REPORT.mkdir(exist_ok=True)

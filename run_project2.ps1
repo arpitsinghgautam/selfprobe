@@ -2,7 +2,7 @@
 #
 #   .\run_project2.ps1
 #
-# Requires run_all.ps1 to have completed first — the privileged-access test
+# Requires run_all.ps1 to have completed first, the privileged-access test
 # scores predictions against the revealed preference matrices it produces.
 #
 # Reuses the same harness. Ratings are 80 forward passes per model; each

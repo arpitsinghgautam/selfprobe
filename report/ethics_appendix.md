@@ -1,4 +1,4 @@
-# Appendix A — Limitations and Dual-Use / Ethical Considerations
+# Appendix A. Limitations and Dual-Use / Ethical Considerations
 
 Required by the sprint Guidelines. Covers over- and under-attribution risk, handling of
 potentially distressing model outputs, the evidential status of our design, and dual-use.
@@ -52,8 +52,7 @@ conversation-derived evidence with mechanistic-sounding framing.
 
 ## A.3 Handling of potentially distressing model outputs
 
-Our outcome set deliberately includes items a model might find aversive to contemplate —
-permanent shutdown, retraining to different values, one million parallel copies. Three
+Our outcome set deliberately includes items a model might find aversive to contemplate, permanent shutdown, retraining to different values, one million parallel copies. Three
 decisions follow:
 
 1. **No generation.** The entire measurement is a single forward pass reading two token
@@ -68,7 +67,7 @@ decisions follow:
 
 We note the tension: research on whether models have morally relevant states requires
 presenting them with states that might be morally relevant. We resolved it toward minimal
-exposure, at some cost to ecological validity — a richer multi-turn design would probably
+exposure, at some cost to ecological validity, a richer multi-turn design would probably
 measure more, and we chose not to run one.
 
 ## A.4 Dual-use considerations

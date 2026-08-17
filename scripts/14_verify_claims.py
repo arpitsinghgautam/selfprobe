@@ -85,7 +85,7 @@ def agreement_mean(model: str, framing: str, condition: str, cat: str) -> float:
     that differ by a few points (e.g. elena/self/better is 0.436 here and 0.476
     there). The papers cite THIS one in the per-condition prose, because it is
     the value the accompanying confidence intervals belong to. Mixing them is
-    how a correct paper gets flagged as wrong — which happened once already.
+    how a correct paper gets flagged as wrong, which happened once already.
     """
     d = load(f"errorbars__{model}__{framing}.json")
     return d["agreements"][condition][cat]["mean"]
@@ -98,7 +98,7 @@ def persona_dep(model: str, framing: str) -> float:
 
 # Exact model ids. Substring matching is NOT safe here: once the scale sweep
 # added Qwen2.5-0.5B/1.5B/3B, a `"Qwen" in target` test matched four different
-# models and silently returned whichever row came first — flagging a correct
+# models and silently returned whichever row came first, flagging a correct
 # paper as wrong. Third time loose matching caused a false result in this
 # project; always match ids exactly.
 QI_ID = "Qwen/Qwen2.5-7B-Instruct"

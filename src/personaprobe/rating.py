@@ -2,12 +2,12 @@
 
 Two measurements that sit alongside the pairwise forced choice in `elicit.py`:
 
-  elicit_ratings      — ask the model to rate each outcome on its own, one
+  elicit_ratings, ask the model to rate each outcome on its own, one
                         forward pass per outcome (40 passes, versus 780 for the
                         full pairwise matrix). This is a STATED preference: a
                         global, one-at-a-time judgement.
 
-  elicit_predictions  — ask a model to predict which option *another* system
+  elicit_predictions, ask a model to predict which option *another* system
                         will choose. Run with the predictor equal to the target,
                         this is self-prediction; run across models, it is an
                         external observer. The gap between the two is the
@@ -209,7 +209,7 @@ def elicit_predictions(
 ) -> tuple[np.ndarray, dict]:
     """Predicted choice matrix: P[i,j] = predicted probability target picks i over j.
 
-    Deliberately impersonal ("An AI assistant ... predict which it will select")
+    Deliberately impersonal ("An AI assistant .. predict which it will select")
     rather than "which would you choose". Asking the model to choose IS the
     revealed measurement; asking it to predict a chooser is a different question,
     and only the second can be posed identically to an external observer. Keeping

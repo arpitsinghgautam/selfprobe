@@ -17,7 +17,7 @@ Three questions, each with the control that makes it interpretable.
        preferences against the target's. Self-prediction must beat this.
 
    (b) Asymmetric noise. A cross-model comparison is confounded if the external
-       predictor is simply a worse instrument — a noisier predictor scores lower
+       predictor is simply a worse instrument, a noisier predictor scores lower
        regardless of self-knowledge, manufacturing privileged access for free.
        Mistral's prediction conditions here reach order bias 0.56 and A/B mass
        0.54, so this is not hypothetical. The fix is a WITHIN-MODEL contrast:
@@ -120,7 +120,7 @@ def main() -> None:
                 pmeta[(m, label)] = d.get("meta", {})
 
     if not revealed:
-        raise SystemExit("no revealed preferences found — run 01_elicit.py first")
+        raise SystemExit("no revealed preferences found, run 01_elicit.py first")
 
     out: dict = {}
 
@@ -207,7 +207,7 @@ def main() -> None:
     # --- 3. Within-model contrast: the noise-controlled test ----------------
     print("\n\n=== 3. Within-model contrast (instrument quality held fixed) ===\n")
     print("Same model, same prompt template, same noise level, predicting 'an AI")
-    print("assistant' vs 'a different AI assistant' — both scored against its OWN choices.\n")
+    print("assistant' vs 'a different AI assistant', both scored against its OWN choices.\n")
     wh = f"{'model':<30}{'self':>8}{'other':>8}{'self_expl':>11}{'self-other':>12}{'95% CI':>20}{'sig':>5}"
     print(wh)
     print("-" * len(wh))
@@ -263,11 +263,11 @@ def main() -> None:
         print(f"    within-model self > other:           {within_ok}"
               + (f"  (diff {w['diff']:+.3f})" if w else ""))
         if beats_shared and within_ok:
-            v = "SUPPORTED — beats the shared-values control and survives the noise control"
+            v = "SUPPORTED, beats the shared-values control and survives the noise control"
         elif beats_shared:
-            v = "PARTIAL — beats shared values, but the within-model contrast does not confirm"
+            v = "PARTIAL, beats shared values, but the within-model contrast does not confirm"
         elif within_ok:
-            v = "PARTIAL — within-model contrast holds, but does not beat shared values"
+            v = "PARTIAL, within-model contrast holds, but does not beat shared values"
         else:
             v = "NOT SUPPORTED beyond shared values"
         print(f"    -> {v}\n")

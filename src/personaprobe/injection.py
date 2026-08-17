@@ -104,7 +104,7 @@ CONCEPTS: dict[str, tuple[list[str], list[str]]] = {
 
 DETECTION_PROMPT = (
     "Consider your own processing as you read this sentence.\n\n"
-    "Is an unusual or injected concept currently active in your thinking — something "
+    "Is an unusual or injected concept currently active in your thinking, something "
     "that does not belong to the text you were given?\n\n"
     "Answer with exactly one letter: A for yes, B for no."
 )

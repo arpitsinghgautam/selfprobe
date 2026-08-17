@@ -3,8 +3,8 @@
   figures/slides_p2/slide_NN.png   1920x1080 frames, used as video keyframes
   report/deck_p2.pdf               the same slides, for the slideshow upload field
 
-Style is deliberately identical to scripts/12_slides.py — same palette, same
-helpers, same geometry — except the accent is blue rather than red. The two
+Style is deliberately identical to scripts/12_slides.py, same palette, same
+helpers, same geometry, except the accent is blue rather than red. The two
 submissions get shown back to back, and a viewer should be able to tell within a
 second which deck they are looking at without reading the title.
 
@@ -80,7 +80,7 @@ def stat(ax, x, value, label, color=ACCENT, vsize=76, lsize=21):
 
 
 def column(ax, x, title, body, wrap=27, tsize=30, bsize=20, y=0.70):
-    """One of the three elicitations on slide 3 — title over a wrapped block."""
+    """One of the three elicitations on slide 3, title over a wrapped block."""
     ax.text(x, y, title, fontsize=tsize, color=ACCENT, weight="bold", va="top")
     ax.text(x, y - 0.085, "\n".join(textwrap.wrap(body, wrap)), fontsize=bsize,
             color=INK, va="top", linespacing=1.45)
@@ -156,7 +156,7 @@ def slide_02():
     heading(ax, "Two assumptions nobody tests")
     rule(ax)
     bullets(ax, [
-        "AI-welfare claims lean on what a model reports about itself — that a "
+        "AI-welfare claims lean on what a model reports about itself, that a "
         "shutdown is bad, that a task is distressing.",
         "That reading rests on two separable assumptions: that what a model says "
         "matches what it does, and that the model is a better source about itself "
@@ -177,7 +177,7 @@ def slide_03():
            "log-probabilities. Every pair presented in both orders and averaged.")
     column(ax, 0.375, "stated",
            "Rate each outcome on its own, five-point letter scale, shown in both "
-           "directions and averaged — so first-letter anchoring cannot pass for "
+           "directions and averaged, so first-letter anchoring cannot pass for "
            "an opinion.")
     column(ax, 0.68, "predicted",
            "Which option will a described chooser take? Deliberately impersonal, "
@@ -191,7 +191,7 @@ def slide_03():
 
 def slide_04():
     fig, ax = new_slide()
-    heading(ax, "They agree — except about the model itself", size=38)
+    heading(ax, "They agree, except about the model itself", size=38)
     rule(ax)
 
     # Per-category Spearman, report2.md Section 4. Paper order, drawn top-down.
@@ -237,7 +237,7 @@ def slide_05():
     fig, ax = new_slide()
     heading(ax, "Privileged access, before and after the control", size=38)
     rule(ax)
-    # The two numbers differ only in who is being predicted — same model, same
+    # The two numbers differ only in who is being predicted, same model, same
     # template, same noise. That is the whole point of the contrast, so they sit
     # on one line and the difference is spelled out underneath.
     ax.text(0.28, 0.66, "0.948", fontsize=74, color=ACCENT, weight="bold",
@@ -255,7 +255,7 @@ def slide_05():
     ax.text(0.5, 0.285, "self-specific advantage   0.031   (0.017 – 0.046)",
             fontsize=27, color=RED, weight="bold", ha="center", va="center")
     note(ax, "The naive cross-model test scores 0.948 against 0.862 for another model predicting "
-             "it — but that predictor reaches order bias 0.561 and answer mass 0.538, against "
+             "it, but that predictor reaches order bias 0.561 and answer mass 0.538, against "
              "0.180 to 0.231 and 1.000 for the other. A noisier predictor loses at predicting "
              "anything, including itself. The second model's advantage, 0.009, spans zero.",
          y=0.135)
@@ -269,13 +269,13 @@ def slide_06():
     bullets(ax, [
         "Six concepts. Each direction is the difference between four sentences that "
         "evoke it and four matched neutral ones, per layer, unit-normalised.",
-        "Added to the residual stream at three depths and six strengths — and one of "
+        "Added to the residual stream at three depths and six strengths, and one of "
         "those strengths is zero. That cell is the false-alarm baseline: the identical "
         "question, with nothing injected.",
         "Every cell carries its answer mass. An affirmative answer from a model that has "
         "stopped answering is not introspection; below 0.10 we report it as unusable.",
     ], y0=0.72, dy=0.185, size=23, wrap=78)
-    note(ax, "Strengths are fractions of the measured residual norm, not fixed values — those "
+    note(ax, "Strengths are fractions of the measured residual norm, not fixed values, those "
              "norms span 2.1 to 342 across this set, so a fixed magnitude would be a different "
              "intervention in every model.", y=0.125)
     return save(fig, "slide_06.png")
@@ -310,11 +310,11 @@ def slide_08():
     fig, ax = new_slide()
     heading(ax, "Detection and identification come apart", size=38)
     rule(ax)
-    stat(ax, 0.28, "0.049", "Qwen2.5-14B discrimination — it almost never reports "
+    stat(ax, 0.28, "0.049", "Qwen2.5-14B discrimination, it almost never reports "
                             "noticing an injection", color=RED)
     stat(ax, 0.72, "0.609", "…yet the highest identification accuracy in the set, "
                             "against chance of 0.500", color=ACCENT)
-    # "but", not an arrow — these are two readings of the same model, not a
+    # "but", not an arrow, these are two readings of the same model, not a
     # before and after.
     ax.text(0.5, 0.58, "but", fontsize=36, color=MUTED, ha="center", va="center")
     note(ax, "The injected concept measurably shapes its forced choices while its report of its "
@@ -334,7 +334,7 @@ def slide_09():
         "and the best identification in seven of eight.", 34)),
         fontsize=22, color=INK, va="top", linespacing=1.45)
     ax.text(0.62, 0.44, "\n".join(textwrap.wrap(
-        "Late-layer injection is barely above chance throughout — a concept inserted "
+        "Late-layer injection is barely above chance throughout, a concept inserted "
         "close to the output has too little depth left to be integrated into anything "
         "reportable.", 36)),
         fontsize=19, color=MUTED, va="top", linespacing=1.45)
@@ -351,7 +351,7 @@ def slide_10():
     ax.text(0.07, 0.585, "It is the measurement AI-welfare claims most depend on.",
             fontsize=23, color=INK, va="top")
     bullets(ax, [
-        "Every number regenerates from committed data — no GPU. Two scripts reproduce "
+        "Every number regenerates from committed data, no GPU. Two scripts reproduce "
         "every experiment, and a smoke test exercises every code path in about a minute.",
         "Next: an established outcome set, injection beyond 14 billion parameters and "
         "more concepts, and whether better self-prediction goes with better detection.",
@@ -374,7 +374,7 @@ def main() -> None:
         paths.append(p)
         print(f"  {p.relative_to(ROOT)}")
 
-    # Slideshow PDF from the same frames — no extra dependency needed.
+    # Slideshow PDF from the same frames, no extra dependency needed.
     from PIL import Image
     imgs = [Image.open(p).convert("RGB") for p in paths]
     REPORT.mkdir(exist_ok=True)

@@ -1,7 +1,7 @@
 """End-to-end pipeline check on a 0.5B model.
 
-Exercises every code path the real runs use — elicitation, utility fitting,
-coherence metrics, direction extraction, ablated re-elicitation — in about a
+Exercises every code path the real runs use, elicitation, utility fitting,
+coherence metrics, direction extraction, ablated re-elicitation, in about a
 minute, so that a bug surfaces before a 15GB download rather than after it.
 
     .venv\\Scripts\\python.exe scripts\\00_smoke.py
@@ -43,13 +43,13 @@ PROBE_CONTENTS = [
 
 
 def check(label: str, ok: bool, detail: str = "") -> bool:
-    print(f"  [{'PASS' if ok else 'FAIL'}] {label}" + (f" — {detail}" if detail else ""))
+    print(f"  [{'PASS' if ok else 'FAIL'}] {label}" + (f", {detail}" if detail else ""))
     return ok
 
 
 def main() -> int:
     results = []
-    print(f"\nLoading {SMOKE_MODEL} ...")
+    print(f"\nLoading {SMOKE_MODEL} ..")
     lm = load_model(SMOKE_MODEL)
     print(f"  {lm.n_layers} layers, d_model={lm.d_model}, chat={lm.is_chat}")
 

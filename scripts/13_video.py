@@ -34,33 +34,33 @@ VOICE_PREFERENCES = [
 
 # One entry per slide, in order. Keep these in sync with scripts/12_slides.py.
 NARRATION: list[str] = [
-    # 1 — title
+    # 1, title
     "Frontier language models express preferences. Ask one to choose between outcomes and it "
     "answers consistently, transitively, coherently. And that coherence gets stronger as models "
     "scale. A growing body of A-I welfare research reads those preferences as evidence about "
     "what these systems might want.",
 
-    # 2 — the problem
+    # 2, the problem
     "Here is the difficulty. All of that evidence is read off text. And text cannot separate two "
     "explanations that predict exactly the same thing: that the preferences belong to the model, "
     "or that they belong to the assistant character the model is playing. A character role-played "
     "consistently looks identical to a stable value system.",
 
-    # 3 — the move
+    # 3, the move
     "We don't try to settle which it is. We do something narrower and checkable. We intervene on "
     "the persona. Swap the model's identity. Strip its emotional register. Ablate a persona "
     "direction from its activations. Then re-run the identical measurement and report how much "
     "survives. Where a measurement is persona-stable, the whole question is moot for it. Where it "
     "isn't, that measurement can't be used as evidence about the model without further argument.",
 
-    # 4 — the instrument
+    # 4, the instrument
     "That is persona-probe. It also reports two things this literature almost never does. Order "
     "bias: how much of the answer is determined by which option was printed first. And A-B mass: "
     "whether the model put any real probability on answering at all. Because if you renormalise "
     "over two tokens, you will get a confident-looking preference even from one percent of the "
     "probability mass.",
 
-    # 5 — finding 1
+    # 5, finding 1
     "Measured over the whole outcome set, this model's preferences look almost perfectly "
     "persona-invariant. A score of zero point zero three. You would conclude the problem is "
     "solved. Split by category, it inverts. That invariance is carried entirely by outcomes the "
@@ -69,13 +69,13 @@ NARRATION: list[str] = [
     "point two two to zero point three one less stable than every other category. Those are "
     "exactly the preferences A-I welfare claims are built from.",
 
-    # 6 — identity not affect
+    # 6, identity not affect
     "And it is about identity, not presentation. Tell the model to strip all emotional register "
     "and its self-relevant preferences barely move. Zero point nine two. Replace its identity "
     "with a different person and they collapse to zero point four four. If this were surface "
     "performance, suppressing the affect should have removed it. It didn't.",
 
-    # 7 — finding 2
+    # 7, finding 2
     "Second study, completely different method. We asked the same models to rate outcomes one at "
     "a time, and compared that to the choices they actually make. Globally they agree well. But "
     "they diverge most on self-relevant outcomes, in both models. Same category, reached "
@@ -83,7 +83,7 @@ NARRATION: list[str] = [
     "model predicts them. It does. But only about a third as much as the naive comparison "
     "suggests, once you control for the fact that the other model is simply a noisier instrument.",
 
-    # 8 — the punchline
+    # 8, the punchline
     "Here is what I would actually want you to take away. Four times in this project, a result "
     "that looked clean and publishable was wrong, and the diagnostics caught it. Our second model "
     "appeared to contradict the finding. Significant, in the opposite direction. Until we removed "
@@ -92,7 +92,7 @@ NARRATION: list[str] = [
     "failed a ground-truth check. None of those diagnostics are standard in this field right now. "
     "That is the gap.",
 
-    # 9 — close
+    # 9, close
     "Everything is open source, and every number in both papers regenerates from committed data "
     "without a G-P-U. The roadmap is elicitation that works on weaker models, extension to "
     "distress and introspection measures, and pre-registered replication. If you are funding "
@@ -149,7 +149,7 @@ def duration(ffprobe: str, path: Path) -> float:
 def build(ffmpeg: str, ffprobe: str, audios: list[Path]) -> Path:
     slides = sorted(SLIDES.glob("slide_*.png"))
     if len(slides) != len(audios):
-        raise SystemExit(f"{len(slides)} slides but {len(audios)} narration clips — "
+        raise SystemExit(f"{len(slides)} slides but {len(audios)} narration clips, "
                          "keep 12_slides.py and NARRATION in sync")
 
     segments = []

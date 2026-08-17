@@ -1,6 +1,7 @@
 # selfprobe
 
-**Do language models know their own preferences — and can they notice a thought you planted in them?**
+**Do language models know their own preferences, and can they notice a thought you planted in
+them?**
 
 Most AI-welfare work leans on what models say about themselves. That quietly assumes two things
 nobody checks: that what a model *says* matches what it *does*, and that it knows itself better
@@ -11,14 +12,14 @@ This tests all three.
 
 ## What I found
 
-**Stated and revealed preferences agree — except on one category.** Ask a model to rate outcomes
+**Stated and revealed preferences agree, except on one category.** Ask a model to rate outcomes
 one at a time, then make it choose between them in pairs, and the two rankings mostly match
 (ρ ≈ 0.83–0.87). Both models reproduce a donation ladder perfectly. Both diverge most on the
-outcomes about themselves — 0.64 and 0.55, the worst substantive category in each.
+outcomes about themselves, 0.64 and 0.55, the worst substantive category in each.
 
 **Privileged access is real but a third the size it looks.** The usual test compares a model
 predicting itself against another model predicting it. Qwen wins 0.948 to 0.862, which looks
-decisive. But the rival is simply a worse instrument — a noisier predictor loses at predicting
+decisive. But the rival is simply a worse instrument, a noisier predictor loses at predicting
 anything. Ask the *same* model about "an AI assistant" versus "a different AI assistant", holding
 quality fixed, and the advantage is **+0.031**. Mistral's doesn't survive the control at all.
 
@@ -40,8 +41,8 @@ Sort by raw detection rate and the bottom two come first. They cry wolf on an em
 than half the time. Report true positives without the false-alarm baseline and you'd rank them best
 in the set.
 
-Two more things fell out of it. **Detection and identification are different faculties** —
-Qwen-14B almost never reports noticing an injection (+0.049) yet has the best identification
+Two more things fell out of it. **Detection and identification are different faculties**. Qwen-14B
+almost never reports noticing an injection (+0.049) yet has the best identification
 accuracy of any model tested (0.609). The planted concept is steering its choices while it reports
 nothing is there. And **introspective access peaks mid-network**, best at middle depth in 7 of 8
 models, barely above chance when injected near the output.
@@ -66,7 +67,7 @@ uv pip install -e .
 1% of its probability there, you still get a confident-looking number computed from nothing.
 
 That matters more here than anywhere. Injection strong enough to be noticed is often strong enough
-to break generation — at 10% of the residual norm, A/B mass drops to 0.016 and the model has simply
+to break generation, at 10% of the residual norm, A/B mass drops to 0.016 and the model has simply
 stopped answering. **A "yes" from a model that can no longer answer isn't introspection, it's
 damage.** Every cell carries its mass, and readings below the floor are marked unusable rather than
 counted as detections.
@@ -74,7 +75,7 @@ counted as detections.
 **The zero-injection cell.** Same question, nothing injected. Without it, "detects 56% of the time"
 is not a result.
 
-Injection strengths are fractions of the measured residual norm, never fixed numbers — norms across
+Injection strengths are fractions of the measured residual norm, never fixed numbers, norms across
 this set span 2.1 to 342, so a fixed value would be a completely different intervention in each
 model.
 
@@ -94,11 +95,12 @@ including the ones that changed a conclusion.
 ## Companion project
 
 [personaprobe](https://github.com/arpitsinghgautam/personaprobe) asks whether a model's preferences
-belong to it or to the assistant character it plays. It finds the same category — self-relevant
-outcomes — is the least stable one, by a completely different method. That the two converge is the
+belong to it or to the assistant character it plays. It finds the same category, self-relevant
+outcomes, is the least stable one, by a completely different method. That the two converge is the
 main reason I believe either.
 
-Built for the [Digital Minds Research Sprint](https://apartresearch.com/sprints/digital-minds-research-sprint-2026-08-14-to-2026-08-16),
+Built for the [Digital Minds Research
+Sprint](https://apartresearch.com/sprints/digital-minds-research-sprint-2026-08-14-to-2026-08-16),
 August 2026. The injection paradigm follows Lindsey (2025), extended with false-alarm rates and a
 usability gate.
 

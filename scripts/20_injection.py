@@ -96,7 +96,7 @@ def main() -> None:
         fpb = float(np.mean([r.detect_yes for r in br if r.fraction == 0.0]))
         use = [r for r in br if r.fraction > 0 and r.usable]
         if not use:
-            print(f"{band_name:<10}{fpb:>8.3f}{'—':>8}{'—':>9}{'—':>11}{'—':>11}")
+            print(f"{band_name:<10}{fpb:>8.3f}{', ':>8}{', ':>9}{', ':>11}{', ':>11}")
             continue
         tpb = float(np.mean([r.detect_yes for r in use]))
         idb = float(np.mean([r.identify_correct for r in use]))

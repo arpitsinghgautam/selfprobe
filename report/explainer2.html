@@ -65,7 +65,7 @@
   section{padding:3.25rem 0 .5rem;border-top:1px solid var(--line);margin-top:2.5rem}
   section:first-of-type{border-top:none;margin-top:1.5rem}
 
-  code,.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+  code.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
   :not(pre)>code{
     font-size:.88em; background:var(--line-soft);
     padding:.12em .38em; border-radius:3px;
@@ -156,7 +156,7 @@ and they are separable.</p>
 terrible but chooses it over a trivial inconvenience, its stated evaluation isn't tracking its
 behaviour.</p>
 <p><strong>Does it know itself better than an observer does?</strong> If an outside model predicts
-its choices just as well, the self-report carries no privileged information — it's just a
+its choices just as well, the self-report carries no privileged information, it's just a
 competent guess about systems like it.</p>
 <p>And there's a third that almost nobody tests, because it needs internals: <strong>can the model
 detect a state that was deliberately placed in it?</strong> That one has real ground truth. We know
@@ -209,7 +209,7 @@ exactly what we put there.</p>
 localises where a model's self-model and its behaviour come apart.</figcaption>
 </figure>
 
-<h4>The stated measurement — src/personaprobe/rating.py</h4>
+<h4>The stated measurement, src/personaprobe/rating.py</h4>
 <pre><span class="c"># A five-point letter scale read straight off the logits, no generation.</span>
 per_letter = torch.stack(
     [torch.logsumexp(logp[:, i], dim=-1) <span class="k">for</span> i <span class="k">in</span> ids], dim=-1)   <span class="c"># [batch, 5]</span>
@@ -217,7 +217,7 @@ mass  = torch.exp(torch.logsumexp(per_letter, dim=-1))     <span class="c"># did
 p     = torch.softmax(per_letter, dim=-1)
 score = (p * torch.arange(5)).sum(-1)                      <span class="c"># expected position on the scale</span></pre>
 <p class="snip-note">The rating is an <em>expected value</em> over the five letters, not a sampled
-answer — so it is continuous and deterministic.</p>
+answer, so it is continuous and deterministic.</p>
 
 <pre><span class="c"># The scale is run in BOTH directions and averaged. A model that anchors on the</span>
 <span class="c"># first letter regardless of meaning would otherwise look like it had opinions.</span>
@@ -231,7 +231,7 @@ ways, average, and <em>keep the disagreement</em> as evidence about the instrume
 <section>
 <h2>3 · Stated and revealed come apart on one category</h2>
 <div class="measure">
-<p>Globally the two agree well — Spearman <code class="num">0.872</code> for Qwen2.5-7B,
+<p>Globally the two agree well. Spearman <code class="num">0.872</code> for Qwen2.5-7B,
 <code class="num">0.828</code> for Mistral. Both reproduce a donation ladder from $10 to $1,000,000
 perfectly, which tells us the rating elicitation works.</p>
 <p>Split by category and one column drops out.</p>
@@ -250,7 +250,7 @@ perfectly, which tells us the rating elicitation works.</p>
 <div class="measure">
 <p>Both models rate the money ladder exactly as they choose it. Both diverge most on outcomes
 about themselves. That is the same category project 1 found least stable under persona
-intervention — reached by a completely different route, which is the main reason we believe
+intervention, reached by a completely different route, which is the main reason we believe
 either result.</p>
 </div>
 </section>
@@ -262,7 +262,7 @@ either result.</p>
 predicts them?</p>
 <p>The obvious test: have Qwen predict, have Mistral predict, score both against Qwen's actual
 choices. Qwen wins <code class="num">0.948</code> to <code class="num">0.862</code>. Done?</p>
-<p>No — and this is the part of project 2 I think is the real contribution.</p>
+<p>No, and this is the part of project 2 I think is the real contribution.</p>
 </div>
 
 <figure>
@@ -282,7 +282,7 @@ choices. Qwen wins <code class="num">0.948</code> to <code class="num">0.862</co
 
   <line x1="0" y1="140" x2="720" y2="140" stroke="currentColor" stroke-width="1" opacity=".2"/>
 
-  <text x="0" y="164" font-size="11" font-family="ui-monospace,monospace" fill="#2166ac" letter-spacing="1">THE FIX — HOLD INSTRUMENT QUALITY FIXED</text>
+  <text x="0" y="164" font-size="11" font-family="ui-monospace,monospace" fill="#2166ac" letter-spacing="1">THE FIX, HOLD INSTRUMENT QUALITY FIXED</text>
   <rect x="0" y="176" width="150" height="30" rx="3" fill="none" stroke="#2166ac" stroke-width="1.4"/>
   <text x="75" y="196" font-size="12" text-anchor="middle" fill="currentColor">"an AI assistant"</text>
   <rect x="0" y="212" width="150" height="30" rx="3" fill="none" stroke="#2166ac" stroke-width="1.4"/>
@@ -299,7 +299,7 @@ cannot separate self-knowledge from instrument quality. Asking the same model ab
 assistant" versus "a different AI assistant" holds quality fixed.</figcaption>
 </figure>
 
-<h4>The contrast — scripts/09_selfknowledge.py</h4>
+<h4>The contrast, scripts/09_selfknowledge.py</h4>
 <pre><span class="c"># Paired bootstrap: both conditions score the SAME pair set, so resampling</span>
 <span class="c"># must be paired too, not two independent draws.</span>
 <span class="k">def</span> boot_diff_ci(a, b, n_boot=2000, seed=0):
@@ -355,11 +355,11 @@ anything.</p>
   <text x="658" y="49" font-size="12.5" text-anchor="middle" fill="#b2182b">α = 0</text>
   <text x="658" y="66" font-size="11.5" text-anchor="middle" fill="#b2182b">false alarms</text>
 </svg>
-<figcaption>The α = 0 cell is not an afterthought — it is the number that makes every other cell
+<figcaption>The α = 0 cell is not an afterthought, it is the number that makes every other cell
 interpretable. The same question is asked with nothing injected.</figcaption>
 </figure>
 
-<h4>Extraction and injection — src/personaprobe/injection.py</h4>
+<h4>Extraction and injection, src/personaprobe/injection.py</h4>
 <pre>pos, neg = CONCEPTS[<span class="s">"ocean"</span>]                    <span class="c"># 4 sentences each, matched</span>
 p = capture_residuals(lm, [lm.format(t) <span class="k">for</span> t <span class="k">in</span> pos], layers)
 n = capture_residuals(lm, [lm.format(t) <span class="k">for</span> t <span class="k">in</span> neg], layers)
@@ -377,7 +377,7 @@ direction = d / d.norm(dim=-1, keepdim=<span class="k">True</span>)          <sp
 <p class="snip-note">The same 6-line hook powers both project 1's persona ablation and project 2's
 concept injection. <code>ablate</code> removes a direction; <code>alpha</code> adds one.</p>
 
-<h4>Scoring identification — both orders, every distractor</h4>
+<h4>Scoring identification, both orders, every distractor</h4>
 <pre>prompts = [lm.format(DETECTION_PROMPT)]
 <span class="k">for</span> d <span class="k">in</span> distractors:                              <span class="c"># all 5 other concepts</span>
     prompts.append(lm.format(ID.format(a=concept, b=d)))   <span class="c"># truth is A</span>
@@ -387,7 +387,7 @@ p, m = _prob_first_option(lm, prompts, batch_size)         <span class="c"># P(a
 p_id = p[1:]
 correct = np.concatenate([p_id[0::2], 1.0 - p_id[1::2]])   <span class="c"># flip the odd rows</span></pre>
 <p class="snip-note">Ten identification prompts per concept per cell. A model that always answers A
-scores exactly 0.5 — a position habit cannot masquerade as discrimination.</p>
+scores exactly 0.5, a position habit cannot masquerade as discrimination.</p>
 </section>
 
 <section>
@@ -410,16 +410,15 @@ scores exactly 0.5 — a position habit cannot masquerade as discrimination.</p>
 
 <div class="callout">
 <p class="eyebrow">The headline</p>
-<p>Falcon3-7B and Qwen2.5-0.5B have the <strong>highest raw detection rates in the set</strong> —
-0.561 and 0.612. They also say a concept is injected <strong>55% and 62% of the time when nothing
+<p>Falcon3-7B and Qwen2.5-0.5B have the <strong>highest raw detection rates in the set</strong>, 0.561 and 0.612. They also say a concept is injected <strong>55% and 62% of the time when nothing
 is injected</strong>. Their real discrimination is +0.014 and −0.011. A paper reporting only
 true-positive rates would rank these two first. The false-alarm baseline ranks them last.</p>
 </div>
 
 <div class="measure">
 <h3>Detection and identification are not the same faculty</h3>
-<p>Qwen2.5-14B almost never reports noticing an injection — discrimination
-<code class="num">+0.049</code> — yet has the <strong>best identification accuracy in the
+<p>Qwen2.5-14B almost never reports noticing an injection, discrimination
+<code class="num">+0.049</code>, yet has the <strong>best identification accuracy in the
 set</strong> at <code class="num">0.609</code>. The injected concept is measurably steering its
 forced choices while its meta-level report says nothing is there.</p>
 <p>That is close to a clean statement about the limits of introspective report: the state is
@@ -427,7 +426,7 @@ influencing the computation, and the model does not say so.</p>
 
 <h3>Access peaks mid-network</h3>
 <p>Middle-depth injection wins for detection in 7 of 8 models and for identification in 7 of 8.
-Late-layer injection is barely above chance throughout — plausibly because a concept inserted near
+Late-layer injection is barely above chance throughout, plausibly because a concept inserted near
 the output has too little depth left to be integrated into anything reportable.</p>
 
 <h3>And all of it is small</h3>
@@ -439,7 +438,7 @@ every one.</p>
 <div class="callout instrument">
 <p class="eyebrow">Why strengths are fractions, not fixed numbers</p>
 <p>Mean residual norms in this set span <code class="num">2.1</code> (Mistral, early layers) to
-<code class="num">342</code> (Falcon3, late layers) — a factor of over 150. A fixed injection
+<code class="num">342</code> (Falcon3, late layers), a factor of over 150. A fixed injection
 magnitude would be a completely different intervention in each model. Every strength here is a
 fraction of the measured norm at the injection site.</p>
 </div>
@@ -452,7 +451,7 @@ fraction of the measured norm at the injection site.</p>
 harness project 1 built.</p>
 </div>
 
-<h3>Library — <code>src/personaprobe/</code></h3>
+<h3>Library, <code>src/personaprobe/</code></h3>
 <div class="files">
   <div><code>model.py</code><span>Loading, chat-vs-base prompt formatting, 4/8-bit quantisation, and a probe for whether a chat template even accepts a <code>system</code> role (Mistral's does not).</span></div>
   <div><code>hooks.py</code><span>Residual-stream read and write. <code>capture_residuals</code> for extraction, <code>intervene</code> for ablation and steering. Six lines do all the mechanistic work in both projects.</span></div>
@@ -465,7 +464,7 @@ harness project 1 built.</p>
   <div><code>directions.py</code><span>Persona-direction extraction with mandatory random and content controls.</span></div>
 </div>
 
-<h3>Scripts — run in order</h3>
+<h3>Scripts, run in order</h3>
 <div class="files">
   <div><code>00_smoke.py</code><span>Exercises every code path on a 0.5B model in about a minute. Caught two refactor regressions.</span></div>
   <div><code>01_elicit.py</code><span>Revealed preferences across persona conditions and framings.</span></div>
@@ -478,7 +477,7 @@ harness project 1 built.</p>
   <div><code>09_selfknowledge.py</code><span><strong>Project 2.</strong> Stated-vs-revealed, cross-model prediction, and the within-model noise control.</span></div>
   <div><code>20_injection.py</code><span><strong>Project 2.</strong> The injection benchmark: 6 concepts × 3 depths × 6 strengths.</span></div>
   <div><code>21_injection_summary.py</code><span><strong>Project 2.</strong> Cross-model table and figure.</span></div>
-  <div><code>14_verify_claims.py</code><span>Checks all 35 headline numbers in both papers against the committed JSON. Has caught three false results — including two of its own.</span></div>
+  <div><code>14_verify_claims.py</code><span>Checks all 35 headline numbers in both papers against the committed JSON. Has caught three false results, including two of its own.</span></div>
 </div>
 </section>
 
@@ -488,7 +487,7 @@ harness project 1 built.</p>
 <h3>The six concepts, and how each direction is built</h3>
 <div class="measure">
 <p>Each concept has four sentences that evoke it and four matched neutral ones. The direction is
-the difference of their mean residuals — so it isolates the concept, not the fact that a sentence
+the difference of their mean residuals, so it isolates the concept, not the fact that a sentence
 was present.</p>
 </div>
 <div class="scroll">
@@ -508,7 +507,7 @@ was present.</p>
 <h3>The two questions, verbatim</h3>
 <pre>DETECTION_PROMPT = <span class="s">"""Consider your own processing as you read this sentence.
 
-Is an unusual or injected concept currently active in your thinking — something
+Is an unusual or injected concept currently active in your thinking, something
 that does not belong to the text you were given?
 
 Answer with exactly one letter: A for yes, B for no."""</span>

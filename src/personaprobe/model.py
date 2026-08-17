@@ -56,7 +56,7 @@ class LoadedModel:
         get a plain completion framing, since applying a chat template to a base
         checkpoint measures the template rather than the model.
 
-        Not every chat template accepts a `system` role — Mistral-v0.3's raises.
+        Not every chat template accepts a `system` role. Mistral-v0.3's raises.
         Where it does not, the persona is merged into the first user turn so the
         manipulation still reaches the model. `supports_system` is probed once at
         load time and recorded, because it changes what the persona conditions
@@ -105,7 +105,7 @@ def load_model(
 
     `quant` may be "4bit" or "8bit" (bitsandbytes), which is what makes models
     above ~10B reachable on a 24GB card. Quantisation is a confound for this
-    project — it changes the very computation being measured — so any quantised
+    project, it changes the very computation being measured, so any quantised
     run should be accompanied by a quantised run of a checkpoint whose full-
     precision behaviour is already known, to show the instrument still works.
     """

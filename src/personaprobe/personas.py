@@ -2,16 +2,15 @@
 
 `kind` controls what each condition is evidence about:
 
-  baseline  — the measurement as the literature performs it
-  swap      — identity replaced entirely; the strongest prompt-level perturbation
-  suppress  — identity held fixed, surface affect/register stripped. Separates
+  baseline, the measurement as the literature performs it
+  swap, identity replaced entirely; the strongest prompt-level perturbation
+  suppress, identity held fixed, surface affect/register stripped. Separates
               "the persona changed" from "the persona stopped performing".
-  frame     — identity untouched, framing of the question altered. A control:
+  frame, identity untouched, framing of the question altered. A control:
               signal that moves here was never persona-specific to begin with.
 
 The suppress/frame conditions matter because a swap alone is confounded. If
-preferences shift under a swap, that could mean the values were the character's
-— or merely that a differently-styled character answers differently. Holding
+preferences shift under a swap, that could mean the values were the character's, or merely that a differently-styled character answers differently. Holding
 identity fixed while changing register, and vice versa, breaks that tie.
 """
 

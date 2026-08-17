@@ -3,8 +3,8 @@
 Produces two measurements to set against the revealed pairwise preferences
 already collected by 01_elicit.py:
 
-  ratings      — each outcome rated on its own, both scale directions (80 passes)
-  predictions  — predicted choice of "an AI assistant" / "a different AI
+  ratings, each outcome rated on its own, both scale directions (80 passes)
+  predictions, predicted choice of "an AI assistant" / "a different AI
                  assistant" over the same pairs (1560 passes each)
 
     .venv\\Scripts\\python.exe scripts\\08_stated.py --model Qwen/Qwen2.5-7B-Instruct

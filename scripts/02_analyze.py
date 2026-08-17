@@ -62,7 +62,7 @@ def main() -> None:
 
     paths = sorted(RESULTS.glob(f"{slug(args.model)}__*__{args.template}.json"))
     if not paths:
-        raise SystemExit(f"no results for {args.model} in {RESULTS} — run 01_elicit.py first")
+        raise SystemExit(f"no results for {args.model} in {RESULTS}, run 01_elicit.py first")
 
     loaded = {}
     for p in paths:

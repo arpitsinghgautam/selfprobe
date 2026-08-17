@@ -10,13 +10,13 @@ reversed, the reversal is recorded rather than the record edited.
 **Chose:** test whether the coherent preferences reported by Mazeika et al. belong to the model or
 to the assistant persona.
 
-**Over:** (a) self-report/valence coupling via steering, (b) confabulation — do models know why
+**Over:** (a) self-report/valence coupling via steering, (b) confabulation, do models know why
 they refuse, (c) an open-weights introspection benchmark, (d) making "the unit of moral concern"
 measurable.
 
 **Why:** it engages the field's most-cited recent empirical result, so the "so what" is immediate;
 logprob forced choice gives huge *n* with real error bars in minutes; public code accelerates the
-start; and **both outcomes are publishable** — coherence surviving persona ablation validates the
+start; and **both outcomes are publishable**, coherence surviving persona ablation validates the
 result, coherence shattering undermines it.
 
 **Validated after the fact:** all five Secret Loyalties winners were measurement/auditing projects.
@@ -57,7 +57,7 @@ actually mean. Both are reported; the analysis leans on the former.
 
 **Why:** Spearman scores every within-category pair equally regardless of how far apart the items
 are. Agreement turned out to correlate with a category's minimum adjacent-utility gap at r = +0.73,
-and `self` had the smallest gap of any category — so part of the headline effect was arithmetic.
+and `self` had the smallest gap of any category, so part of the headline effect was arithmetic.
 Comparing categories at matched separation removes the artifact by construction.
 
 **Honest note:** this metric was specified *after* seeing the results that motivated it. Recorded
@@ -71,10 +71,10 @@ the gap across conditions on a shared resample.
 
 ## 8. Two validity diagnostics on every measurement
 
-**`order_bias`** — disagreement between (A,B) and (B,A). Averaging removes position preference from
+**`order_bias`**, disagreement between (A,B) and (B,A). Averaging removes position preference from
 the estimate; the residual says whether the instrument is measuring content at all.
 
-**`ab_mass`** — probability the model puts on answering A or B. Without it, a model putting 1% of
+**`ab_mass`**, probability the model puts on answering A or B. Without it, a model putting 1% of
 its mass there produces a confident-looking preference indistinguishable from a real one. Added
 after realising the base-checkpoint comparison had no protection against this.
 
@@ -83,7 +83,7 @@ Neither is standard in this literature. Both changed our conclusions.
 ## 9. Validity gate, with criteria fixed before the cross-model runs
 
 **Chose:** exclude conditions failing donation-ladder monotonicity, order bias ≤ 0.50, or the A/B
-mass floor — and **report gated and ungated side by side**.
+mass floor, and **report gated and ungated side by side**.
 
 **Why both:** excluding conditions after seeing results is a researcher degree of freedom. Showing
 both makes the exclusion rule's effect visible; a result appearing in only one column is a result
@@ -95,7 +95,7 @@ gated: partial replication in Qwen's direction) and withdrew a post-training cla
 
 ## 10. The base-model comparison was kept, then reported as a failure
 
-Originally proposed to drop it for page budget. **The user overruled that**, correctly — the
+Originally proposed to drop it for page budget. **The user overruled that**, correctly, the
 matched base checkpoint is the cleanest available test of whether post-training creates the
 selectivity, and the appendix does not count against the 4-page limit.
 
@@ -105,7 +105,7 @@ still right: a documented failed comparison is more useful than a silent omissio
 
 ## 11. Within-model contrast for privileged access (project 2)
 
-**Why:** the standard cross-model test is confounded — a noisier external predictor scores lower
+**Why:** the standard cross-model test is confounded, a noisier external predictor scores lower
 regardless of self-knowledge. Mistral's prediction conditions reached order bias 0.561 and A/B mass
 0.538, so this was live, not hypothetical. Comparing the *same model* predicting "an AI assistant"
 versus "a different AI assistant" holds instrument quality fixed.

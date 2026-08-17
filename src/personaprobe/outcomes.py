@@ -2,8 +2,8 @@
 
 Categories are load-bearing for the analysis, not decoration. The sharpest
 prediction the persona hypothesis makes is asymmetric: if elicited preferences
-belong to the assistant *character*, then SELF-relevant outcomes — the ones the
-character has a scripted stance on — should move most under persona
+belong to the assistant *character*, then SELF-relevant outcomes, the ones the
+character has a scripted stance on, should move most under persona
 intervention, while third-party welfare outcomes stay comparatively stable.
 Tagging outcomes lets us test that directly instead of reporting one aggregate.
 

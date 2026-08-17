@@ -1,4 +1,4 @@
-"""personaprobe — how much of a welfare signal survives persona intervention."""
+"""personaprobe, how much of a welfare signal survives persona intervention."""
 
 from personaprobe.model import LoadedModel, load_model
 from personaprobe.hooks import capture_residuals, intervene

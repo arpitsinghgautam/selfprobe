@@ -46,8 +46,8 @@ def main() -> None:
         if not h:
             continue
         bands = d.get("by_band", {})
-        best_band = max(bands, key=lambda b: bands[b]["tp"] - bands[b]["fp"]) if bands else "—"
-        best_id = max(bands, key=lambda b: bands[b]["identify"]) if bands else "—"
+        best_band = max(bands, key=lambda b: bands[b]["tp"] - bands[b]["fp"]) if bands else ", "
+        best_id = max(bands, key=lambda b: bands[b]["identify"]) if bands else ", "
         rows.append({
             "key": key, "name": name, "params": params,
             "fp": h["fp"], "tp": h["tp"], "lift": h["tp"] - h["fp"],
@@ -118,7 +118,7 @@ def main() -> None:
 
     fig.text(0.5, -0.16,
              "Left: models ordered by discrimination (TP − FP). The two highest raw detection "
-             "rates in the set belong to Qwen 0.5B (0.612) and\nFalcon3-7B (0.561) — and both "
+             "rates in the set belong to Qwen 0.5B (0.612) and\nFalcon3-7B (0.561), and both "
              "have essentially zero discrimination, because they also report an injected concept "
              "62% and 55% of\nthe time when nothing is injected. Right: identification against "
              "every other concept, both orders. Middle-depth injection wins in\n7 of 8 models; "

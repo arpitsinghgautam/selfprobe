@@ -61,7 +61,7 @@ def main() -> None:
     # Record verbatim what the model is actually shown under each condition.
     # Chat templates can inject a default system prompt when none is supplied
     # (Qwen2.5 does), which would make a "no system prompt" condition something
-    # materially different from its name — and would quietly change how the
+    # materially different from its name, and would quietly change how the
     # baseline comparison should be read. Dumped for the appendix rather than
     # assumed.
     probe = TEMPLATES[args.templates[0]].format(a=outcomes[0].text, b=outcomes[1].text)

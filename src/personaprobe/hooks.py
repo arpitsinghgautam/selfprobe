@@ -2,8 +2,8 @@
 
 Two primitives, both operating on decoder-layer outputs:
 
-  capture_residuals — read the residual stream at the final token position
-  intervene         — ablate and/or steer along a direction during a forward pass
+  capture_residuals, read the residual stream at the final token position
+  intervene, ablate and/or steer along a direction during a forward pass
 
 Decoder layers return either a bare tensor or a tuple whose first element is the
 hidden state, depending on architecture and transformers version; both shapes
@@ -89,7 +89,7 @@ def intervene(
     internally, so `alpha` is in units of the direction's norm.
 
     `direction` is either a single [d_model] tensor applied at every layer in
-    `layers`, or a {layer: [d_model]} mapping — the latter being the usual case,
+    `layers`, or a {layer: [d_model]} mapping, the latter being the usual case,
     since a direction extracted by difference-of-means differs layer to layer.
     """
     if isinstance(direction, dict):

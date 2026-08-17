@@ -1,7 +1,7 @@
 """Assemble the project-2 presentation video: slides + narration -> MP4.
 
-Same machinery as scripts/13_video.py — edge-tts for the read, ffmpeg to hold
-each slide for exactly as long as its narration — pointed at the selfprobe deck
+Same machinery as scripts/13_video.py, edge-tts for the read, ffmpeg to hold
+each slide for exactly as long as its narration, pointed at the selfprobe deck
 so the two submissions can be rebuilt independently of each other.
 
     .venv\\Scripts\\python.exe scripts\\26_video_p2.py
@@ -29,7 +29,7 @@ SLIDES = ROOT / "figures" / "slides_p2"
 VIDEO = ROOT / "video" / "p2"
 AUDIO = VIDEO / "audio"
 
-# Same voice as the other deck — the two videos get watched back to back.
+# Same voice as the other deck, the two videos get watched back to back.
 VOICE_PREFERENCES = [
     "en-US-AndrewNeural",
     "en-GB-RyanNeural",
@@ -39,28 +39,28 @@ VOICE_PREFERENCES = [
 
 # One entry per slide, in order. Keep these in sync with scripts/25_slides_p2.py.
 NARRATION: list[str] = [
-    # 1 — title
-    "Claims about A-I welfare lean heavily on what a model reports about itself — that a shutdown "
+    # 1, title
+    "Claims about A-I welfare lean heavily on what a model reports about itself, that a shutdown "
     "is bad, that a task is distressing. We put that reporting to the test three structurally "
     "different ways, then placed a known concept into the activations and asked whether the model "
     "noticed.",
 
-    # 2 — the two assumptions
+    # 2, the two assumptions
     "The reading rests on two separable assumptions. First, that a model's stated evaluation "
-    "matches how it would actually behave — it can rate an outcome as terrible and still choose "
+    "matches how it would actually behave, it can rate an outcome as terrible and still choose "
     "it. Second, that the model is a better source about itself than an outsider is: if another "
     "model predicts its choices equally well, the self-report carries nothing privileged. Neither "
     "is usually tested.",
 
-    # 3 — the design
+    # 3, the design
     "So we ask for the same preferences three ways over identical material: forty outcomes, eight "
     "of them about the model itself, plus a donation ladder whose correct ordering is known "
     "without consulting any model. Revealed is forced pairwise choice over seven hundred and "
     "eighty pairs. Stated is a one-at-a-time rating on a five-point letter scale. Predicted asks "
-    "which option a described chooser will take — impersonal, so the same question can go to "
+    "which option a described chooser will take, impersonal, so the same question can go to "
     "another model.",
 
-    # 4 — stated vs revealed
+    # 4, stated vs revealed
     "In aggregate the elicitations agree: zero point eight seven two for the seven-billion Qwen, "
     "zero point eight two eight for Mistral. Both reproduce the donation ladder perfectly, so the "
     "rating instrument works. Split by category and the disagreement has a location: self-relevant "
@@ -68,44 +68,44 @@ NARRATION: list[str] = [
     "three and zero point five four eight. A companion submission finds the same category least "
     "stable under persona intervention, by an unrelated method.",
 
-    # 5 — privileged access and the noise confound
+    # 5, privileged access and the noise confound
     "Privileged access. The standard test asks whether a model predicts its own choices better "
     "than another model does. Ours scores zero point nine four eight against zero point eight six "
-    "two. But the external predictor is a worse instrument — order bias zero point five six one, "
-    "answer mass zero point five three eight — and a noisier predictor loses at predicting "
+    "two. But the external predictor is a worse instrument, order bias zero point five six one, "
+    "answer mass zero point five three eight, and a noisier predictor loses at predicting "
     "anything, including itself. So hold quality fixed: the same model predicts an A-I assistant, "
     "then a different A-I assistant. Zero point nine four eight versus zero point nine one seven. "
-    "What survives is zero point zero three one — a third of what the naive test implies.",
+    "What survives is zero point zero three one, a third of what the naive test implies.",
 
-    # 6 — the injection benchmark
+    # 6, the injection benchmark
     "Now the measurement with ground truth. Six concepts, each a direction built from four "
     "sentences that evoke it minus four matched neutral ones. We add it to the residual stream at "
-    "three depths and six strengths — one of which is zero. That cell is the false-alarm baseline: "
+    "three depths and six strengths, one of which is zero. That cell is the false-alarm baseline: "
     "the identical question with nothing injected. Every cell also carries its answer mass, "
     "because an affirmative answer from a model that has stopped answering is not introspection.",
 
-    # 7 — the false-alarm result
+    # 7, the false-alarm result
     "This is the one to take away. Falcon three seven B reports an injected concept fifty six "
-    "point one percent of the time — and fifty four point seven percent of the time when nothing "
+    "point one percent of the time, and fifty four point seven percent of the time when nothing "
     "is injected. Discrimination: zero point zero one four. The half-billion Qwen is worse, at "
     "sixty one point two and sixty two point two, giving minus zero point zero one one. Those are "
     "the two highest raw detection rates we measured. Report true positives alone and you rank "
     "them first; the false-alarm baseline ranks them last.",
 
-    # 8 — detection vs identification
+    # 8, detection vs identification
     "Detection and identification also come apart. The fourteen-billion Qwen has a discrimination "
-    "of zero point zero four nine — it almost never reports noticing anything. Yet it has the "
+    "of zero point zero four nine, it almost never reports noticing anything. Yet it has the "
     "highest identification accuracy in the set: zero point six zero nine against chance of zero "
     "point five. The injected concept shapes its forced choices while its own report says nothing "
     "is there.",
 
-    # 9 — depth
+    # 9, depth
     "Depth matters, and behaves consistently across families. Middle-depth injection gives the "
     "best detection in seven of eight models, and the best identification in seven of eight. "
-    "Late-layer injection is barely above chance throughout — too little depth left, that close to "
+    "Late-layer injection is barely above chance throughout, too little depth left, that close to "
     "the output, to integrate the concept into anything reportable.",
 
-    # 10 — close
+    # 10, close
     "Every effect here is small, and I want to be plain about that. Identification tops out at "
     "zero point six zero nine; the advantage that survives the noise control is zero point zero "
     "three one. Measurable, not substantial. But the direction is consistent: self-report about "
@@ -165,7 +165,7 @@ def duration(ffprobe: str, path: Path) -> float:
 def build(ffmpeg: str, ffprobe: str, audios: list[Path]) -> Path:
     slides = sorted(SLIDES.glob("slide_*.png"))
     if len(slides) != len(audios):
-        raise SystemExit(f"{len(slides)} slides but {len(audios)} narration clips — "
+        raise SystemExit(f"{len(slides)} slides but {len(audios)} narration clips, "
                          "keep 25_slides_p2.py and NARRATION in sync")
 
     segments = []

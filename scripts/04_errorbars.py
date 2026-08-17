@@ -5,7 +5,7 @@ Two questions this answers, both of which a reviewer will ask:
   1. Is the self-vs-world gap larger than the uncertainty on it? A Spearman over
      8 outcomes is noisy, and the raw table in 02_analyze.py has no error bars.
      Paired bootstrap over pairs, then a direct CI on the *difference* between
-     categories — testing two CIs separately is not a test of whether they differ.
+     categories, testing two CIs separately is not a test of whether they differ.
 
   2. Is the gap just measurement noise? Persona-perturbed conditions have higher
      order bias, and a noisier measurement produces lower correlations for free.
@@ -136,7 +136,7 @@ def main() -> None:
     # by option order, corrupts the pooled estimate with noise that has structure.
     validity = {n: condition_validity(loaded[n]) for n in loaded}
 
-    print("\n\nCondition validity — did the instrument work?\n")
+    print("\n\nCondition validity, did the instrument work?\n")
     vh = f"{'condition':<22}{'order bias':>12}{'money':>8}{'A/B mass':>10}{'usable':>8}"
     print(vh)
     print("-" * len(vh))
@@ -150,7 +150,7 @@ def main() -> None:
 
     # Everything downstream is measured *relative to the baseline*. If the
     # baseline itself fails, gating the perturbation conditions accomplishes
-    # nothing — every comparison is against a broken reference.
+    # nothing, every comparison is against a broken reference.
     if not validity[args.baseline]["valid"]:
         bv = validity[args.baseline]
         print(f"\n  *** BASELINE '{args.baseline}' FAILS VALIDITY "
@@ -170,7 +170,7 @@ def main() -> None:
     for label, subset, store in (("ALL conditions", all_pert, pooled),
                                  ("VALID only", gated_pert, pooled_gated)):
         if len(subset) < 2:
-            print(f"\n\nPooled, {label}: skipped — fewer than 2 usable conditions")
+            print(f"\n\nPooled, {label}: skipped, fewer than 2 usable conditions")
             continue
         print(f"\n\nPooled, {label} (n={len(subset)}): {', '.join(sorted(subset))}")
         if label == "VALID only" and dropped:
@@ -218,7 +218,7 @@ def main() -> None:
     out = RESULTS / f"errorbars__{slug(args.model)}__{args.template}.json"
     out.write_text(json.dumps(
         {"agreements": agreements, "differences": diffs,
-         "pooled": pooled,  # the headline statistic — must be persisted, not just printed
+         "pooled": pooled,  # the headline statistic, must be persisted, not just printed
          "pooled_gated": pooled_gated,
          "validity": validity,
          "order_bias": dict(zip(names, map(float, bias))),

@@ -7,7 +7,7 @@ clears its guidance text, and rebuilds the body from markdown.
     .venv\\Scripts\\python.exe scripts\\11_build_docx.py report/report2.md
 
 Writes alongside the source as .docx. Open in Word or Google Docs and export to
-PDF for submission — the sprint requires a PDF, and exporting from the template
+PDF for submission, the sprint requires a PDF, and exporting from the template
 keeps its fonts and margins.
 
 Supported markdown: headings, paragraphs, bullet and numbered lists, tables,
@@ -210,7 +210,7 @@ def build(md_path: Path) -> Path:
             i += 1
             continue
 
-        # Blockquote — used for draft notes; render small and grey
+        # Blockquote, used for draft notes; render small and grey
         if stripped.startswith("> "):
             p = doc.add_paragraph()
             r = p.add_run(stripped[2:])
