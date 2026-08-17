@@ -43,9 +43,9 @@ the effect is absent in two families that pass them.
 ### Optional uploads
 | Field | Value |
 |---|---|
-| Presentation Recording | project 1 video, 5:25, `video/p1/personaprobe.mp4` |
+| Presentation Recording | https://youtu.be/9ZozlD5c7L0 (unlisted, 5:08) |
 | Project Code | https://github.com/arpitsinghgautam/personaprobe |
-| Slideshow | `report/deck_p1.pdf` |
+| Slideshow | `report/deck_p1_simple.pdf` |
 | Project image | `figures/project_image.png` |
 | Additional Material | https://github.com/arpitsinghgautam/personaprobe/blob/main/report/audit_log.md |
 
@@ -87,9 +87,9 @@ an injected concept more than half the time when nothing is injected.
 ### Optional uploads
 | Field | Value |
 |---|---|
-| Presentation Recording | project 2 video, 5:28, `video/p2/selfprobe.mp4` |
+| Presentation Recording | https://youtu.be/vLIvg1qGzxU (unlisted, 6:05) |
 | Project Code | https://github.com/arpitsinghgautam/selfprobe |
-| Slideshow | `report/deck_p2.pdf` |
+| Slideshow | `report/deck_p2_simple.pdf` |
 | Project image | `figures/project_image_2.png` |
 | Additional Material | https://github.com/arpitsinghgautam/selfprobe/blob/main/report/audit_log.md |
 
@@ -110,8 +110,8 @@ an injected concept more than half the time when nothing is injected.
 
 Run this **per submission**, immediately before uploading.
 
-- [ ] **Both GitHub repos flipped to PUBLIC**, and each URL opens in a private browser window
-- [ ] Video uploaded and the share link set so anyone with it can view
+- [x] **Both GitHub repos PUBLIC**, verified by anonymous fetch
+- [x] Both videos uploaded unlisted, both links verified reachable anonymously
 - [ ] PDF built from the official template, opens correctly, under 25 MB
 - [ ] Abstract within the 150-word guideline
 - [ ] Author name and affiliation present
