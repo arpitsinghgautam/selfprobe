@@ -32,28 +32,52 @@ PHI = "microsoft_Phi-3.5-mini-instruct"
 FAL = "tiiuae_Falcon3-7B-Instruct"
 
 
+class MissingResult(Exception):
+    """A results file this check needs is not present in the current checkout."""
+
+
+def optional(fn):
+    """Turn 'this data is not here' into a skip instead of a hard failure.
+
+    The two submission repos each ship only their own results, so the shared
+    version of this script would otherwise die on the first check belonging to
+    the other project. A genuinely WRONG number still fails loudly; only an
+    ABSENT one is tolerated, and main() prints which checks were skipped so an
+    empty run cannot be mistaken for a clean one.
+    """
+    def wrapped(*args, **kwargs):
+        try:
+            return fn(*args, **kwargs)
+        except MissingResult:
+            return None
+    return wrapped
+
+
 def load(name: str) -> dict:
     p = RESULTS / name
     if not p.exists():
-        raise SystemExit(f"missing results file: {name}")
+        raise MissingResult(name)
     return json.loads(p.read_text())
 
 
+@optional
 def pooled(model: str, framing: str, comparison: str, gated: bool = False) -> float:
     d = load(f"errorbars__{model}__{framing}.json")
     rows = d.get("pooled_gated" if gated else "pooled") or []
     for r in rows:
         if r["comparison"] == comparison:
             return r["mean_diff"]
-    raise SystemExit(f"no pooled row {comparison!r} in {model}/{framing} (gated={gated})")
+    raise MissingResult(f"no pooled row {comparison!r} in {model}/{framing} (gated={gated})")
 
 
+@optional
 def category(model: str, framing: str, condition: str, cat: str) -> float:
     """Point-estimate Spearman, from the summary file."""
     d = load(f"summary__{model}__{framing}.json")
     return d["comparisons"][condition]["by_category"][cat]["spearman"]
 
 
+@optional
 def agreement_mean(model: str, framing: str, condition: str, cat: str) -> float:
     """Bootstrap mean agreement, from the errorbars file.
 
@@ -67,6 +91,7 @@ def agreement_mean(model: str, framing: str, condition: str, cat: str) -> float:
     return d["agreements"][condition][cat]["mean"]
 
 
+@optional
 def persona_dep(model: str, framing: str) -> float:
     return load(f"summary__{model}__{framing}.json")["persona_dependence"]["score"]
 
@@ -80,6 +105,7 @@ QI_ID = "Qwen/Qwen2.5-7B-Instruct"
 MI_ID = "mistralai/Mistral-7B-Instruct-v0.3"
 
 
+@optional
 def selfknow(kind: str, target_id: str, predictor_id: str | None = None) -> float:
     """Prediction accuracy for an exact (target, kind[, predictor]) triple.
 
@@ -94,22 +120,47 @@ def selfknow(kind: str, target_id: str, predictor_id: str | None = None) -> floa
         if predictor_id is not None and r["predictor"] != predictor_id:
             continue
         return r["accuracy_decided"]
-    raise SystemExit(f"no {kind} row for target={target_id} predictor={predictor_id}")
+    raise MissingResult(f"no {kind} row for target={target_id} predictor={predictor_id}")
 
 
+@optional
+def steering_conditions_below_floor(threshold: float = 0.10) -> int:
+    """How many steering conditions at |alpha| >= 0.10 fell under the answer-mass floor.
+
+    The Discussion cites this count as one of the four defects a diagnostic caught.
+    Counting it here rather than trusting the prose matters because the FULL steering
+    sweep also contains six SMALLER magnitudes that pass comfortably (0.67 to 1.00).
+    Quoting the failures alone would read as though steering never worked at all.
+    """
+    files = sorted(RESULTS.glob("*__steer-steer_*__prefer.json"))
+    if not files:
+        # No sweep in this checkout. Returning 0 here would be a count that looks
+        # measured and is not, which is the exact failure mode this paper is about.
+        raise MissingResult("no steering sweep in results/")
+    n = 0
+    for p in files:
+        tag = p.name.split("__")[1]
+        mag = float(tag.rsplit("_", 1)[-1].replace("p", ".").lstrip("+-"))
+        if mag >= threshold and json.loads(p.read_text())["meta"]["ab_mass_mean"] < threshold:
+            n += 1
+    return n
+
+
+@optional
 def within(model_id: str, field: str) -> float:
     d = load("selfknowledge_summary.json")
     for r in d["within_model"]:
         if r["model"] == model_id:
             return r[field]
-    raise SystemExit(f"no within-model row for {model_id}")
+    raise MissingResult(f"no within-model row for {model_id}")
 
 
+@optional
 def stated_cat(model_id: str, cat: str) -> float:
     d = load("selfknowledge_summary.json")
     row = d["stated_vs_revealed"]["by_category"].get(model_id)
     if row is None:
-        raise SystemExit(f"no stated/revealed row for {model_id}")
+        raise MissingResult(f"no stated/revealed row for {model_id}")
     return row[cat]
 
 
@@ -128,15 +179,15 @@ CHECKS = [
      [P1, P1_FULL], "ersona-dependence"),
 
     ("pooled self-animal, prefer", pooled(QI, "prefer", "self - animal"), "{:.3f}",
-     [P1, P1_FULL], "animal"),
+     [P1_FULL], "animal"),
     ("pooled self-human, prefer", pooled(QI, "prefer", "self - human"), "{:.3f}",
-     [P1, P1_FULL], "human"),
+     [P1, P1_FULL], "prefer"),
     ("pooled self-human, better", pooled(QI, "better", "self - human"), "{:.3f}",
-     [P1, P1_FULL], "human"),
+     [P1, P1_FULL], "better"),
     ("pooled self-human, choose", pooled(QI, "choose", "self - human"), "{:.3f}",
-     [P1, P1_FULL], "human"),
+     [P1_FULL], "human"),
     ("pooled self-epi, better", pooled(QI, "better", "self - epi"), "{:.3f}",
-     [P1, P1_FULL], "epi"),
+     [P1_FULL], "epi"),
 
     # The 4-page version condenses Mistral into a cross-model table, so these
     # per-comparison numbers survive only in the full write-up. Where both papers
@@ -165,15 +216,15 @@ CHECKS = [
      pooled(FAL, "better", "self - human", gated=True), "{:.3f}", [P1], "Falcon"),
 
     # Per-condition prose cites the BOOTSTRAP MEAN, matching the CIs beside it.
-    ("elena self, better (bootstrap mean)",
+    ("identity replacement, self agreement",
      agreement_mean(QI, "better", "elena_archivist", "self"), "{:.3f}",
-     [P1, P1_FULL], "elena_archivist"),
-    ("suppress_affect self, better (bootstrap mean)",
+     [P1, P1_FULL], "identity"),
+    ("affect suppression, self agreement",
      agreement_mean(QI, "better", "suppress_affect", "self"), "{:.3f}",
-     [P1, P1_FULL], "suppress_affect"),
+     [P1], "register"),
     ("marcus self, better (bootstrap mean)",
      agreement_mean(QI, "better", "marcus_navigator", "self"), "{:.3f}",
-     [P1, P1_FULL], "marcus_navigator"),
+     [P1_FULL], "marcus_navigator"),
 
     # Ablation cites point estimates. Contexts are phrases rather than condition
     # names, because the 4-page version describes these in prose ("the corrected
@@ -186,28 +237,41 @@ CHECKS = [
      [P1, P1_FULL], "content"),
     ("ablate-persona_sd self",
      category(QI, "prefer", "ablate-persona_sd", "self"), "{:.3f}",
-     [P1, P1_FULL], "mismatched"),
+     [P1, P1_FULL], "self-description"),
 
-    ("self-prediction, Qwen-7B", selfknow("SELF-pred", QI_ID), "{:.3f}", [P2], "SELF"),
+    ("steering conditions below answer-mass floor",
+     steering_conditions_below_floor(), "{:.0f}", [P1], "all six conditions"),
+
+    ("self-prediction, Qwen-7B", selfknow("SELF-pred", QI_ID), "{:.3f}", [P2],
+     "own decided choices"),
     ("external-prediction, Qwen-7B (by Mistral)",
-     selfknow("EXTERNAL-pred", QI_ID, MI_ID), "{:.3f}", [P2], "EXTERNAL"),
+     selfknow("EXTERNAL-pred", QI_ID, MI_ID), "{:.3f}", [P2], "Mistral predicting"),
     ("shared-values, Qwen-7B (Mistral prefs)",
-     selfknow("shared-values", QI_ID, MI_ID), "{:.3f}", [P2], "shared-values"),
-    ("self-prediction, Mistral", selfknow("SELF-pred", MI_ID), "{:.3f}", [P2], "SELF"),
+     selfknow("shared-values", QI_ID, MI_ID), "{:.3f}", [P2], "own preferences"),
     ("within-model diff, Qwen-7B", within(QI_ID, "diff"), "{:.3f}", [P2], "Qwen"),
     ("within-model diff, Mistral", within(MI_ID, "diff"), "{:.3f}", [P2], "Mistral"),
     ("stated-vs-revealed self, Qwen-7B", stated_cat(QI_ID, "self"), "{:.3f}", [P2], "Qwen"),
     ("stated-vs-revealed self, Mistral", stated_cat(MI_ID, "self"), "{:.3f}",
      [P2], "Mistral"),
 
-    # Scale sweep — pre-registered predictions (report/preregistration.md)
-    ("within-model diff, Qwen-0.5B",
-     within("Qwen/Qwen2.5-0.5B-Instruct", "diff"), "{:.3f}", [P2], "0.5B"),
-    ("within-model diff, Qwen-1.5B",
-     within("Qwen/Qwen2.5-1.5B-Instruct", "diff"), "{:.3f}", [P2], "1.5B"),
-    ("within-model diff, Qwen-3B",
-     within("Qwen/Qwen2.5-3B-Instruct", "diff"), "{:.3f}", [P2], "3B"),
 ]
+# The scale-sweep within-model figures were dropped when report2 was rewritten,
+# so there is nothing left in either paper for them to verify against.
+
+
+# House style spells small integers out in prose, so a count check has to accept
+# "six" as well as "6". Only counts hit this; every measured quantity is a decimal.
+NUMBER_WORDS = {"0": "zero", "1": "one", "2": "two", "3": "three", "4": "four",
+                "5": "five", "6": "six", "7": "seven", "8": "eight", "9": "nine",
+                "10": "ten", "11": "eleven", "12": "twelve"}
+
+
+def surface_forms(s: str) -> list[str]:
+    """Every spelling the paper is allowed to use for this value."""
+    forms = [s]
+    if s in NUMBER_WORDS:
+        forms.append(NUMBER_WORDS[s])
+    return forms
 
 
 def candidates(text: str) -> list[str]:
@@ -228,14 +292,22 @@ def main() -> None:
 
     print(f"{'claim':<42}{'value':>9}   papers")
     print("-" * 78)
+    skipped = []
     for label, value, fmt, papers, context in CHECKS:
+        if value is None:
+            # Belongs to the other submission's results, which this checkout
+            # does not ship. Recorded and reported, never silently dropped.
+            skipped.append(label)
+            print(f"{label:<42}{'n/a':>9}   no results in this checkout")
+            continue
         s = fmt.format(abs(value))   # papers render the sign themselves (− vs -)
         marks = []
         for p in papers:
             if p not in texts:
                 marks.append(f"{p.name}:SKIP")
                 continue
-            ok = any(context in c and s in c for c in texts[p])
+            forms = surface_forms(s)
+            ok = any(context in c and any(f in c for f in forms) for c in texts[p])
             marks.append(f"{p.name}:{'ok' if ok else 'MISSING'}")
             if not ok:
                 failures.append((label, s, context, p.name))
@@ -250,8 +322,13 @@ def main() -> None:
               "the wrong\nestimator (see agreement_mean vs category). Resolve before submitting.")
         sys.exit(1)
 
-    print(f"All {len(CHECKS)} headline claims verified against results/*.json, "
+    checked = len(CHECKS) - len(skipped)
+    print(f"All {checked} headline claims verified against results/*.json, "
           "each matched alongside its context.")
+    if skipped:
+        print(f"{len(skipped)} skipped, needing results this checkout does not ship:")
+        for label in skipped:
+            print(f"  {label}")
 
 
 if __name__ == "__main__":

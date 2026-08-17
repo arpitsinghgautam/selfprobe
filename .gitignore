@@ -1,11 +1,11 @@
-# Python
+﻿# Python
 __pycache__/
 *.py[cod]
 *.egg-info/
 .venv/
 venv/
 
-# Model weights and HF cache — never commit
+# Model weights and HF cache â€” never commit
 *.safetensors
 *.bin
 *.gguf
@@ -19,6 +19,7 @@ results_v0_pre_diagnostic/
 # Intermediate TTS clips. The assembled video/presentation.mp4 IS committed;
 # these regenerate from scripts/13_video.py.
 video/audio/
+video/*/audio/
 
 # Editor / OS
 .vscode/
