@@ -30,3 +30,11 @@ Thumbs.db
 # results/ and figures/ ARE committed on purpose: the JSON is ~5MB and lets a
 # reader verify every number in the report without a GPU, and report/tables.md
 # is generated from it rather than transcribed by hand.
+
+# Submission artifacts live on the form, not in the repo: videos, decks, slide
+# frames and the project images are all uploaded separately.
+video/
+figures/slides*/
+figures/project_image*.png
+report/deck*.pdf
+report/*.docx
