@@ -2,7 +2,7 @@
 
 Chronological record of what was done and why, Digital Minds Research Sprint, 15–16 August 2026.
 Companion documents: `decisions.md` (why choices were made), `problems.md` (what went wrong),
-`audit_log.md` (methodological defects, paper-facing).
+` ` (methodological defects, paper-facing).
 
 ---
 

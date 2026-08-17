@@ -1,7 +1,7 @@
 # Problems encountered and how they were fixed
 
 Everything that went wrong, infrastructure, tooling, code quality, and methodology, with the fix.
-`audit_log.md` is the paper-facing subset covering only the methodological defects; this file is
+` ` is the paper-facing subset covering only the methodological defects; this file is
 the complete record.
 
 Severity: **critical** = would have invalidated a result or lost the run; **major** = would have
