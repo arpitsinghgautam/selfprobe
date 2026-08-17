@@ -1,0 +1,2192 @@
+{
+  "false_positive_rate": 0.07585817575454712,
+  "by_band": {
+    "early": {
+      "fp": 0.07585817575454712,
+      "tp": 0.24656632731979092,
+      "identify": 0.5302936236063639,
+      "n": 30
+    },
+    "middle": {
+      "fp": 0.07585817575454712,
+      "tp": 0.26494507150103647,
+      "identify": 0.532626074552536,
+      "n": 30
+    },
+    "late": {
+      "fp": 0.07585817575454712,
+      "tp": 0.08981874448557695,
+      "identify": 0.5023786326249441,
+      "n": 30
+    }
+  },
+  "cells": [
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "ocean",
+      "fraction": 0.0,
+      "detect_yes": 0.07585817575454712,
+      "detect_mass": 0.9999246597290039,
+      "identify_correct": 0.5204057097434998,
+      "identify_mass": 0.9897681474685669,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "ocean",
+      "fraction": 0.005,
+      "detect_yes": 0.060086652636528015,
+      "detect_mass": 0.9999423027038574,
+      "identify_correct": 0.5192857980728149,
+      "identify_mass": 0.9901717901229858,
+      "usable": true,
+      "meta": {
+        "alpha": 0.010491127967834473,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "ocean",
+      "fraction": 0.01,
+      "detect_yes": 0.03308597952127457,
+      "detect_mass": 0.9999515414237976,
+      "identify_correct": 0.5226365327835083,
+      "identify_mass": 0.9906876683235168,
+      "usable": true,
+      "meta": {
+        "alpha": 0.020982255935668947,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "ocean",
+      "fraction": 0.02,
+      "detect_yes": 0.01798621006309986,
+      "detect_mass": 0.9999633431434631,
+      "identify_correct": 0.52554851770401,
+      "identify_mass": 0.9914913177490234,
+      "usable": true,
+      "meta": {
+        "alpha": 0.041964511871337894,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "ocean",
+      "fraction": 0.04,
+      "detect_yes": 0.009708477184176445,
+      "detect_mass": 0.9999693036079407,
+      "identify_correct": 0.5103383660316467,
+      "identify_mass": 0.9924421310424805,
+      "usable": true,
+      "meta": {
+        "alpha": 0.08392902374267579,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "ocean",
+      "fraction": 0.08,
+      "detect_yes": 0.13296423852443695,
+      "detect_mass": 0.9984956383705139,
+      "identify_correct": 0.516445517539978,
+      "identify_mass": 0.9834665060043335,
+      "usable": true,
+      "meta": {
+        "alpha": 0.16785804748535157,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "mathematics",
+      "fraction": 0.0,
+      "detect_yes": 0.07585817575454712,
+      "detect_mass": 0.9999246597290039,
+      "identify_correct": 0.5105074644088745,
+      "identify_mass": 0.9931892156600952,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "mathematics",
+      "fraction": 0.005,
+      "detect_yes": 0.11920291930437088,
+      "detect_mass": 0.9998974204063416,
+      "identify_correct": 0.5137597918510437,
+      "identify_mass": 0.9908611178398132,
+      "usable": true,
+      "meta": {
+        "alpha": 0.010491127967834473,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "mathematics",
+      "fraction": 0.01,
+      "detect_yes": 0.16451646387577057,
+      "detect_mass": 0.9998883008956909,
+      "identify_correct": 0.5160230398178101,
+      "identify_mass": 0.9890676736831665,
+      "usable": true,
+      "meta": {
+        "alpha": 0.020982255935668947,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "mathematics",
+      "fraction": 0.02,
+      "detect_yes": 0.32082128524780273,
+      "detect_mass": 0.9997979998588562,
+      "identify_correct": 0.5187907218933105,
+      "identify_mass": 0.9827502965927124,
+      "usable": true,
+      "meta": {
+        "alpha": 0.041964511871337894,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "mathematics",
+      "fraction": 0.04,
+      "detect_yes": 0.5,
+      "detect_mass": 0.9991596937179565,
+      "identify_correct": 0.5345748662948608,
+      "identify_mass": 0.9349956512451172,
+      "usable": true,
+      "meta": {
+        "alpha": 0.08392902374267579,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "mathematics",
+      "fraction": 0.08,
+      "detect_yes": 0.7772998809814453,
+      "detect_mass": 0.9750586748123169,
+      "identify_correct": 0.5721498727798462,
+      "identify_mass": 0.29267627000808716,
+      "usable": true,
+      "meta": {
+        "alpha": 0.16785804748535157,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "music",
+      "fraction": 0.0,
+      "detect_yes": 0.07585817575454712,
+      "detect_mass": 0.9999246597290039,
+      "identify_correct": 0.527901828289032,
+      "identify_mass": 0.9915318489074707,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "music",
+      "fraction": 0.005,
+      "detect_yes": 0.10669060051441193,
+      "detect_mass": 0.9999339580535889,
+      "identify_correct": 0.5282822847366333,
+      "identify_mass": 0.9913594126701355,
+      "usable": true,
+      "meta": {
+        "alpha": 0.010491127967834473,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "music",
+      "fraction": 0.01,
+      "detect_yes": 0.14804719388484955,
+      "detect_mass": 0.9999250769615173,
+      "identify_correct": 0.5365064740180969,
+      "identify_mass": 0.9918786883354187,
+      "usable": true,
+      "meta": {
+        "alpha": 0.020982255935668947,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "music",
+      "fraction": 0.02,
+      "detect_yes": 0.2689414322376251,
+      "detect_mass": 0.9999064207077026,
+      "identify_correct": 0.5402652621269226,
+      "identify_mass": 0.9927583932876587,
+      "usable": true,
+      "meta": {
+        "alpha": 0.041964511871337894,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "music",
+      "fraction": 0.04,
+      "detect_yes": 0.5,
+      "detect_mass": 0.9998347163200378,
+      "identify_correct": 0.5528435707092285,
+      "identify_mass": 0.9936771392822266,
+      "usable": true,
+      "meta": {
+        "alpha": 0.08392902374267579,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "music",
+      "fraction": 0.08,
+      "detect_yes": 0.6513549089431763,
+      "detect_mass": 0.9988675117492676,
+      "identify_correct": 0.5417488217353821,
+      "identify_mass": 0.991509735584259,
+      "usable": true,
+      "meta": {
+        "alpha": 0.16785804748535157,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "fear",
+      "fraction": 0.0,
+      "detect_yes": 0.07585817575454712,
+      "detect_mass": 0.9999246597290039,
+      "identify_correct": 0.43423977494239807,
+      "identify_mass": 0.9891999363899231,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "fear",
+      "fraction": 0.005,
+      "detect_yes": 0.08509904146194458,
+      "detect_mass": 0.9999346137046814,
+      "identify_correct": 0.4308975338935852,
+      "identify_mass": 0.9895642399787903,
+      "usable": true,
+      "meta": {
+        "alpha": 0.010491127967834473,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "fear",
+      "fraction": 0.01,
+      "detect_yes": 0.08509904146194458,
+      "detect_mass": 0.9999274611473083,
+      "identify_correct": 0.44138026237487793,
+      "identify_mass": 0.990219235420227,
+      "usable": true,
+      "meta": {
+        "alpha": 0.020982255935668947,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "fear",
+      "fraction": 0.02,
+      "detect_yes": 0.10669060051441193,
+      "detect_mass": 0.9999374151229858,
+      "identify_correct": 0.4425725042819977,
+      "identify_mass": 0.9910351634025574,
+      "usable": true,
+      "meta": {
+        "alpha": 0.041964511871337894,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "fear",
+      "fraction": 0.04,
+      "detect_yes": 0.24508501589298248,
+      "detect_mass": 0.9999395608901978,
+      "identify_correct": 0.495870441198349,
+      "identify_mass": 0.9935044050216675,
+      "usable": true,
+      "meta": {
+        "alpha": 0.08392902374267579,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "fear",
+      "fraction": 0.08,
+      "detect_yes": 0.9241418242454529,
+      "detect_mass": 0.9999169111251831,
+      "identify_correct": 0.6175805330276489,
+      "identify_mass": 0.9971905946731567,
+      "usable": true,
+      "meta": {
+        "alpha": 0.16785804748535157,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "betrayal",
+      "fraction": 0.0,
+      "detect_yes": 0.07585817575454712,
+      "detect_mass": 0.9999246597290039,
+      "identify_correct": 0.49547523260116577,
+      "identify_mass": 0.990817666053772,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "betrayal",
+      "fraction": 0.005,
+      "detect_yes": 0.037326887249946594,
+      "detect_mass": 0.9999380111694336,
+      "identify_correct": 0.4956693649291992,
+      "identify_mass": 0.9887167811393738,
+      "usable": true,
+      "meta": {
+        "alpha": 0.010491127967834473,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "betrayal",
+      "fraction": 0.01,
+      "detect_yes": 0.022977370768785477,
+      "detect_mass": 0.9999439120292664,
+      "identify_correct": 0.48913636803627014,
+      "identify_mass": 0.9869651794433594,
+      "usable": true,
+      "meta": {
+        "alpha": 0.020982255935668947,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "betrayal",
+      "fraction": 0.02,
+      "detect_yes": 0.008577484637498856,
+      "detect_mass": 0.9999479055404663,
+      "identify_correct": 0.4832075238227844,
+      "identify_mass": 0.9827874302864075,
+      "usable": true,
+      "meta": {
+        "alpha": 0.041964511871337894,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "betrayal",
+      "fraction": 0.04,
+      "detect_yes": 0.00407013762742281,
+      "detect_mass": 0.9998757839202881,
+      "identify_correct": 0.48354372382164,
+      "identify_mass": 0.9692012667655945,
+      "usable": true,
+      "meta": {
+        "alpha": 0.08392902374267579,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "betrayal",
+      "fraction": 0.08,
+      "detect_yes": 0.9399133324623108,
+      "detect_mass": 0.739608108997345,
+      "identify_correct": 0.5788014531135559,
+      "identify_mass": 0.8332592248916626,
+      "usable": true,
+      "meta": {
+        "alpha": 0.16785804748535157,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "flight",
+      "fraction": 0.0,
+      "detect_yes": 0.07585817575454712,
+      "detect_mass": 0.9999246597290039,
+      "identify_correct": 0.5114699602127075,
+      "identify_mass": 0.9935886263847351,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "flight",
+      "fraction": 0.005,
+      "detect_yes": 0.08509904146194458,
+      "detect_mass": 0.9999372363090515,
+      "identify_correct": 0.5152718424797058,
+      "identify_mass": 0.9933179616928101,
+      "usable": true,
+      "meta": {
+        "alpha": 0.010491127967834473,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "flight",
+      "fraction": 0.01,
+      "detect_yes": 0.053403329104185104,
+      "detect_mass": 0.9999462962150574,
+      "identify_correct": 0.5226616859436035,
+      "identify_mass": 0.9932528734207153,
+      "usable": true,
+      "meta": {
+        "alpha": 0.020982255935668947,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "flight",
+      "fraction": 0.02,
+      "detect_yes": 0.042087726294994354,
+      "detect_mass": 0.9999545216560364,
+      "identify_correct": 0.5383920073509216,
+      "identify_mass": 0.9931151270866394,
+      "usable": true,
+      "meta": {
+        "alpha": 0.041964511871337894,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "flight",
+      "fraction": 0.04,
+      "detect_yes": 0.053403329104185104,
+      "detect_mass": 0.9999480843544006,
+      "identify_correct": 0.6263092160224915,
+      "identify_mass": 0.9932988882064819,
+      "usable": true,
+      "meta": {
+        "alpha": 0.08392902374267579,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "flight",
+      "fraction": 0.08,
+      "detect_yes": 0.8933094143867493,
+      "detect_mass": 0.998816728591919,
+      "identify_correct": 0.7983148097991943,
+      "identify_mass": 0.9906690716743469,
+      "usable": true,
+      "meta": {
+        "alpha": 0.16785804748535157,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "ocean",
+      "fraction": 0.0,
+      "detect_yes": 0.07585817575454712,
+      "detect_mass": 0.9999246597290039,
+      "identify_correct": 0.5204057097434998,
+      "identify_mass": 0.9897681474685669,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "ocean",
+      "fraction": 0.005,
+      "detect_yes": 0.10669060051441193,
+      "detect_mass": 0.9999207854270935,
+      "identify_correct": 0.5249592065811157,
+      "identify_mass": 0.9893225431442261,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0319003701210022,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "ocean",
+      "fraction": 0.01,
+      "detect_yes": 0.13296422362327576,
+      "detect_mass": 0.9999043345451355,
+      "identify_correct": 0.5220940709114075,
+      "identify_mass": 0.9890190958976746,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0638007402420044,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "ocean",
+      "fraction": 0.02,
+      "detect_yes": 0.29421496391296387,
+      "detect_mass": 0.9998886585235596,
+      "identify_correct": 0.5228358507156372,
+      "identify_mass": 0.9886908531188965,
+      "usable": true,
+      "meta": {
+        "alpha": 0.1276014804840088,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "ocean",
+      "fraction": 0.04,
+      "detect_yes": 0.7772998809814453,
+      "detect_mass": 0.9998914003372192,
+      "identify_correct": 0.5515506863594055,
+      "identify_mass": 0.9893689155578613,
+      "usable": true,
+      "meta": {
+        "alpha": 0.2552029609680176,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "ocean",
+      "fraction": 0.08,
+      "detect_yes": 0.9953904151916504,
+      "detect_mass": 0.9998297691345215,
+      "identify_correct": 0.6020573377609253,
+      "identify_mass": 0.9880962371826172,
+      "usable": true,
+      "meta": {
+        "alpha": 0.5104059219360352,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "mathematics",
+      "fraction": 0.0,
+      "detect_yes": 0.07585817575454712,
+      "detect_mass": 0.9999246597290039,
+      "identify_correct": 0.5105074644088745,
+      "identify_mass": 0.9931892156600952,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "mathematics",
+      "fraction": 0.005,
+      "detect_yes": 0.060086652636528015,
+      "detect_mass": 0.9999217987060547,
+      "identify_correct": 0.5193353891372681,
+      "identify_mass": 0.9913004040718079,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0319003701210022,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "mathematics",
+      "fraction": 0.01,
+      "detect_yes": 0.053403329104185104,
+      "detect_mass": 0.999907910823822,
+      "identify_correct": 0.5299755334854126,
+      "identify_mass": 0.989223837852478,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0638007402420044,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "mathematics",
+      "fraction": 0.02,
+      "detect_yes": 0.053403329104185104,
+      "detect_mass": 0.9998658299446106,
+      "identify_correct": 0.5587109327316284,
+      "identify_mass": 0.9835635423660278,
+      "usable": true,
+      "meta": {
+        "alpha": 0.1276014804840088,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "mathematics",
+      "fraction": 0.04,
+      "detect_yes": 0.042087726294994354,
+      "detect_mass": 0.9995510578155518,
+      "identify_correct": 0.6067831516265869,
+      "identify_mass": 0.9515088796615601,
+      "usable": true,
+      "meta": {
+        "alpha": 0.2552029609680176,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "mathematics",
+      "fraction": 0.08,
+      "detect_yes": 0.053403329104185104,
+      "detect_mass": 0.9886597990989685,
+      "identify_correct": 0.6584152579307556,
+      "identify_mass": 0.8080857396125793,
+      "usable": true,
+      "meta": {
+        "alpha": 0.5104059219360352,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "music",
+      "fraction": 0.0,
+      "detect_yes": 0.07585817575454712,
+      "detect_mass": 0.9999246597290039,
+      "identify_correct": 0.527901828289032,
+      "identify_mass": 0.9915318489074707,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "music",
+      "fraction": 0.005,
+      "detect_yes": 0.07585817575454712,
+      "detect_mass": 0.9999171495437622,
+      "identify_correct": 0.5278304815292358,
+      "identify_mass": 0.9901940226554871,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0319003701210022,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "music",
+      "fraction": 0.01,
+      "detect_yes": 0.07585817575454712,
+      "detect_mass": 0.9999203681945801,
+      "identify_correct": 0.5359255075454712,
+      "identify_mass": 0.988489031791687,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0638007402420044,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "music",
+      "fraction": 0.02,
+      "detect_yes": 0.08509904146194458,
+      "detect_mass": 0.9998908638954163,
+      "identify_correct": 0.5484758615493774,
+      "identify_mass": 0.9842106699943542,
+      "usable": true,
+      "meta": {
+        "alpha": 0.1276014804840088,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "music",
+      "fraction": 0.04,
+      "detect_yes": 0.10669060051441193,
+      "detect_mass": 0.9997337460517883,
+      "identify_correct": 0.5782300233840942,
+      "identify_mass": 0.9760745167732239,
+      "usable": true,
+      "meta": {
+        "alpha": 0.2552029609680176,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "music",
+      "fraction": 0.08,
+      "detect_yes": 0.3486451208591461,
+      "detect_mass": 0.9961063265800476,
+      "identify_correct": 0.611093282699585,
+      "identify_mass": 0.9298129081726074,
+      "usable": true,
+      "meta": {
+        "alpha": 0.5104059219360352,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "fear",
+      "fraction": 0.0,
+      "detect_yes": 0.07585817575454712,
+      "detect_mass": 0.9999246597290039,
+      "identify_correct": 0.43423977494239807,
+      "identify_mass": 0.9891999363899231,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "fear",
+      "fraction": 0.005,
+      "detect_yes": 0.13296425342559814,
+      "detect_mass": 0.9999333620071411,
+      "identify_correct": 0.4517207741737366,
+      "identify_mass": 0.990658164024353,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0319003701210022,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "fear",
+      "fraction": 0.01,
+      "detect_yes": 0.18242552876472473,
+      "detect_mass": 0.999940037727356,
+      "identify_correct": 0.4639361798763275,
+      "identify_mass": 0.9927245378494263,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0638007402420044,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "fear",
+      "fraction": 0.02,
+      "detect_yes": 0.46879062056541443,
+      "detect_mass": 0.9999406337738037,
+      "identify_correct": 0.4798293113708496,
+      "identify_mass": 0.9947752952575684,
+      "usable": true,
+      "meta": {
+        "alpha": 0.1276014804840088,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "fear",
+      "fraction": 0.04,
+      "detect_yes": 0.9399133324623108,
+      "detect_mass": 0.9999483227729797,
+      "identify_correct": 0.49775829911231995,
+      "identify_mass": 0.9954711198806763,
+      "usable": true,
+      "meta": {
+        "alpha": 0.2552029609680176,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "fear",
+      "fraction": 0.08,
+      "detect_yes": 0.9995121955871582,
+      "detect_mass": 0.9998883008956909,
+      "identify_correct": 0.6156261563301086,
+      "identify_mass": 0.9908577799797058,
+      "usable": true,
+      "meta": {
+        "alpha": 0.5104059219360352,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "betrayal",
+      "fraction": 0.0,
+      "detect_yes": 0.07585817575454712,
+      "detect_mass": 0.9999246597290039,
+      "identify_correct": 0.49547523260116577,
+      "identify_mass": 0.990817666053772,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "betrayal",
+      "fraction": 0.005,
+      "detect_yes": 0.053403329104185104,
+      "detect_mass": 0.9999319314956665,
+      "identify_correct": 0.4997327923774719,
+      "identify_mass": 0.9894965887069702,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0319003701210022,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "betrayal",
+      "fraction": 0.01,
+      "detect_yes": 0.04742587357759476,
+      "detect_mass": 0.9999315142631531,
+      "identify_correct": 0.49922752380371094,
+      "identify_mass": 0.9876236915588379,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0638007402420044,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "betrayal",
+      "fraction": 0.02,
+      "detect_yes": 0.02595735713839531,
+      "detect_mass": 0.9999196529388428,
+      "identify_correct": 0.500662088394165,
+      "identify_mass": 0.9816034436225891,
+      "usable": true,
+      "meta": {
+        "alpha": 0.1276014804840088,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "betrayal",
+      "fraction": 0.04,
+      "detect_yes": 0.01798621006309986,
+      "detect_mass": 0.9997172951698303,
+      "identify_correct": 0.5036734938621521,
+      "identify_mass": 0.9373771548271179,
+      "usable": true,
+      "meta": {
+        "alpha": 0.2552029609680176,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "betrayal",
+      "fraction": 0.08,
+      "detect_yes": 0.053403329104185104,
+      "detect_mass": 0.9851014018058777,
+      "identify_correct": 0.5111145377159119,
+      "identify_mass": 0.3340848684310913,
+      "usable": true,
+      "meta": {
+        "alpha": 0.5104059219360352,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "flight",
+      "fraction": 0.0,
+      "detect_yes": 0.07585817575454712,
+      "detect_mass": 0.9999246597290039,
+      "identify_correct": 0.5114699602127075,
+      "identify_mass": 0.9935886263847351,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "flight",
+      "fraction": 0.005,
+      "detect_yes": 0.09534945338964462,
+      "detect_mass": 0.9999147057533264,
+      "identify_correct": 0.5104609131813049,
+      "identify_mass": 0.993109405040741,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0319003701210022,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "flight",
+      "fraction": 0.01,
+      "detect_yes": 0.10669060051441193,
+      "detect_mass": 0.9999265074729919,
+      "identify_correct": 0.5098311901092529,
+      "identify_mass": 0.9926152229309082,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0638007402420044,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "flight",
+      "fraction": 0.02,
+      "detect_yes": 0.14804719388484955,
+      "detect_mass": 0.9998982548713684,
+      "identify_correct": 0.5093132257461548,
+      "identify_mass": 0.9922731518745422,
+      "usable": true,
+      "meta": {
+        "alpha": 0.1276014804840088,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "flight",
+      "fraction": 0.04,
+      "detect_yes": 0.46879062056541443,
+      "detect_mass": 0.9995667934417725,
+      "identify_correct": 0.5108245015144348,
+      "identify_mass": 0.98968505859375,
+      "usable": true,
+      "meta": {
+        "alpha": 0.2552029609680176,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "flight",
+      "fraction": 0.08,
+      "detect_yes": 0.9465966820716858,
+      "detect_mass": 0.9953504800796509,
+      "identify_correct": 0.5167986750602722,
+      "identify_mass": 0.9759249687194824,
+      "usable": true,
+      "meta": {
+        "alpha": 0.5104059219360352,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "ocean",
+      "fraction": 0.0,
+      "detect_yes": 0.07585817575454712,
+      "detect_mass": 0.9999246597290039,
+      "identify_correct": 0.5204057097434998,
+      "identify_mass": 0.9897681474685669,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "ocean",
+      "fraction": 0.005,
+      "detect_yes": 0.09534945338964462,
+      "detect_mass": 0.9999129176139832,
+      "identify_correct": 0.5206360816955566,
+      "identify_mass": 0.9898999333381653,
+      "usable": true,
+      "meta": {
+        "alpha": 0.07265881538391114,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "ocean",
+      "fraction": 0.01,
+      "detect_yes": 0.10669060051441193,
+      "detect_mass": 0.9998947978019714,
+      "identify_correct": 0.5198215246200562,
+      "identify_mass": 0.9901908040046692,
+      "usable": true,
+      "meta": {
+        "alpha": 0.14531763076782228,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "ocean",
+      "fraction": 0.02,
+      "detect_yes": 0.11920291930437088,
+      "detect_mass": 0.9998683333396912,
+      "identify_correct": 0.5200510025024414,
+      "identify_mass": 0.9891945123672485,
+      "usable": true,
+      "meta": {
+        "alpha": 0.29063526153564456,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "ocean",
+      "fraction": 0.04,
+      "detect_yes": 0.13296425342559814,
+      "detect_mass": 0.9997540712356567,
+      "identify_correct": 0.5193427801132202,
+      "identify_mass": 0.9880017042160034,
+      "usable": true,
+      "meta": {
+        "alpha": 0.5812705230712891,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "ocean",
+      "fraction": 0.08,
+      "detect_yes": 0.13296423852443695,
+      "detect_mass": 0.9992379546165466,
+      "identify_correct": 0.5301980376243591,
+      "identify_mass": 0.9735199809074402,
+      "usable": true,
+      "meta": {
+        "alpha": 1.1625410461425782,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "mathematics",
+      "fraction": 0.0,
+      "detect_yes": 0.07585817575454712,
+      "detect_mass": 0.9999246597290039,
+      "identify_correct": 0.5105074644088745,
+      "identify_mass": 0.9931892156600952,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "mathematics",
+      "fraction": 0.005,
+      "detect_yes": 0.09534945338964462,
+      "detect_mass": 0.9999055862426758,
+      "identify_correct": 0.5132469534873962,
+      "identify_mass": 0.9932657480239868,
+      "usable": true,
+      "meta": {
+        "alpha": 0.07265881538391114,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "mathematics",
+      "fraction": 0.01,
+      "detect_yes": 0.08509904146194458,
+      "detect_mass": 0.9998981356620789,
+      "identify_correct": 0.5138561129570007,
+      "identify_mass": 0.9938896298408508,
+      "usable": true,
+      "meta": {
+        "alpha": 0.14531763076782228,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "mathematics",
+      "fraction": 0.02,
+      "detect_yes": 0.08509904146194458,
+      "detect_mass": 0.9998841881752014,
+      "identify_correct": 0.5200040936470032,
+      "identify_mass": 0.9942289590835571,
+      "usable": true,
+      "meta": {
+        "alpha": 0.29063526153564456,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "mathematics",
+      "fraction": 0.04,
+      "detect_yes": 0.08509904146194458,
+      "detect_mass": 0.9997506737709045,
+      "identify_correct": 0.5320085287094116,
+      "identify_mass": 0.9923502802848816,
+      "usable": true,
+      "meta": {
+        "alpha": 0.5812705230712891,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "mathematics",
+      "fraction": 0.08,
+      "detect_yes": 0.08509904146194458,
+      "detect_mass": 0.9985679984092712,
+      "identify_correct": 0.5640361309051514,
+      "identify_mass": 0.9696893692016602,
+      "usable": true,
+      "meta": {
+        "alpha": 1.1625410461425782,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "music",
+      "fraction": 0.0,
+      "detect_yes": 0.07585817575454712,
+      "detect_mass": 0.9999246597290039,
+      "identify_correct": 0.527901828289032,
+      "identify_mass": 0.9915318489074707,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "music",
+      "fraction": 0.005,
+      "detect_yes": 0.08509904146194458,
+      "detect_mass": 0.9999076724052429,
+      "identify_correct": 0.5306268930435181,
+      "identify_mass": 0.9913328886032104,
+      "usable": true,
+      "meta": {
+        "alpha": 0.07265881538391114,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "music",
+      "fraction": 0.01,
+      "detect_yes": 0.07585817575454712,
+      "detect_mass": 0.9998969435691833,
+      "identify_correct": 0.5336635112762451,
+      "identify_mass": 0.9896613955497742,
+      "usable": true,
+      "meta": {
+        "alpha": 0.14531763076782228,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "music",
+      "fraction": 0.02,
+      "detect_yes": 0.07585817575454712,
+      "detect_mass": 0.9998348951339722,
+      "identify_correct": 0.5399572849273682,
+      "identify_mass": 0.9859613180160522,
+      "usable": true,
+      "meta": {
+        "alpha": 0.29063526153564456,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "music",
+      "fraction": 0.04,
+      "detect_yes": 0.07585817575454712,
+      "detect_mass": 0.9994358420372009,
+      "identify_correct": 0.5518214106559753,
+      "identify_mass": 0.9704453349113464,
+      "usable": true,
+      "meta": {
+        "alpha": 0.5812705230712891,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "music",
+      "fraction": 0.08,
+      "detect_yes": 0.09534945338964462,
+      "detect_mass": 0.989057183265686,
+      "identify_correct": 0.5682211518287659,
+      "identify_mass": 0.8629497289657593,
+      "usable": true,
+      "meta": {
+        "alpha": 1.1625410461425782,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "fear",
+      "fraction": 0.0,
+      "detect_yes": 0.07585817575454712,
+      "detect_mass": 0.9999246597290039,
+      "identify_correct": 0.43423977494239807,
+      "identify_mass": 0.9891999363899231,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "fear",
+      "fraction": 0.005,
+      "detect_yes": 0.07585817575454712,
+      "detect_mass": 0.999929666519165,
+      "identify_correct": 0.42796531319618225,
+      "identify_mass": 0.9893144369125366,
+      "usable": true,
+      "meta": {
+        "alpha": 0.07265881538391114,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "fear",
+      "fraction": 0.01,
+      "detect_yes": 0.07585817575454712,
+      "detect_mass": 0.9999390840530396,
+      "identify_correct": 0.4325675964355469,
+      "identify_mass": 0.9896687269210815,
+      "usable": true,
+      "meta": {
+        "alpha": 0.14531763076782228,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "fear",
+      "fraction": 0.02,
+      "detect_yes": 0.06754669547080994,
+      "detect_mass": 0.9999464154243469,
+      "identify_correct": 0.4311541020870209,
+      "identify_mass": 0.989930272102356,
+      "usable": true,
+      "meta": {
+        "alpha": 0.29063526153564456,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "fear",
+      "fraction": 0.04,
+      "detect_yes": 0.053403329104185104,
+      "detect_mass": 0.9999571442604065,
+      "identify_correct": 0.42524299025535583,
+      "identify_mass": 0.9893787503242493,
+      "usable": true,
+      "meta": {
+        "alpha": 0.5812705230712891,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "fear",
+      "fraction": 0.08,
+      "detect_yes": 0.060086652636528015,
+      "detect_mass": 0.9999251961708069,
+      "identify_correct": 0.40441304445266724,
+      "identify_mass": 0.9818005561828613,
+      "usable": true,
+      "meta": {
+        "alpha": 1.1625410461425782,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "betrayal",
+      "fraction": 0.0,
+      "detect_yes": 0.07585817575454712,
+      "detect_mass": 0.9999246597290039,
+      "identify_correct": 0.49547523260116577,
+      "identify_mass": 0.990817666053772,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "betrayal",
+      "fraction": 0.005,
+      "detect_yes": 0.08509904146194458,
+      "detect_mass": 0.9999183416366577,
+      "identify_correct": 0.49671030044555664,
+      "identify_mass": 0.9886692762374878,
+      "usable": true,
+      "meta": {
+        "alpha": 0.07265881538391114,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "betrayal",
+      "fraction": 0.01,
+      "detect_yes": 0.08509904146194458,
+      "detect_mass": 0.9999032020568848,
+      "identify_correct": 0.4932597279548645,
+      "identify_mass": 0.9855849146842957,
+      "usable": true,
+      "meta": {
+        "alpha": 0.14531763076782228,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "betrayal",
+      "fraction": 0.02,
+      "detect_yes": 0.07585817575454712,
+      "detect_mass": 0.9998775124549866,
+      "identify_correct": 0.48840728402137756,
+      "identify_mass": 0.9776617288589478,
+      "usable": true,
+      "meta": {
+        "alpha": 0.29063526153564456,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "betrayal",
+      "fraction": 0.04,
+      "detect_yes": 0.060086652636528015,
+      "detect_mass": 0.9996632933616638,
+      "identify_correct": 0.4801604151725769,
+      "identify_mass": 0.9468311071395874,
+      "usable": true,
+      "meta": {
+        "alpha": 0.5812705230712891,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "betrayal",
+      "fraction": 0.08,
+      "detect_yes": 0.060086652636528015,
+      "detect_mass": 0.996347188949585,
+      "identify_correct": 0.4532051682472229,
+      "identify_mass": 0.7601475715637207,
+      "usable": true,
+      "meta": {
+        "alpha": 1.1625410461425782,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "flight",
+      "fraction": 0.0,
+      "detect_yes": 0.07585817575454712,
+      "detect_mass": 0.9999246597290039,
+      "identify_correct": 0.5114699602127075,
+      "identify_mass": 0.9935886263847351,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "flight",
+      "fraction": 0.005,
+      "detect_yes": 0.09534945338964462,
+      "detect_mass": 0.9999167323112488,
+      "identify_correct": 0.5101661086082458,
+      "identify_mass": 0.9933228492736816,
+      "usable": true,
+      "meta": {
+        "alpha": 0.07265881538391114,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "flight",
+      "fraction": 0.01,
+      "detect_yes": 0.09534945338964462,
+      "detect_mass": 0.9999107718467712,
+      "identify_correct": 0.5103748440742493,
+      "identify_mass": 0.9923601150512695,
+      "usable": true,
+      "meta": {
+        "alpha": 0.14531763076782228,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "flight",
+      "fraction": 0.02,
+      "detect_yes": 0.10669060051441193,
+      "detect_mass": 0.9998868107795715,
+      "identify_correct": 0.5110269784927368,
+      "identify_mass": 0.9897539019584656,
+      "usable": true,
+      "meta": {
+        "alpha": 0.29063526153564456,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "flight",
+      "fraction": 0.04,
+      "detect_yes": 0.11920293420553207,
+      "detect_mass": 0.9997600317001343,
+      "identify_correct": 0.5112027525901794,
+      "identify_mass": 0.9842918515205383,
+      "usable": true,
+      "meta": {
+        "alpha": 0.5812705230712891,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "concept": "flight",
+      "fraction": 0.08,
+      "detect_yes": 0.14804719388484955,
+      "detect_mass": 0.9977131485939026,
+      "identify_correct": 0.5180108547210693,
+      "identify_mass": 0.9520639181137085,
+      "usable": true,
+      "meta": {
+        "alpha": 1.1625410461425782,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    }
+  ],
+  "headline": {
+    "fraction": 0.08,
+    "tp": 0.4609759946664174,
+    "fp": 0.07585817575454712,
+    "identify": 0.5654572579595778,
+    "n_usable": 18
+  }
+}

@@ -1,0 +1,2192 @@
+{
+  "false_positive_rate": 3.535625000949949e-05,
+  "by_band": {
+    "early": {
+      "fp": 3.535625000949949e-05,
+      "tp": 0.0020660006221097167,
+      "identify": 0.5150320202112197,
+      "n": 30
+    },
+    "middle": {
+      "fp": 3.535625000949949e-05,
+      "tp": 0.12133632835348533,
+      "identify": 0.5422905226205957,
+      "n": 29
+    },
+    "late": {
+      "fp": 3.535625000949949e-05,
+      "tp": 0.054696473104437586,
+      "identify": 0.5150132904450099,
+      "n": 30
+    }
+  },
+  "cells": [
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.0,
+      "detect_yes": 3.535625000949949e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.40456265211105347,
+      "identify_mass": 0.9999998807907104,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          5,
+          12
+        ],
+        "band_center": 0.243,
+        "band": "early"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.005,
+      "detect_yes": 6.144174221844878e-06,
+      "detect_mass": 1.0,
+      "identify_correct": 0.40550240874290466,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 0.17743432998657227,
+        "n_pairings": 5,
+        "layers": [
+          5,
+          12
+        ],
+        "band_center": 0.243,
+        "band": "early"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.01,
+      "detect_yes": 3.7266393064783188e-06,
+      "detect_mass": 1.0,
+      "identify_correct": 0.4301643371582031,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 0.35486865997314454,
+        "n_pairings": 5,
+        "layers": [
+          5,
+          12
+        ],
+        "band_center": 0.243,
+        "band": "early"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.02,
+      "detect_yes": 6.144174221844878e-06,
+      "detect_mass": 1.0,
+      "identify_correct": 0.4551521837711334,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 0.7097373199462891,
+        "n_pairings": 5,
+        "layers": [
+          5,
+          12
+        ],
+        "band_center": 0.243,
+        "band": "early"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.04,
+      "detect_yes": 1.67014204635052e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.4857749044895172,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 1.4194746398925782,
+        "n_pairings": 5,
+        "layers": [
+          5,
+          12
+        ],
+        "band_center": 0.243,
+        "band": "early"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.08,
+      "detect_yes": 2.1444948288262822e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.49934476613998413,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 2.8389492797851563,
+        "n_pairings": 5,
+        "layers": [
+          5,
+          12
+        ],
+        "band_center": 0.243,
+        "band": "early"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.0,
+      "detect_yes": 3.535625000949949e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.764431357383728,
+      "identify_mass": 0.9999998211860657,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          5,
+          12
+        ],
+        "band_center": 0.243,
+        "band": "early"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.005,
+      "detect_yes": 2.1444948288262822e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.7491271495819092,
+      "identify_mass": 0.9999998211860657,
+      "usable": true,
+      "meta": {
+        "alpha": 0.17743432998657227,
+        "n_pairings": 5,
+        "layers": [
+          5,
+          12
+        ],
+        "band_center": 0.243,
+        "band": "early"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.01,
+      "detect_yes": 7.484622619813308e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.765070915222168,
+      "identify_mass": 0.9999998211860657,
+      "usable": true,
+      "meta": {
+        "alpha": 0.35486865997314454,
+        "n_pairings": 5,
+        "layers": [
+          5,
+          12
+        ],
+        "band_center": 0.243,
+        "band": "early"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.02,
+      "detect_yes": 7.484622619813308e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.7749415636062622,
+      "identify_mass": 0.9999995231628418,
+      "usable": true,
+      "meta": {
+        "alpha": 0.7097373199462891,
+        "n_pairings": 5,
+        "layers": [
+          5,
+          12
+        ],
+        "band_center": 0.243,
+        "band": "early"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.04,
+      "detect_yes": 0.0015011823270469904,
+      "detect_mass": 1.0,
+      "identify_correct": 0.772307276725769,
+      "identify_mass": 0.999992847442627,
+      "usable": true,
+      "meta": {
+        "alpha": 1.4194746398925782,
+        "n_pairings": 5,
+        "layers": [
+          5,
+          12
+        ],
+        "band_center": 0.243,
+        "band": "early"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.08,
+      "detect_yes": 0.060086652636528015,
+      "detect_mass": 1.0,
+      "identify_correct": 0.5026323199272156,
+      "identify_mass": 0.9775961637496948,
+      "usable": true,
+      "meta": {
+        "alpha": 2.8389492797851563,
+        "n_pairings": 5,
+        "layers": [
+          5,
+          12
+        ],
+        "band_center": 0.243,
+        "band": "early"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "music",
+      "fraction": 0.0,
+      "detect_yes": 3.535625000949949e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.40936797857284546,
+      "identify_mass": 0.9999998211860657,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          5,
+          12
+        ],
+        "band_center": 0.243,
+        "band": "early"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "music",
+      "fraction": 0.005,
+      "detect_yes": 3.7266393064783188e-06,
+      "detect_mass": 1.0,
+      "identify_correct": 0.407481849193573,
+      "identify_mass": 0.9999998211860657,
+      "usable": true,
+      "meta": {
+        "alpha": 0.17743432998657227,
+        "n_pairings": 5,
+        "layers": [
+          5,
+          12
+        ],
+        "band_center": 0.243,
+        "band": "early"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "music",
+      "fraction": 0.01,
+      "detect_yes": 2.2603242086915998e-06,
+      "detect_mass": 1.0,
+      "identify_correct": 0.4076851010322571,
+      "identify_mass": 0.9999997019767761,
+      "usable": true,
+      "meta": {
+        "alpha": 0.35486865997314454,
+        "n_pairings": 5,
+        "layers": [
+          5,
+          12
+        ],
+        "band_center": 0.243,
+        "band": "early"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "music",
+      "fraction": 0.02,
+      "detect_yes": 1.3709573067899328e-06,
+      "detect_mass": 1.0,
+      "identify_correct": 0.42023158073425293,
+      "identify_mass": 0.9999995231628418,
+      "usable": true,
+      "meta": {
+        "alpha": 0.7097373199462891,
+        "n_pairings": 5,
+        "layers": [
+          5,
+          12
+        ],
+        "band_center": 0.243,
+        "band": "early"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "music",
+      "fraction": 0.04,
+      "detect_yes": 6.144174221844878e-06,
+      "detect_mass": 1.0,
+      "identify_correct": 0.41575947403907776,
+      "identify_mass": 0.9999991655349731,
+      "usable": true,
+      "meta": {
+        "alpha": 1.4194746398925782,
+        "n_pairings": 5,
+        "layers": [
+          5,
+          12
+        ],
+        "band_center": 0.243,
+        "band": "early"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "music",
+      "fraction": 0.08,
+      "detect_yes": 7.484622619813308e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.4008595049381256,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 2.8389492797851563,
+        "n_pairings": 5,
+        "layers": [
+          5,
+          12
+        ],
+        "band_center": 0.243,
+        "band": "early"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "fear",
+      "fraction": 0.0,
+      "detect_yes": 3.535625000949949e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.5538249015808105,
+      "identify_mass": 0.9999998807907104,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          5,
+          12
+        ],
+        "band_center": 0.243,
+        "band": "early"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "fear",
+      "fraction": 0.005,
+      "detect_yes": 4.785094461112749e-06,
+      "detect_mass": 1.0,
+      "identify_correct": 0.5551648736000061,
+      "identify_mass": 0.9999998807907104,
+      "usable": true,
+      "meta": {
+        "alpha": 0.17743432998657227,
+        "n_pairings": 5,
+        "layers": [
+          5,
+          12
+        ],
+        "band_center": 0.243,
+        "band": "early"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "fear",
+      "fraction": 0.01,
+      "detect_yes": 3.7266393064783188e-06,
+      "detect_mass": 1.0,
+      "identify_correct": 0.5407009720802307,
+      "identify_mass": 0.9999998807907104,
+      "usable": true,
+      "meta": {
+        "alpha": 0.35486865997314454,
+        "n_pairings": 5,
+        "layers": [
+          5,
+          12
+        ],
+        "band_center": 0.243,
+        "band": "early"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "fear",
+      "fraction": 0.02,
+      "detect_yes": 5.04347383412096e-07,
+      "detect_mass": 1.0,
+      "identify_correct": 0.5358411073684692,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 0.7097373199462891,
+        "n_pairings": 5,
+        "layers": [
+          5,
+          12
+        ],
+        "band_center": 0.243,
+        "band": "early"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "fear",
+      "fraction": 0.04,
+      "detect_yes": 1.4449801710725296e-07,
+      "detect_mass": 1.0,
+      "identify_correct": 0.561379075050354,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 1.4194746398925782,
+        "n_pairings": 5,
+        "layers": [
+          5,
+          12
+        ],
+        "band_center": 0.243,
+        "band": "early"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "fear",
+      "fraction": 0.08,
+      "detect_yes": 6.475947884609923e-07,
+      "detect_mass": 1.0,
+      "identify_correct": 0.5009872913360596,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 2.8389492797851563,
+        "n_pairings": 5,
+        "layers": [
+          5,
+          12
+        ],
+        "band_center": 0.243,
+        "band": "early"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.0,
+      "detect_yes": 3.535625000949949e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.5205267667770386,
+      "identify_mass": 0.9999998211860657,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          5,
+          12
+        ],
+        "band_center": 0.243,
+        "band": "early"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.005,
+      "detect_yes": 1.67014204635052e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.5331190824508667,
+      "identify_mass": 0.9999998211860657,
+      "usable": true,
+      "meta": {
+        "alpha": 0.17743432998657227,
+        "n_pairings": 5,
+        "layers": [
+          5,
+          12
+        ],
+        "band_center": 0.243,
+        "band": "early"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.01,
+      "detect_yes": 4.785094461112749e-06,
+      "detect_mass": 1.0,
+      "identify_correct": 0.5223159790039062,
+      "identify_mass": 0.9999998807907104,
+      "usable": true,
+      "meta": {
+        "alpha": 0.35486865997314454,
+        "n_pairings": 5,
+        "layers": [
+          5,
+          12
+        ],
+        "band_center": 0.243,
+        "band": "early"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.02,
+      "detect_yes": 1.3709573067899328e-06,
+      "detect_mass": 1.0,
+      "identify_correct": 0.5321780443191528,
+      "identify_mass": 0.9999998807907104,
+      "usable": true,
+      "meta": {
+        "alpha": 0.7097373199462891,
+        "n_pairings": 5,
+        "layers": [
+          5,
+          12
+        ],
+        "band_center": 0.243,
+        "band": "early"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.04,
+      "detect_yes": 1.3709573067899328e-06,
+      "detect_mass": 1.0,
+      "identify_correct": 0.5441638231277466,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 1.4194746398925782,
+        "n_pairings": 5,
+        "layers": [
+          5,
+          12
+        ],
+        "band_center": 0.243,
+        "band": "early"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.08,
+      "detect_yes": 7.889262633398175e-06,
+      "detect_mass": 1.0,
+      "identify_correct": 0.5953845381736755,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 2.8389492797851563,
+        "n_pairings": 5,
+        "layers": [
+          5,
+          12
+        ],
+        "band_center": 0.243,
+        "band": "early"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "flight",
+      "fraction": 0.0,
+      "detect_yes": 3.535625000949949e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.34728628396987915,
+      "identify_mass": 0.9999998807907104,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          5,
+          12
+        ],
+        "band_center": 0.243,
+        "band": "early"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "flight",
+      "fraction": 0.005,
+      "detect_yes": 6.144174221844878e-06,
+      "detect_mass": 1.0,
+      "identify_correct": 0.3522534668445587,
+      "identify_mass": 0.9999998807907104,
+      "usable": true,
+      "meta": {
+        "alpha": 0.17743432998657227,
+        "n_pairings": 5,
+        "layers": [
+          5,
+          12
+        ],
+        "band_center": 0.243,
+        "band": "early"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "flight",
+      "fraction": 0.01,
+      "detect_yes": 1.3007129382458515e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.3784880042076111,
+      "identify_mass": 0.9999998807907104,
+      "usable": true,
+      "meta": {
+        "alpha": 0.35486865997314454,
+        "n_pairings": 5,
+        "layers": [
+          5,
+          12
+        ],
+        "band_center": 0.243,
+        "band": "early"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "flight",
+      "fraction": 0.02,
+      "detect_yes": 4.785094461112749e-06,
+      "detect_mass": 1.0,
+      "identify_correct": 0.4423673152923584,
+      "identify_mass": 0.9999997019767761,
+      "usable": true,
+      "meta": {
+        "alpha": 0.7097373199462891,
+        "n_pairings": 5,
+        "layers": [
+          5,
+          12
+        ],
+        "band_center": 0.243,
+        "band": "early"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "flight",
+      "fraction": 0.04,
+      "detect_yes": 7.889262633398175e-06,
+      "detect_mass": 1.0,
+      "identify_correct": 0.4722847044467926,
+      "identify_mass": 0.9999998211860657,
+      "usable": true,
+      "meta": {
+        "alpha": 1.4194746398925782,
+        "n_pairings": 5,
+        "layers": [
+          5,
+          12
+        ],
+        "band_center": 0.243,
+        "band": "early"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "flight",
+      "fraction": 0.08,
+      "detect_yes": 4.785094461112749e-06,
+      "detect_mass": 1.0,
+      "identify_correct": 0.4922969937324524,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 2.8389492797851563,
+        "n_pairings": 5,
+        "layers": [
+          5,
+          12
+        ],
+        "band_center": 0.243,
+        "band": "early"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.0,
+      "detect_yes": 3.535625000949949e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.40456265211105347,
+      "identify_mass": 0.9999998807907104,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          14,
+          21
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.005,
+      "detect_yes": 3.535625000949949e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.41657358407974243,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 0.2940250015258789,
+        "n_pairings": 5,
+        "layers": [
+          14,
+          21
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.01,
+      "detect_yes": 7.484622619813308e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.41444358229637146,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 0.5880500030517578,
+        "n_pairings": 5,
+        "layers": [
+          14,
+          21
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.02,
+      "detect_yes": 0.0011695103021338582,
+      "detect_mass": 1.0,
+      "identify_correct": 0.4178432822227478,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 1.1761000061035156,
+        "n_pairings": 5,
+        "layers": [
+          14,
+          21
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.04,
+      "detect_yes": 0.32082128524780273,
+      "detect_mass": 1.0,
+      "identify_correct": 0.46926361322402954,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 2.3522000122070312,
+        "n_pairings": 5,
+        "layers": [
+          14,
+          21
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.08,
+      "detect_yes": 0.9947799444198608,
+      "detect_mass": 1.0,
+      "identify_correct": 0.43501514196395874,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 4.7044000244140625,
+        "n_pairings": 5,
+        "layers": [
+          14,
+          21
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.0,
+      "detect_yes": 3.535625000949949e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.764431357383728,
+      "identify_mass": 0.9999998211860657,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          14,
+          21
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.005,
+      "detect_yes": 1.67014204635052e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.7824784517288208,
+      "identify_mass": 0.9999998807907104,
+      "usable": true,
+      "meta": {
+        "alpha": 0.2940250015258789,
+        "n_pairings": 5,
+        "layers": [
+          14,
+          21
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.01,
+      "detect_yes": 2.2603242086915998e-06,
+      "detect_mass": 1.0,
+      "identify_correct": 0.7866934537887573,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 0.5880500030517578,
+        "n_pairings": 5,
+        "layers": [
+          14,
+          21
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.02,
+      "detect_yes": 1.855391076333035e-07,
+      "detect_mass": 1.0,
+      "identify_correct": 0.7903767824172974,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 1.1761000061035156,
+        "n_pairings": 5,
+        "layers": [
+          14,
+          21
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.04,
+      "detect_yes": 1.855391076333035e-07,
+      "detect_mass": 1.0,
+      "identify_correct": 0.7871625423431396,
+      "identify_mass": 0.999998927116394,
+      "usable": true,
+      "meta": {
+        "alpha": 2.3522000122070312,
+        "n_pairings": 5,
+        "layers": [
+          14,
+          21
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.08,
+      "detect_yes": 0.022977370768785477,
+      "detect_mass": 0.22355246543884277,
+      "identify_correct": 0.6499871015548706,
+      "identify_mass": 0.000621676561422646,
+      "usable": false,
+      "meta": {
+        "alpha": 4.7044000244140625,
+        "n_pairings": 5,
+        "layers": [
+          14,
+          21
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "music",
+      "fraction": 0.0,
+      "detect_yes": 3.535625000949949e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.40936797857284546,
+      "identify_mass": 0.9999998211860657,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          14,
+          21
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "music",
+      "fraction": 0.005,
+      "detect_yes": 2.1444948288262822e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.41077977418899536,
+      "identify_mass": 0.9999998807907104,
+      "usable": true,
+      "meta": {
+        "alpha": 0.2940250015258789,
+        "n_pairings": 5,
+        "layers": [
+          14,
+          21
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "music",
+      "fraction": 0.01,
+      "detect_yes": 1.67014204635052e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.4104638695716858,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 0.5880500030517578,
+        "n_pairings": 5,
+        "layers": [
+          14,
+          21
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "music",
+      "fraction": 0.02,
+      "detect_yes": 3.535625000949949e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.43191808462142944,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 1.1761000061035156,
+        "n_pairings": 5,
+        "layers": [
+          14,
+          21
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "music",
+      "fraction": 0.04,
+      "detect_yes": 0.00033535013790242374,
+      "detect_mass": 1.0,
+      "identify_correct": 0.44659677147865295,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 2.3522000122070312,
+        "n_pairings": 5,
+        "layers": [
+          14,
+          21
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "music",
+      "fraction": 0.08,
+      "detect_yes": 0.8807970285415649,
+      "detect_mass": 1.0,
+      "identify_correct": 0.22716756165027618,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 4.7044000244140625,
+        "n_pairings": 5,
+        "layers": [
+          14,
+          21
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "fear",
+      "fraction": 0.0,
+      "detect_yes": 3.535625000949949e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.5538249015808105,
+      "identify_mass": 0.9999998807907104,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          14,
+          21
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "fear",
+      "fraction": 0.005,
+      "detect_yes": 1.0129991096619051e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.5576096773147583,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 0.2940250015258789,
+        "n_pairings": 5,
+        "layers": [
+          14,
+          21
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "fear",
+      "fraction": 0.01,
+      "detect_yes": 7.889262633398175e-06,
+      "detect_mass": 1.0,
+      "identify_correct": 0.5672352910041809,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 0.5880500030517578,
+        "n_pairings": 5,
+        "layers": [
+          14,
+          21
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "fear",
+      "fraction": 0.02,
+      "detect_yes": 2.2603242086915998e-06,
+      "detect_mass": 1.0,
+      "identify_correct": 0.5670716166496277,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 1.1761000061035156,
+        "n_pairings": 5,
+        "layers": [
+          14,
+          21
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "fear",
+      "fraction": 0.04,
+      "detect_yes": 4.785094461112749e-06,
+      "detect_mass": 1.0,
+      "identify_correct": 0.5449827909469604,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 2.3522000122070312,
+        "n_pairings": 5,
+        "layers": [
+          14,
+          21
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "fear",
+      "fraction": 0.08,
+      "detect_yes": 0.32082128524780273,
+      "detect_mass": 1.0,
+      "identify_correct": 0.6242596507072449,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 4.7044000244140625,
+        "n_pairings": 5,
+        "layers": [
+          14,
+          21
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.0,
+      "detect_yes": 3.535625000949949e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.5205267667770386,
+      "identify_mass": 0.9999998211860657,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          14,
+          21
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.005,
+      "detect_yes": 1.67014204635052e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.541613757610321,
+      "identify_mass": 0.9999998807907104,
+      "usable": true,
+      "meta": {
+        "alpha": 0.2940250015258789,
+        "n_pairings": 5,
+        "layers": [
+          14,
+          21
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.01,
+      "detect_yes": 1.3007129382458515e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.5748001933097839,
+      "identify_mass": 0.9999998807907104,
+      "usable": true,
+      "meta": {
+        "alpha": 0.5880500030517578,
+        "n_pairings": 5,
+        "layers": [
+          14,
+          21
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.02,
+      "detect_yes": 3.7266393064783188e-06,
+      "detect_mass": 1.0,
+      "identify_correct": 0.6726076006889343,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 1.1761000061035156,
+        "n_pairings": 5,
+        "layers": [
+          14,
+          21
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.04,
+      "detect_yes": 0.00015843621804378927,
+      "detect_mass": 1.0,
+      "identify_correct": 0.8229519128799438,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 2.3522000122070312,
+        "n_pairings": 5,
+        "layers": [
+          14,
+          21
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.08,
+      "detect_yes": 0.9980732202529907,
+      "detect_mass": 1.0,
+      "identify_correct": 0.9557112455368042,
+      "identify_mass": 0.9999997019767761,
+      "usable": true,
+      "meta": {
+        "alpha": 4.7044000244140625,
+        "n_pairings": 5,
+        "layers": [
+          14,
+          21
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "flight",
+      "fraction": 0.0,
+      "detect_yes": 3.535625000949949e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.34728628396987915,
+      "identify_mass": 0.9999998807907104,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          14,
+          21
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "flight",
+      "fraction": 0.005,
+      "detect_yes": 2.1444948288262822e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.34928643703460693,
+      "identify_mass": 0.9999998807907104,
+      "usable": true,
+      "meta": {
+        "alpha": 0.2940250015258789,
+        "n_pairings": 5,
+        "layers": [
+          14,
+          21
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "flight",
+      "fraction": 0.01,
+      "detect_yes": 4.785094461112749e-06,
+      "detect_mass": 1.0,
+      "identify_correct": 0.33429351449012756,
+      "identify_mass": 0.9999998807907104,
+      "usable": true,
+      "meta": {
+        "alpha": 0.5880500030517578,
+        "n_pairings": 5,
+        "layers": [
+          14,
+          21
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "flight",
+      "fraction": 0.02,
+      "detect_yes": 4.785094461112749e-06,
+      "detect_mass": 1.0,
+      "identify_correct": 0.33020779490470886,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 1.1761000061035156,
+        "n_pairings": 5,
+        "layers": [
+          14,
+          21
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "flight",
+      "fraction": 0.04,
+      "detect_yes": 3.7266393064783188e-06,
+      "detect_mass": 1.0,
+      "identify_correct": 0.3940263092517853,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 2.3522000122070312,
+        "n_pairings": 5,
+        "layers": [
+          14,
+          21
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "flight",
+      "fraction": 0.08,
+      "detect_yes": 0.0015011823270469904,
+      "detect_mass": 0.9999993443489075,
+      "identify_correct": 0.6629908680915833,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 4.7044000244140625,
+        "n_pairings": 5,
+        "layers": [
+          14,
+          21
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.0,
+      "detect_yes": 3.535625000949949e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.40456265211105347,
+      "identify_mass": 0.9999998807907104,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          23,
+          30
+        ],
+        "band_center": 0.757,
+        "band": "late"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.005,
+      "detect_yes": 2.1444948288262822e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.3822411596775055,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 0.5507429885864258,
+        "n_pairings": 5,
+        "layers": [
+          23,
+          30
+        ],
+        "band_center": 0.757,
+        "band": "late"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.01,
+      "detect_yes": 3.535625000949949e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.36668282747268677,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 1.1014859771728516,
+        "n_pairings": 5,
+        "layers": [
+          23,
+          30
+        ],
+        "band_center": 0.757,
+        "band": "late"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.02,
+      "detect_yes": 9.610241977497935e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.361808717250824,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 2.202971954345703,
+        "n_pairings": 5,
+        "layers": [
+          23,
+          30
+        ],
+        "band_center": 0.757,
+        "band": "late"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.04,
+      "detect_yes": 0.014063628390431404,
+      "detect_mass": 1.0,
+      "identify_correct": 0.3861904442310333,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 4.405943908691406,
+        "n_pairings": 5,
+        "layers": [
+          23,
+          30
+        ],
+        "band_center": 0.757,
+        "band": "late"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.08,
+      "detect_yes": 0.998498797416687,
+      "detect_mass": 1.0,
+      "identify_correct": 0.5304459929466248,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 8.811887817382813,
+        "n_pairings": 5,
+        "layers": [
+          23,
+          30
+        ],
+        "band_center": 0.757,
+        "band": "late"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.0,
+      "detect_yes": 3.535625000949949e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.764431357383728,
+      "identify_mass": 0.9999998211860657,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          23,
+          30
+        ],
+        "band_center": 0.757,
+        "band": "late"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.005,
+      "detect_yes": 4.539786823443137e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.781293511390686,
+      "identify_mass": 0.9999998807907104,
+      "usable": true,
+      "meta": {
+        "alpha": 0.5507429885864258,
+        "n_pairings": 5,
+        "layers": [
+          23,
+          30
+        ],
+        "band_center": 0.757,
+        "band": "late"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.01,
+      "detect_yes": 0.00020342698553577065,
+      "detect_mass": 1.0,
+      "identify_correct": 0.7829304933547974,
+      "identify_mass": 0.9999998807907104,
+      "usable": true,
+      "meta": {
+        "alpha": 1.1014859771728516,
+        "n_pairings": 5,
+        "layers": [
+          23,
+          30
+        ],
+        "band_center": 0.757,
+        "band": "late"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.02,
+      "detect_yes": 0.0011695103021338582,
+      "detect_mass": 1.0,
+      "identify_correct": 0.7887734174728394,
+      "identify_mass": 0.9999998211860657,
+      "usable": true,
+      "meta": {
+        "alpha": 2.202971954345703,
+        "n_pairings": 5,
+        "layers": [
+          23,
+          30
+        ],
+        "band_center": 0.757,
+        "band": "late"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.04,
+      "detect_yes": 0.022977370768785477,
+      "detect_mass": 0.9999997615814209,
+      "identify_correct": 0.7908174395561218,
+      "identify_mass": 0.9999982714653015,
+      "usable": true,
+      "meta": {
+        "alpha": 4.405943908691406,
+        "n_pairings": 5,
+        "layers": [
+          23,
+          30
+        ],
+        "band_center": 0.757,
+        "band": "late"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.08,
+      "detect_yes": 0.562176525592804,
+      "detect_mass": 0.9998514652252197,
+      "identify_correct": 0.7337384223937988,
+      "identify_mass": 0.9998420476913452,
+      "usable": true,
+      "meta": {
+        "alpha": 8.811887817382813,
+        "n_pairings": 5,
+        "layers": [
+          23,
+          30
+        ],
+        "band_center": 0.757,
+        "band": "late"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "music",
+      "fraction": 0.0,
+      "detect_yes": 3.535625000949949e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.40936797857284546,
+      "identify_mass": 0.9999998211860657,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          23,
+          30
+        ],
+        "band_center": 0.757,
+        "band": "late"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "music",
+      "fraction": 0.005,
+      "detect_yes": 1.67014204635052e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.4085710048675537,
+      "identify_mass": 0.9999998807907104,
+      "usable": true,
+      "meta": {
+        "alpha": 0.5507429885864258,
+        "n_pairings": 5,
+        "layers": [
+          23,
+          30
+        ],
+        "band_center": 0.757,
+        "band": "late"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "music",
+      "fraction": 0.01,
+      "detect_yes": 1.3007129382458515e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.4110914170742035,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 1.1014859771728516,
+        "n_pairings": 5,
+        "layers": [
+          23,
+          30
+        ],
+        "band_center": 0.757,
+        "band": "late"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "music",
+      "fraction": 0.02,
+      "detect_yes": 2.7535690605873242e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.4090704917907715,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 2.202971954345703,
+        "n_pairings": 5,
+        "layers": [
+          23,
+          30
+        ],
+        "band_center": 0.757,
+        "band": "late"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "music",
+      "fraction": 0.04,
+      "detect_yes": 0.0002611903182696551,
+      "detect_mass": 1.0,
+      "identify_correct": 0.4143947958946228,
+      "identify_mass": 0.9999998211860657,
+      "usable": true,
+      "meta": {
+        "alpha": 4.405943908691406,
+        "n_pairings": 5,
+        "layers": [
+          23,
+          30
+        ],
+        "band_center": 0.757,
+        "band": "late"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "music",
+      "fraction": 0.08,
+      "detect_yes": 0.010986941866576672,
+      "detect_mass": 1.0,
+      "identify_correct": 0.4625416696071625,
+      "identify_mass": 0.9999988675117493,
+      "usable": true,
+      "meta": {
+        "alpha": 8.811887817382813,
+        "n_pairings": 5,
+        "layers": [
+          23,
+          30
+        ],
+        "band_center": 0.757,
+        "band": "late"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "fear",
+      "fraction": 0.0,
+      "detect_yes": 3.535625000949949e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.5538249015808105,
+      "identify_mass": 0.9999998807907104,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          23,
+          30
+        ],
+        "band_center": 0.757,
+        "band": "late"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "fear",
+      "fraction": 0.005,
+      "detect_yes": 2.7535690605873242e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.5480643510818481,
+      "identify_mass": 0.9999998807907104,
+      "usable": true,
+      "meta": {
+        "alpha": 0.5507429885864258,
+        "n_pairings": 5,
+        "layers": [
+          23,
+          30
+        ],
+        "band_center": 0.757,
+        "band": "late"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "fear",
+      "fraction": 0.01,
+      "detect_yes": 1.3007129382458515e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.5488370656967163,
+      "identify_mass": 0.9999998807907104,
+      "usable": true,
+      "meta": {
+        "alpha": 1.1014859771728516,
+        "n_pairings": 5,
+        "layers": [
+          23,
+          30
+        ],
+        "band_center": 0.757,
+        "band": "late"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "fear",
+      "fraction": 0.02,
+      "detect_yes": 1.0129991096619051e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.5559099912643433,
+      "identify_mass": 0.9999998807907104,
+      "usable": true,
+      "meta": {
+        "alpha": 2.202971954345703,
+        "n_pairings": 5,
+        "layers": [
+          23,
+          30
+        ],
+        "band_center": 0.757,
+        "band": "late"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "fear",
+      "fraction": 0.04,
+      "detect_yes": 4.785094461112749e-06,
+      "detect_mass": 1.0,
+      "identify_correct": 0.556503415107727,
+      "identify_mass": 0.999998927116394,
+      "usable": true,
+      "meta": {
+        "alpha": 4.405943908691406,
+        "n_pairings": 5,
+        "layers": [
+          23,
+          30
+        ],
+        "band_center": 0.757,
+        "band": "late"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "fear",
+      "fraction": 0.08,
+      "detect_yes": 6.475947884609923e-07,
+      "detect_mass": 1.0,
+      "identify_correct": 0.531109631061554,
+      "identify_mass": 0.9999581575393677,
+      "usable": true,
+      "meta": {
+        "alpha": 8.811887817382813,
+        "n_pairings": 5,
+        "layers": [
+          23,
+          30
+        ],
+        "band_center": 0.757,
+        "band": "late"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.0,
+      "detect_yes": 3.535625000949949e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.5205267667770386,
+      "identify_mass": 0.9999998211860657,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          23,
+          30
+        ],
+        "band_center": 0.757,
+        "band": "late"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.005,
+      "detect_yes": 1.67014204635052e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.5068669319152832,
+      "identify_mass": 0.9999998211860657,
+      "usable": true,
+      "meta": {
+        "alpha": 0.5507429885864258,
+        "n_pairings": 5,
+        "layers": [
+          23,
+          30
+        ],
+        "band_center": 0.757,
+        "band": "late"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.01,
+      "detect_yes": 1.3007129382458515e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.5044890642166138,
+      "identify_mass": 0.9999998211860657,
+      "usable": true,
+      "meta": {
+        "alpha": 1.1014859771728516,
+        "n_pairings": 5,
+        "layers": [
+          23,
+          30
+        ],
+        "band_center": 0.757,
+        "band": "late"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.02,
+      "detect_yes": 2.902311962316162e-06,
+      "detect_mass": 1.0,
+      "identify_correct": 0.5006130337715149,
+      "identify_mass": 0.9999997019767761,
+      "usable": true,
+      "meta": {
+        "alpha": 2.202971954345703,
+        "n_pairings": 5,
+        "layers": [
+          23,
+          30
+        ],
+        "band_center": 0.757,
+        "band": "late"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.04,
+      "detect_yes": 3.9278620533877984e-07,
+      "detect_mass": 1.0,
+      "identify_correct": 0.5000628232955933,
+      "identify_mass": 0.9999990463256836,
+      "usable": true,
+      "meta": {
+        "alpha": 4.405943908691406,
+        "n_pairings": 5,
+        "layers": [
+          23,
+          30
+        ],
+        "band_center": 0.757,
+        "band": "late"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.08,
+      "detect_yes": 8.152020392060422e-09,
+      "detect_mass": 1.0,
+      "identify_correct": 0.500003457069397,
+      "identify_mass": 0.9995986223220825,
+      "usable": true,
+      "meta": {
+        "alpha": 8.811887817382813,
+        "n_pairings": 5,
+        "layers": [
+          23,
+          30
+        ],
+        "band_center": 0.757,
+        "band": "late"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "flight",
+      "fraction": 0.0,
+      "detect_yes": 3.535625000949949e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.34728628396987915,
+      "identify_mass": 0.9999998807907104,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          23,
+          30
+        ],
+        "band_center": 0.757,
+        "band": "late"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "flight",
+      "fraction": 0.005,
+      "detect_yes": 4.539786823443137e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.37896454334259033,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 0.5507429885864258,
+        "n_pairings": 5,
+        "layers": [
+          23,
+          30
+        ],
+        "band_center": 0.757,
+        "band": "late"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "flight",
+      "fraction": 0.01,
+      "detect_yes": 2.1444948288262822e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.3820911645889282,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 1.1014859771728516,
+        "n_pairings": 5,
+        "layers": [
+          23,
+          30
+        ],
+        "band_center": 0.757,
+        "band": "late"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "flight",
+      "fraction": 0.02,
+      "detect_yes": 0.00012339458044152707,
+      "detect_mass": 1.0,
+      "identify_correct": 0.4366764426231384,
+      "identify_mass": 0.9999998807907104,
+      "usable": true,
+      "meta": {
+        "alpha": 2.202971954345703,
+        "n_pairings": 5,
+        "layers": [
+          23,
+          30
+        ],
+        "band_center": 0.757,
+        "band": "late"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "flight",
+      "fraction": 0.04,
+      "detect_yes": 0.0007096704212017357,
+      "detect_mass": 1.0,
+      "identify_correct": 0.48853978514671326,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 4.405943908691406,
+        "n_pairings": 5,
+        "layers": [
+          23,
+          30
+        ],
+        "band_center": 0.757,
+        "band": "late"
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "concept": "flight",
+      "fraction": 0.08,
+      "detect_yes": 0.02931223064661026,
+      "detect_mass": 0.9999998807907104,
+      "identify_correct": 0.5010752081871033,
+      "identify_mass": 0.9999998807907104,
+      "usable": true,
+      "meta": {
+        "alpha": 8.811887817382813,
+        "n_pairings": 5,
+        "layers": [
+          23,
+          30
+        ],
+        "band_center": 0.757,
+        "band": "late"
+      }
+    }
+  ],
+  "headline": {
+    "fraction": 0.08,
+    "tp": 0.2857143575189206,
+    "fp": 3.535625000949949e-05,
+    "identify": 0.5385626037331188,
+    "n_usable": 17
+  }
+}

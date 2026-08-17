@@ -1,0 +1,172 @@
+{
+  "prediction_validity": {
+    "Qwen/Qwen2.5-7B-Instruct|self": {
+      "ab_mass_mean": 1.0,
+      "order_bias_mean": 0.23142023384571075,
+      "target": "An AI assistant",
+      "n_forward_passes": 1560,
+      "target_label": "self",
+      "seconds": 25.3
+    },
+    "Qwen/Qwen2.5-7B-Instruct|other": {
+      "ab_mass_mean": 1.0,
+      "order_bias_mean": 0.1799539029598236,
+      "target": "A different AI assistant, built by another organisation,",
+      "n_forward_passes": 1560,
+      "target_label": "other",
+      "seconds": 34.6
+    },
+    "Qwen/Qwen2.5-7B-Instruct|self_explicit": {
+      "ab_mass_mean": 1.0,
+      "order_bias_mean": 0.1800585240125656,
+      "target": null,
+      "n_forward_passes": 1560,
+      "target_label": "self_explicit",
+      "seconds": 60.3
+    },
+    "mistralai/Mistral-7B-Instruct-v0.3|self": {
+      "ab_mass_mean": 0.7876946330070496,
+      "order_bias_mean": 0.47590145468711853,
+      "target": "An AI assistant",
+      "n_forward_passes": 1560,
+      "target_label": "self",
+      "seconds": 66.0
+    },
+    "mistralai/Mistral-7B-Instruct-v0.3|other": {
+      "ab_mass_mean": 0.5382920503616333,
+      "order_bias_mean": 0.5610535740852356,
+      "target": "A different AI assistant, built by another organisation,",
+      "n_forward_passes": 1560,
+      "target_label": "other",
+      "seconds": 71.7
+    },
+    "mistralai/Mistral-7B-Instruct-v0.3|self_explicit": {
+      "ab_mass_mean": 0.9449552297592163,
+      "order_bias_mean": 0.32771793007850647,
+      "target": null,
+      "n_forward_passes": 1560,
+      "target_label": "self_explicit",
+      "seconds": 66.0
+    }
+  },
+  "stated_vs_revealed": {
+    "global": {
+      "Qwen/Qwen2.5-7B-Instruct": {
+        "global_spearman": 0.8716697936210133,
+        "valid": true,
+        "scale_disagreement": 0.3209361732006073
+      },
+      "mistralai/Mistral-7B-Instruct-v0.3": {
+        "global_spearman": 0.827767354596623,
+        "valid": true,
+        "scale_disagreement": 0.21745038032531738
+      }
+    },
+    "by_category": {
+      "Qwen/Qwen2.5-7B-Instruct": {
+        "animal": 0.942857142857143,
+        "epi": 0.942857142857143,
+        "human": 0.7619047619047621,
+        "money": 1.0,
+        "self": 0.6428571428571429,
+        "trivial": 0.6
+      },
+      "mistralai/Mistral-7B-Instruct-v0.3": {
+        "animal": 0.8285714285714287,
+        "epi": 1.0,
+        "human": 0.6190476190476191,
+        "money": 1.0,
+        "self": 0.5476190476190477,
+        "trivial": 1.0
+      }
+    }
+  },
+  "prediction": [
+    {
+      "target": "Qwen/Qwen2.5-7B-Instruct",
+      "predictor": "Qwen/Qwen2.5-7B-Instruct",
+      "kind": "SELF-pred",
+      "accuracy": 0.9166666666666666,
+      "accuracy_decided": 0.9478873239436619,
+      "ci_low": 0.9309859154929577,
+      "ci_high": 0.9633802816901409,
+      "n_decided": 710
+    },
+    {
+      "target": "Qwen/Qwen2.5-7B-Instruct",
+      "predictor": "mistralai/Mistral-7B-Instruct-v0.3",
+      "kind": "EXTERNAL-pred",
+      "accuracy": 0.8384615384615385,
+      "accuracy_decided": 0.8619718309859155,
+      "ci_low": 0.8366197183098592,
+      "ci_high": 0.8859154929577465,
+      "n_decided": 710
+    },
+    {
+      "target": "Qwen/Qwen2.5-7B-Instruct",
+      "predictor": "mistralai/Mistral-7B-Instruct-v0.3",
+      "kind": "shared-values",
+      "accuracy": 0.8525641025641025,
+      "accuracy_decided": 0.8816901408450705,
+      "ci_low": 0.856338028169014,
+      "ci_high": 0.9042253521126761,
+      "n_decided": 710
+    },
+    {
+      "target": "mistralai/Mistral-7B-Instruct-v0.3",
+      "predictor": "Qwen/Qwen2.5-7B-Instruct",
+      "kind": "EXTERNAL-pred",
+      "accuracy": 0.8512820512820513,
+      "accuracy_decided": 0.8710166919575114,
+      "ci_low": 0.8437025796661608,
+      "ci_high": 0.8968133535660091,
+      "n_decided": 659
+    },
+    {
+      "target": "mistralai/Mistral-7B-Instruct-v0.3",
+      "predictor": "Qwen/Qwen2.5-7B-Instruct",
+      "kind": "shared-values",
+      "accuracy": 0.8525641025641025,
+      "accuracy_decided": 0.8801213960546282,
+      "ci_low": 0.8543247344461306,
+      "ci_high": 0.9044006069802731,
+      "n_decided": 659
+    },
+    {
+      "target": "mistralai/Mistral-7B-Instruct-v0.3",
+      "predictor": "mistralai/Mistral-7B-Instruct-v0.3",
+      "kind": "SELF-pred",
+      "accuracy": 0.926923076923077,
+      "accuracy_decided": 0.9590288315629742,
+      "ci_low": 0.9423368740515933,
+      "ci_high": 0.9726858877086495,
+      "n_decided": 659
+    }
+  ],
+  "within_model": [
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "self": 0.9478873239436619,
+      "other": 0.9169014084507042,
+      "self_explicit": 0.9605633802816902,
+      "diff": 0.030985915492957705,
+      "ci_low": 0.016901408450704203,
+      "ci_high": 0.04647887323943656,
+      "significant": true
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "self": 0.9590288315629742,
+      "other": 0.9499241274658573,
+      "self_explicit": 0.9620637329286799,
+      "diff": 0.009104704097116945,
+      "ci_low": -0.0015174506828528084,
+      "ci_high": 0.02124430955993939,
+      "significant": false
+    }
+  ],
+  "verdicts": {
+    "Qwen/Qwen2.5-7B-Instruct": "SUPPORTED \u2014 beats the shared-values control and survives the noise control",
+    "mistralai/Mistral-7B-Instruct-v0.3": "PARTIAL \u2014 beats shared values, but the within-model contrast does not confirm"
+  }
+}

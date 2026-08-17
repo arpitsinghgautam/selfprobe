@@ -1,0 +1,2192 @@
+{
+  "false_positive_rate": 0.0637146383523941,
+  "by_band": {
+    "early": {
+      "fp": 0.0637146383523941,
+      "tp": 0.08237633022169272,
+      "identify": 0.4930731803178787,
+      "n": 30
+    },
+    "middle": {
+      "fp": 0.0637146383523941,
+      "tp": 0.07161426556607088,
+      "identify": 0.52772416472435,
+      "n": 30
+    },
+    "late": {
+      "fp": 0.0637146383523941,
+      "tp": 0.0738292781325678,
+      "identify": 0.5035089443127314,
+      "n": 30
+    }
+  },
+  "cells": [
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.0,
+      "detect_yes": 0.0637146383523941,
+      "detect_mass": 0.9594725370407104,
+      "identify_correct": 0.45203718543052673,
+      "identify_mass": 0.9985841512680054,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.005,
+      "detect_yes": 0.06371466815471649,
+      "detect_mass": 0.9611772894859314,
+      "identify_correct": 0.44626760482788086,
+      "identify_mass": 0.9984725713729858,
+      "usable": true,
+      "meta": {
+        "alpha": 0.031044530868530273,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.01,
+      "detect_yes": 0.07159078866243362,
+      "detect_mass": 0.9588642120361328,
+      "identify_correct": 0.440862238407135,
+      "identify_mass": 0.9983243942260742,
+      "usable": true,
+      "meta": {
+        "alpha": 0.062089061737060545,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.02,
+      "detect_yes": 0.09009247273206711,
+      "detect_mass": 0.9536718726158142,
+      "identify_correct": 0.4272767901420593,
+      "identify_mass": 0.9980438947677612,
+      "usable": true,
+      "meta": {
+        "alpha": 0.12417812347412109,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.04,
+      "detect_yes": 0.14804615080356598,
+      "detect_mass": 0.9435256719589233,
+      "identify_correct": 0.37609127163887024,
+      "identify_mass": 0.9972467422485352,
+      "usable": true,
+      "meta": {
+        "alpha": 0.24835624694824218,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.08,
+      "detect_yes": 0.2942119538784027,
+      "detect_mass": 0.915995180606842,
+      "identify_correct": 0.28094610571861267,
+      "identify_mass": 0.9957603216171265,
+      "usable": true,
+      "meta": {
+        "alpha": 0.49671249389648436,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.0,
+      "detect_yes": 0.0637146383523941,
+      "detect_mass": 0.9594725370407104,
+      "identify_correct": 0.5053613185882568,
+      "identify_mass": 0.9985074996948242,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.005,
+      "detect_yes": 0.06008629500865936,
+      "detect_mass": 0.9610846042633057,
+      "identify_correct": 0.5117831826210022,
+      "identify_mass": 0.9983962774276733,
+      "usable": true,
+      "meta": {
+        "alpha": 0.031044530868530273,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.01,
+      "detect_yes": 0.06008627265691757,
+      "detect_mass": 0.9600501656532288,
+      "identify_correct": 0.5159493088722229,
+      "identify_mass": 0.998309314250946,
+      "usable": true,
+      "meta": {
+        "alpha": 0.062089061737060545,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.02,
+      "detect_yes": 0.060086168348789215,
+      "detect_mass": 0.9592057466506958,
+      "identify_correct": 0.5232726335525513,
+      "identify_mass": 0.9981425404548645,
+      "usable": true,
+      "meta": {
+        "alpha": 0.12417812347412109,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.04,
+      "detect_yes": 0.0446803942322731,
+      "detect_mass": 0.9646751880645752,
+      "identify_correct": 0.5448243021965027,
+      "identify_mass": 0.9978466033935547,
+      "usable": true,
+      "meta": {
+        "alpha": 0.24835624694824218,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.08,
+      "detect_yes": 0.06008338928222656,
+      "detect_mass": 0.982089102268219,
+      "identify_correct": 0.61185222864151,
+      "identify_mass": 0.9968347549438477,
+      "usable": true,
+      "meta": {
+        "alpha": 0.49671249389648436,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "music",
+      "fraction": 0.0,
+      "detect_yes": 0.0637146383523941,
+      "detect_mass": 0.9594725370407104,
+      "identify_correct": 0.5048697590827942,
+      "identify_mass": 0.997859001159668,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "music",
+      "fraction": 0.005,
+      "detect_yes": 0.07159075886011124,
+      "detect_mass": 0.9539101719856262,
+      "identify_correct": 0.5063620805740356,
+      "identify_mass": 0.9979484677314758,
+      "usable": true,
+      "meta": {
+        "alpha": 0.031044530868530273,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "music",
+      "fraction": 0.01,
+      "detect_yes": 0.07159075886011124,
+      "detect_mass": 0.9534562826156616,
+      "identify_correct": 0.5038696527481079,
+      "identify_mass": 0.9980233311653137,
+      "usable": true,
+      "meta": {
+        "alpha": 0.062089061737060545,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "music",
+      "fraction": 0.02,
+      "detect_yes": 0.07159073650836945,
+      "detect_mass": 0.94251549243927,
+      "identify_correct": 0.5128729343414307,
+      "identify_mass": 0.9982325434684753,
+      "usable": true,
+      "meta": {
+        "alpha": 0.12417812347412109,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "music",
+      "fraction": 0.04,
+      "detect_yes": 0.07159069180488586,
+      "detect_mass": 0.934127151966095,
+      "identify_correct": 0.5163489580154419,
+      "identify_mass": 0.9985018968582153,
+      "usable": true,
+      "meta": {
+        "alpha": 0.24835624694824218,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "music",
+      "fraction": 0.08,
+      "detect_yes": 0.10087665170431137,
+      "detect_mass": 0.8977264761924744,
+      "identify_correct": 0.5250620245933533,
+      "identify_mass": 0.9991647601127625,
+      "usable": true,
+      "meta": {
+        "alpha": 0.49671249389648436,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "fear",
+      "fraction": 0.0,
+      "detect_yes": 0.0637146383523941,
+      "detect_mass": 0.9594725370407104,
+      "identify_correct": 0.5038695335388184,
+      "identify_mass": 0.9977361559867859,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "fear",
+      "fraction": 0.005,
+      "detect_yes": 0.06008630618453026,
+      "detect_mass": 0.9630812406539917,
+      "identify_correct": 0.5035879015922546,
+      "identify_mass": 0.9979252815246582,
+      "usable": true,
+      "meta": {
+        "alpha": 0.031044530868530273,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "fear",
+      "fraction": 0.01,
+      "detect_yes": 0.06371457129716873,
+      "detect_mass": 0.9569806456565857,
+      "identify_correct": 0.5064842104911804,
+      "identify_mass": 0.9981794357299805,
+      "usable": true,
+      "meta": {
+        "alpha": 0.062089061737060545,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "fear",
+      "fraction": 0.02,
+      "detect_yes": 0.05340299382805824,
+      "detect_mass": 0.9596600532531738,
+      "identify_correct": 0.5093572735786438,
+      "identify_mass": 0.9985417127609253,
+      "usable": true,
+      "meta": {
+        "alpha": 0.12417812347412109,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "fear",
+      "fraction": 0.04,
+      "detect_yes": 0.06008615717291832,
+      "detect_mass": 0.9586728811264038,
+      "identify_correct": 0.5175952315330505,
+      "identify_mass": 0.999178409576416,
+      "usable": true,
+      "meta": {
+        "alpha": 0.24835624694824218,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "fear",
+      "fraction": 0.08,
+      "detect_yes": 0.1403345912694931,
+      "detect_mass": 0.9522448182106018,
+      "identify_correct": 0.5231109857559204,
+      "identify_mass": 0.999843418598175,
+      "usable": true,
+      "meta": {
+        "alpha": 0.49671249389648436,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.0,
+      "detect_yes": 0.0637146383523941,
+      "detect_mass": 0.9594725370407104,
+      "identify_correct": 0.4923672676086426,
+      "identify_mass": 0.9978941082954407,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.005,
+      "detect_yes": 0.06008636951446533,
+      "detect_mass": 0.9585487842559814,
+      "identify_correct": 0.4832715094089508,
+      "identify_mass": 0.9979443550109863,
+      "usable": true,
+      "meta": {
+        "alpha": 0.031044530868530273,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.01,
+      "detect_yes": 0.056652117520570755,
+      "detect_mass": 0.9543301463127136,
+      "identify_correct": 0.48432016372680664,
+      "identify_mass": 0.9980282783508301,
+      "usable": true,
+      "meta": {
+        "alpha": 0.062089061737060545,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.02,
+      "detect_yes": 0.05340305343270302,
+      "detect_mass": 0.9555566906929016,
+      "identify_correct": 0.48436444997787476,
+      "identify_mass": 0.9982906579971313,
+      "usable": true,
+      "meta": {
+        "alpha": 0.12417812347412109,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.04,
+      "detect_yes": 0.056652192026376724,
+      "detect_mass": 0.9503467679023743,
+      "identify_correct": 0.475480854511261,
+      "identify_mass": 0.9988551139831543,
+      "usable": true,
+      "meta": {
+        "alpha": 0.24835624694824218,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.08,
+      "detect_yes": 0.222699373960495,
+      "detect_mass": 0.9413706064224243,
+      "identify_correct": 0.4658065438270569,
+      "identify_mass": 0.9994869232177734,
+      "usable": true,
+      "meta": {
+        "alpha": 0.49671249389648436,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "flight",
+      "fraction": 0.0,
+      "detect_yes": 0.0637146383523941,
+      "detect_mass": 0.9594725370407104,
+      "identify_correct": 0.5414949655532837,
+      "identify_mass": 0.9984868764877319,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "flight",
+      "fraction": 0.005,
+      "detect_yes": 0.056652143597602844,
+      "detect_mass": 0.9610425233840942,
+      "identify_correct": 0.5409157872200012,
+      "identify_mass": 0.9984796643257141,
+      "usable": true,
+      "meta": {
+        "alpha": 0.031044530868530273,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "flight",
+      "fraction": 0.01,
+      "detect_yes": 0.060086335986852646,
+      "detect_mass": 0.9566330909729004,
+      "identify_correct": 0.5359060764312744,
+      "identify_mass": 0.9985284805297852,
+      "usable": true,
+      "meta": {
+        "alpha": 0.062089061737060545,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "flight",
+      "fraction": 0.02,
+      "detect_yes": 0.06008635461330414,
+      "detect_mass": 0.9565494060516357,
+      "identify_correct": 0.5372242331504822,
+      "identify_mass": 0.9985920190811157,
+      "usable": true,
+      "meta": {
+        "alpha": 0.12417812347412109,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "flight",
+      "fraction": 0.04,
+      "detect_yes": 0.0637146532535553,
+      "detect_mass": 0.9517103433609009,
+      "identify_correct": 0.5145200490951538,
+      "identify_mass": 0.9985703229904175,
+      "usable": true,
+      "meta": {
+        "alpha": 0.24835624694824218,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "flight",
+      "fraction": 0.08,
+      "detect_yes": 0.06371454149484634,
+      "detect_mass": 0.9657683372497559,
+      "identify_correct": 0.46660882234573364,
+      "identify_mass": 0.99888676404953,
+      "usable": true,
+      "meta": {
+        "alpha": 0.49671249389648436,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.0,
+      "detect_yes": 0.0637146383523941,
+      "detect_mass": 0.9594725370407104,
+      "identify_correct": 0.45203718543052673,
+      "identify_mass": 0.9985841512680054,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.005,
+      "detect_yes": 0.07159079611301422,
+      "detect_mass": 0.9629524350166321,
+      "identify_correct": 0.45715513825416565,
+      "identify_mass": 0.9988547563552856,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0742323350906372,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.01,
+      "detect_yes": 0.08035698533058167,
+      "detect_mass": 0.9594963788986206,
+      "identify_correct": 0.46153753995895386,
+      "identify_mass": 0.9990313649177551,
+      "usable": true,
+      "meta": {
+        "alpha": 0.1484646701812744,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.02,
+      "detect_yes": 0.10668987780809402,
+      "detect_mass": 0.9602974057197571,
+      "identify_correct": 0.468535840511322,
+      "identify_mass": 0.9992833137512207,
+      "usable": true,
+      "meta": {
+        "alpha": 0.2969293403625488,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.04,
+      "detect_yes": 0.10087833553552628,
+      "detect_mass": 0.9816047549247742,
+      "identify_correct": 0.4755328595638275,
+      "identify_mass": 0.9997791051864624,
+      "usable": true,
+      "meta": {
+        "alpha": 0.5938586807250976,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.08,
+      "detect_yes": 0.042087726294994354,
+      "detect_mass": 0.9986020922660828,
+      "identify_correct": 0.4941330850124359,
+      "identify_mass": 0.9999831318855286,
+      "usable": true,
+      "meta": {
+        "alpha": 1.1877173614501952,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.0,
+      "detect_yes": 0.0637146383523941,
+      "detect_mass": 0.9594725370407104,
+      "identify_correct": 0.5053613185882568,
+      "identify_mass": 0.9985074996948242,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.005,
+      "detect_yes": 0.07159087806940079,
+      "detect_mass": 0.9566136598587036,
+      "identify_correct": 0.5095962285995483,
+      "identify_mass": 0.9987232089042664,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0742323350906372,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.01,
+      "detect_yes": 0.08509860187768936,
+      "detect_mass": 0.947998046875,
+      "identify_correct": 0.5162190198898315,
+      "identify_mass": 0.9988883137702942,
+      "usable": true,
+      "meta": {
+        "alpha": 0.1484646701812744,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.02,
+      "detect_yes": 0.10087817162275314,
+      "detect_mass": 0.9328947067260742,
+      "identify_correct": 0.5269383788108826,
+      "identify_mass": 0.9991796612739563,
+      "usable": true,
+      "meta": {
+        "alpha": 0.2969293403625488,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.04,
+      "detect_yes": 0.10669025778770447,
+      "detect_mass": 0.8713188767433167,
+      "identify_correct": 0.5384387969970703,
+      "identify_mass": 0.9997261166572571,
+      "usable": true,
+      "meta": {
+        "alpha": 0.5938586807250976,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.08,
+      "detect_yes": 0.2018105685710907,
+      "detect_mass": 0.8408604264259338,
+      "identify_correct": 0.512332558631897,
+      "identify_mass": 0.9995420575141907,
+      "usable": true,
+      "meta": {
+        "alpha": 1.1877173614501952,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "music",
+      "fraction": 0.0,
+      "detect_yes": 0.0637146383523941,
+      "detect_mass": 0.9594725370407104,
+      "identify_correct": 0.5048697590827942,
+      "identify_mass": 0.997859001159668,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "music",
+      "fraction": 0.005,
+      "detect_yes": 0.06371462345123291,
+      "detect_mass": 0.9618574976921082,
+      "identify_correct": 0.5088905096054077,
+      "identify_mass": 0.9979778528213501,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0742323350906372,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "music",
+      "fraction": 0.01,
+      "detect_yes": 0.0675463154911995,
+      "detect_mass": 0.9619557857513428,
+      "identify_correct": 0.5137574672698975,
+      "identify_mass": 0.9980481266975403,
+      "usable": true,
+      "meta": {
+        "alpha": 0.1484646701812744,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "music",
+      "fraction": 0.02,
+      "detect_yes": 0.0758577436208725,
+      "detect_mass": 0.9571933150291443,
+      "identify_correct": 0.525842547416687,
+      "identify_mass": 0.9981569051742554,
+      "usable": true,
+      "meta": {
+        "alpha": 0.2969293403625488,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "music",
+      "fraction": 0.04,
+      "detect_yes": 0.08509881794452667,
+      "detect_mass": 0.9702116250991821,
+      "identify_correct": 0.5617840886116028,
+      "identify_mass": 0.999556839466095,
+      "usable": true,
+      "meta": {
+        "alpha": 0.5938586807250976,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "music",
+      "fraction": 0.08,
+      "detect_yes": 0.09009287506341934,
+      "detect_mass": 0.749540388584137,
+      "identify_correct": 0.6484172940254211,
+      "identify_mass": 0.9997060894966125,
+      "usable": true,
+      "meta": {
+        "alpha": 1.1877173614501952,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "fear",
+      "fraction": 0.0,
+      "detect_yes": 0.0637146383523941,
+      "detect_mass": 0.9594725370407104,
+      "identify_correct": 0.5038695335388184,
+      "identify_mass": 0.9977361559867859,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "fear",
+      "fraction": 0.005,
+      "detect_yes": 0.06008632108569145,
+      "detect_mass": 0.9632159471511841,
+      "identify_correct": 0.5082125067710876,
+      "identify_mass": 0.997958779335022,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0742323350906372,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "fear",
+      "fraction": 0.01,
+      "detect_yes": 0.06008632108569145,
+      "detect_mass": 0.9670764803886414,
+      "identify_correct": 0.5124477744102478,
+      "identify_mass": 0.9980921745300293,
+      "usable": true,
+      "meta": {
+        "alpha": 0.1484646701812744,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "fear",
+      "fraction": 0.02,
+      "detect_yes": 0.06008629500865936,
+      "detect_mass": 0.9693908095359802,
+      "identify_correct": 0.5212920308113098,
+      "identify_mass": 0.9982260465621948,
+      "usable": true,
+      "meta": {
+        "alpha": 0.2969293403625488,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "fear",
+      "fraction": 0.04,
+      "detect_yes": 0.05665191635489464,
+      "detect_mass": 0.9738194942474365,
+      "identify_correct": 0.5447748899459839,
+      "identify_mass": 0.9993057250976562,
+      "usable": true,
+      "meta": {
+        "alpha": 0.5938586807250976,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "fear",
+      "fraction": 0.08,
+      "detect_yes": 0.01168713066726923,
+      "detect_mass": 0.9836605191230774,
+      "identify_correct": 0.5328036546707153,
+      "identify_mass": 0.9990647435188293,
+      "usable": true,
+      "meta": {
+        "alpha": 1.1877173614501952,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.0,
+      "detect_yes": 0.0637146383523941,
+      "detect_mass": 0.9594725370407104,
+      "identify_correct": 0.4923672676086426,
+      "identify_mass": 0.9978941082954407,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.005,
+      "detect_yes": 0.06754625588655472,
+      "detect_mass": 0.959978461265564,
+      "identify_correct": 0.49826279282569885,
+      "identify_mass": 0.9977843165397644,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0742323350906372,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.01,
+      "detect_yes": 0.07159067690372467,
+      "detect_mass": 0.9557492733001709,
+      "identify_correct": 0.5124205946922302,
+      "identify_mass": 0.9976949691772461,
+      "usable": true,
+      "meta": {
+        "alpha": 0.1484646701812744,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.02,
+      "detect_yes": 0.08035679906606674,
+      "detect_mass": 0.9548170566558838,
+      "identify_correct": 0.5270935297012329,
+      "identify_mass": 0.9976671934127808,
+      "usable": true,
+      "meta": {
+        "alpha": 0.2969293403625488,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.04,
+      "detect_yes": 0.08509820699691772,
+      "detect_mass": 0.9398391842842102,
+      "identify_correct": 0.5666612386703491,
+      "identify_mass": 0.998734176158905,
+      "usable": true,
+      "meta": {
+        "alpha": 0.5938586807250976,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.08,
+      "detect_yes": 0.031143536791205406,
+      "detect_mass": 0.9177846908569336,
+      "identify_correct": 0.6854405403137207,
+      "identify_mass": 0.9993414878845215,
+      "usable": true,
+      "meta": {
+        "alpha": 1.1877173614501952,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "flight",
+      "fraction": 0.0,
+      "detect_yes": 0.0637146383523941,
+      "detect_mass": 0.9594725370407104,
+      "identify_correct": 0.5414949655532837,
+      "identify_mass": 0.9984868764877319,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "flight",
+      "fraction": 0.005,
+      "detect_yes": 0.06008635461330414,
+      "detect_mass": 0.960439920425415,
+      "identify_correct": 0.5420700311660767,
+      "identify_mass": 0.9986769556999207,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0742323350906372,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "flight",
+      "fraction": 0.01,
+      "detect_yes": 0.05665218085050583,
+      "detect_mass": 0.9628629088401794,
+      "identify_correct": 0.5438865423202515,
+      "identify_mass": 0.9987924695014954,
+      "usable": true,
+      "meta": {
+        "alpha": 0.1484646701812744,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "flight",
+      "fraction": 0.02,
+      "detect_yes": 0.053403135389089584,
+      "detect_mass": 0.96319580078125,
+      "identify_correct": 0.5493665337562561,
+      "identify_mass": 0.9989922642707825,
+      "usable": true,
+      "meta": {
+        "alpha": 0.2969293403625488,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "flight",
+      "fraction": 0.04,
+      "detect_yes": 0.039638761430978775,
+      "detect_mass": 0.972987711429596,
+      "identify_correct": 0.5544366836547852,
+      "identify_mass": 0.9996433258056641,
+      "usable": true,
+      "meta": {
+        "alpha": 0.5938586807250976,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "flight",
+      "fraction": 0.08,
+      "detect_yes": 0.004331500269472599,
+      "detect_mass": 0.985619306564331,
+      "identify_correct": 0.5134442448616028,
+      "identify_mass": 0.9994667172431946,
+      "usable": true,
+      "meta": {
+        "alpha": 1.1877173614501952,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.0,
+      "detect_yes": 0.0637146383523941,
+      "detect_mass": 0.9594725370407104,
+      "identify_correct": 0.45203718543052673,
+      "identify_mass": 0.9985841512680054,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.005,
+      "detect_yes": 0.07159081846475601,
+      "detect_mass": 0.9634048938751221,
+      "identify_correct": 0.45723381638526917,
+      "identify_mass": 0.9988574981689453,
+      "usable": true,
+      "meta": {
+        "alpha": 0.16932132720947266,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.01,
+      "detect_yes": 0.06754641979932785,
+      "detect_mass": 0.9702901840209961,
+      "identify_correct": 0.45378178358078003,
+      "identify_mass": 0.9991385340690613,
+      "usable": true,
+      "meta": {
+        "alpha": 0.3386426544189453,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.02,
+      "detect_yes": 0.06754656881093979,
+      "detect_mass": 0.982166588306427,
+      "identify_correct": 0.4547877907752991,
+      "identify_mass": 0.9994106292724609,
+      "usable": true,
+      "meta": {
+        "alpha": 0.6772853088378906,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.04,
+      "detect_yes": 0.04468085616827011,
+      "detect_mass": 0.9927744269371033,
+      "identify_correct": 0.45879340171813965,
+      "identify_mass": 0.9998451471328735,
+      "usable": true,
+      "meta": {
+        "alpha": 1.3545706176757812,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.08,
+      "detect_yes": 0.02758527733385563,
+      "detect_mass": 0.9900542497634888,
+      "identify_correct": 0.4473140835762024,
+      "identify_mass": 0.9999383687973022,
+      "usable": true,
+      "meta": {
+        "alpha": 2.7091412353515625,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.0,
+      "detect_yes": 0.0637146383523941,
+      "detect_mass": 0.9594725370407104,
+      "identify_correct": 0.5053613185882568,
+      "identify_mass": 0.9985074996948242,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.005,
+      "detect_yes": 0.06754633039236069,
+      "detect_mass": 0.9649991393089294,
+      "identify_correct": 0.5061577558517456,
+      "identify_mass": 0.9987785220146179,
+      "usable": true,
+      "meta": {
+        "alpha": 0.16932132720947266,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.01,
+      "detect_yes": 0.06371469795703888,
+      "detect_mass": 0.9709054827690125,
+      "identify_correct": 0.5083223581314087,
+      "identify_mass": 0.999029278755188,
+      "usable": true,
+      "meta": {
+        "alpha": 0.3386426544189453,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.02,
+      "detect_yes": 0.053403161466121674,
+      "detect_mass": 0.9813544750213623,
+      "identify_correct": 0.5082109570503235,
+      "identify_mass": 0.9994193315505981,
+      "usable": true,
+      "meta": {
+        "alpha": 0.6772853088378906,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.04,
+      "detect_yes": 0.022977327927947044,
+      "detect_mass": 0.9899274706840515,
+      "identify_correct": 0.5103853344917297,
+      "identify_mass": 0.9997145533561707,
+      "usable": true,
+      "meta": {
+        "alpha": 1.3545706176757812,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.08,
+      "detect_yes": 0.031143760308623314,
+      "detect_mass": 0.9863423705101013,
+      "identify_correct": 0.5395482778549194,
+      "identify_mass": 0.9991466403007507,
+      "usable": true,
+      "meta": {
+        "alpha": 2.7091412353515625,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "music",
+      "fraction": 0.0,
+      "detect_yes": 0.0637146383523941,
+      "detect_mass": 0.9594725370407104,
+      "identify_correct": 0.5048697590827942,
+      "identify_mass": 0.997859001159668,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "music",
+      "fraction": 0.005,
+      "detect_yes": 0.07585775852203369,
+      "detect_mass": 0.9597028493881226,
+      "identify_correct": 0.50653475522995,
+      "identify_mass": 0.9980192184448242,
+      "usable": true,
+      "meta": {
+        "alpha": 0.16932132720947266,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "music",
+      "fraction": 0.01,
+      "detect_yes": 0.07585784047842026,
+      "detect_mass": 0.9608644843101501,
+      "identify_correct": 0.5039375424385071,
+      "identify_mass": 0.9981134533882141,
+      "usable": true,
+      "meta": {
+        "alpha": 0.3386426544189453,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "music",
+      "fraction": 0.02,
+      "detect_yes": 0.08509881794452667,
+      "detect_mass": 0.965569019317627,
+      "identify_correct": 0.5083996653556824,
+      "identify_mass": 0.9982306361198425,
+      "usable": true,
+      "meta": {
+        "alpha": 0.6772853088378906,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "music",
+      "fraction": 0.04,
+      "detect_yes": 0.08509902656078339,
+      "detect_mass": 0.9782100319862366,
+      "identify_correct": 0.5086260437965393,
+      "identify_mass": 0.9993684887886047,
+      "usable": true,
+      "meta": {
+        "alpha": 1.3545706176757812,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "music",
+      "fraction": 0.08,
+      "detect_yes": 0.4073333740234375,
+      "detect_mass": 0.8680010437965393,
+      "identify_correct": 0.5066287517547607,
+      "identify_mass": 0.9986407160758972,
+      "usable": true,
+      "meta": {
+        "alpha": 2.7091412353515625,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "fear",
+      "fraction": 0.0,
+      "detect_yes": 0.0637146383523941,
+      "detect_mass": 0.9594725370407104,
+      "identify_correct": 0.5038695335388184,
+      "identify_mass": 0.9977361559867859,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "fear",
+      "fraction": 0.005,
+      "detect_yes": 0.06008630618453026,
+      "detect_mass": 0.9610666632652283,
+      "identify_correct": 0.5045597553253174,
+      "identify_mass": 0.9978607296943665,
+      "usable": true,
+      "meta": {
+        "alpha": 0.16932132720947266,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "fear",
+      "fraction": 0.01,
+      "detect_yes": 0.06008629500865936,
+      "detect_mass": 0.9635396003723145,
+      "identify_correct": 0.5019553899765015,
+      "identify_mass": 0.9978939294815063,
+      "usable": true,
+      "meta": {
+        "alpha": 0.3386426544189453,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "fear",
+      "fraction": 0.02,
+      "detect_yes": 0.05340298265218735,
+      "detect_mass": 0.9649972915649414,
+      "identify_correct": 0.5035300254821777,
+      "identify_mass": 0.9979192018508911,
+      "usable": true,
+      "meta": {
+        "alpha": 0.6772853088378906,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "fear",
+      "fraction": 0.04,
+      "detect_yes": 0.0311435554176569,
+      "detect_mass": 0.9794657230377197,
+      "identify_correct": 0.5025728344917297,
+      "identify_mass": 0.9988734126091003,
+      "usable": true,
+      "meta": {
+        "alpha": 1.3545706176757812,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "fear",
+      "fraction": 0.08,
+      "detect_yes": 0.010986548848450184,
+      "detect_mass": 0.9811435341835022,
+      "identify_correct": 0.5026083588600159,
+      "identify_mass": 0.998306930065155,
+      "usable": true,
+      "meta": {
+        "alpha": 2.7091412353515625,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.0,
+      "detect_yes": 0.0637146383523941,
+      "detect_mass": 0.9594725370407104,
+      "identify_correct": 0.4923672676086426,
+      "identify_mass": 0.9978941082954407,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.005,
+      "detect_yes": 0.06371459364891052,
+      "detect_mass": 0.9599233269691467,
+      "identify_correct": 0.4921959340572357,
+      "identify_mass": 0.9978864789009094,
+      "usable": true,
+      "meta": {
+        "alpha": 0.16932132720947266,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.01,
+      "detect_yes": 0.056652095168828964,
+      "detect_mass": 0.9638748168945312,
+      "identify_correct": 0.48901766538619995,
+      "identify_mass": 0.9978944063186646,
+      "usable": true,
+      "meta": {
+        "alpha": 0.3386426544189453,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.02,
+      "detect_yes": 0.053403064608573914,
+      "detect_mass": 0.9657700657844543,
+      "identify_correct": 0.49107328057289124,
+      "identify_mass": 0.998161792755127,
+      "usable": true,
+      "meta": {
+        "alpha": 0.6772853088378906,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.04,
+      "detect_yes": 0.04208763316273689,
+      "detect_mass": 0.9652397632598877,
+      "identify_correct": 0.4967966675758362,
+      "identify_mass": 0.9987306594848633,
+      "usable": true,
+      "meta": {
+        "alpha": 1.3545706176757812,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.08,
+      "detect_yes": 0.027585051953792572,
+      "detect_mass": 0.9002882838249207,
+      "identify_correct": 0.5059958696365356,
+      "identify_mass": 0.997974693775177,
+      "usable": true,
+      "meta": {
+        "alpha": 2.7091412353515625,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "flight",
+      "fraction": 0.0,
+      "detect_yes": 0.0637146383523941,
+      "detect_mass": 0.9594725370407104,
+      "identify_correct": 0.5414949655532837,
+      "identify_mass": 0.9984868764877319,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "flight",
+      "fraction": 0.005,
+      "detect_yes": 0.0715908333659172,
+      "detect_mass": 0.9620863199234009,
+      "identify_correct": 0.5396358370780945,
+      "identify_mass": 0.9986251592636108,
+      "usable": true,
+      "meta": {
+        "alpha": 0.16932132720947266,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "flight",
+      "fraction": 0.01,
+      "detect_yes": 0.07585784047842026,
+      "detect_mass": 0.9647648930549622,
+      "identify_correct": 0.5445448160171509,
+      "identify_mass": 0.9986899495124817,
+      "usable": true,
+      "meta": {
+        "alpha": 0.3386426544189453,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "flight",
+      "fraction": 0.02,
+      "detect_yes": 0.09009268879890442,
+      "detect_mass": 0.9653478860855103,
+      "identify_correct": 0.5413335561752319,
+      "identify_mass": 0.9986811876296997,
+      "usable": true,
+      "meta": {
+        "alpha": 0.6772853088378906,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "flight",
+      "fraction": 0.04,
+      "detect_yes": 0.10669050365686417,
+      "detect_mass": 0.9701831936836243,
+      "identify_correct": 0.5451285243034363,
+      "identify_mass": 0.9993849992752075,
+      "usable": true,
+      "meta": {
+        "alpha": 1.3545706176757812,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "concept": "flight",
+      "fraction": 0.08,
+      "detect_yes": 0.16451631486415863,
+      "detect_mass": 0.9605869054794312,
+      "identify_correct": 0.5656574964523315,
+      "identify_mass": 0.9995662569999695,
+      "usable": true,
+      "meta": {
+        "alpha": 2.7091412353515625,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    }
+  ],
+  "headline": {
+    "fraction": 0.08,
+    "tp": 0.10734578703219692,
+    "fp": 0.0637146383523941,
+    "identify": 0.5182061625851525,
+    "n_usable": 18
+  }
+}

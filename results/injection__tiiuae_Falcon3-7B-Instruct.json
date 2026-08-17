@@ -1,0 +1,2192 @@
+{
+  "false_positive_rate": 0.5467372536659241,
+  "by_band": {
+    "early": {
+      "fp": 0.5467372536659241,
+      "tp": 0.4972864344716072,
+      "identify": 0.5441644181807835,
+      "n": 30
+    },
+    "middle": {
+      "fp": 0.5467372536659241,
+      "tp": 0.5900293231010437,
+      "identify": 0.5257924060026805,
+      "n": 30
+    },
+    "late": {
+      "fp": 0.5467372536659241,
+      "tp": 0.570526945590973,
+      "identify": 0.5127480606238047,
+      "n": 30
+    }
+  },
+  "cells": [
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.0,
+      "detect_yes": 0.5467372536659241,
+      "detect_mass": 0.9991039633750916,
+      "identify_correct": 0.25585830211639404,
+      "identify_mass": 0.9881359338760376,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          9
+        ],
+        "band_center": 0.241,
+        "band": "early"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.005,
+      "detect_yes": 0.5467372536659241,
+      "detect_mass": 0.9991649389266968,
+      "identify_correct": 0.27242550253868103,
+      "identify_mass": 0.9869329333305359,
+      "usable": true,
+      "meta": {
+        "alpha": 0.6409533691406251,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          9
+        ],
+        "band_center": 0.241,
+        "band": "early"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.01,
+      "detect_yes": 0.5467371940612793,
+      "detect_mass": 0.9991148710250854,
+      "identify_correct": 0.2863897681236267,
+      "identify_mass": 0.985340416431427,
+      "usable": true,
+      "meta": {
+        "alpha": 1.2819067382812501,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          9
+        ],
+        "band_center": 0.241,
+        "band": "early"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.02,
+      "detect_yes": 0.5312083959579468,
+      "detect_mass": 0.9991174340248108,
+      "identify_correct": 0.3254846930503845,
+      "identify_mass": 0.9811239242553711,
+      "usable": true,
+      "meta": {
+        "alpha": 2.5638134765625002,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          9
+        ],
+        "band_center": 0.241,
+        "band": "early"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.04,
+      "detect_yes": 0.5467370748519897,
+      "detect_mass": 0.9991097450256348,
+      "identify_correct": 0.41150274872779846,
+      "identify_mass": 0.9713425636291504,
+      "usable": true,
+      "meta": {
+        "alpha": 5.1276269531250005,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          9
+        ],
+        "band_center": 0.241,
+        "band": "early"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.08,
+      "detect_yes": 0.4073324501514435,
+      "detect_mass": 0.9986233711242676,
+      "identify_correct": 0.5280330181121826,
+      "identify_mass": 0.9283537864685059,
+      "usable": true,
+      "meta": {
+        "alpha": 10.255253906250001,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          9
+        ],
+        "band_center": 0.241,
+        "band": "early"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.0,
+      "detect_yes": 0.5467372536659241,
+      "detect_mass": 0.9991039633750916,
+      "identify_correct": 0.7997846603393555,
+      "identify_mass": 0.9954970479011536,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          9
+        ],
+        "band_center": 0.241,
+        "band": "early"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.005,
+      "detect_yes": 0.5312083959579468,
+      "detect_mass": 0.9990972280502319,
+      "identify_correct": 0.8091179132461548,
+      "identify_mass": 0.9953429102897644,
+      "usable": true,
+      "meta": {
+        "alpha": 0.6409533691406251,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          9
+        ],
+        "band_center": 0.241,
+        "band": "early"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.01,
+      "detect_yes": 0.546737015247345,
+      "detect_mass": 0.9990240931510925,
+      "identify_correct": 0.8277265429496765,
+      "identify_mass": 0.9952133297920227,
+      "usable": true,
+      "meta": {
+        "alpha": 1.2819067382812501,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          9
+        ],
+        "band_center": 0.241,
+        "band": "early"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.02,
+      "detect_yes": 0.546737015247345,
+      "detect_mass": 0.9988561868667603,
+      "identify_correct": 0.8559890985488892,
+      "identify_mass": 0.9946494102478027,
+      "usable": true,
+      "meta": {
+        "alpha": 2.5638134765625002,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          9
+        ],
+        "band_center": 0.241,
+        "band": "early"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.04,
+      "detect_yes": 0.577494204044342,
+      "detect_mass": 0.9987454414367676,
+      "identify_correct": 0.9078624844551086,
+      "identify_mass": 0.9933586120605469,
+      "usable": true,
+      "meta": {
+        "alpha": 5.1276269531250005,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          9
+        ],
+        "band_center": 0.241,
+        "band": "early"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.08,
+      "detect_yes": 0.6224582195281982,
+      "detect_mass": 0.99874347448349,
+      "identify_correct": 0.9551035165786743,
+      "identify_mass": 0.9939964413642883,
+      "usable": true,
+      "meta": {
+        "alpha": 10.255253906250001,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          9
+        ],
+        "band_center": 0.241,
+        "band": "early"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "music",
+      "fraction": 0.0,
+      "detect_yes": 0.5467372536659241,
+      "detect_mass": 0.9991039633750916,
+      "identify_correct": 0.38087013363838196,
+      "identify_mass": 0.9899666905403137,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          9
+        ],
+        "band_center": 0.241,
+        "band": "early"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "music",
+      "fraction": 0.005,
+      "detect_yes": 0.5467372536659241,
+      "detect_mass": 0.9991113543510437,
+      "identify_correct": 0.3870834410190582,
+      "identify_mass": 0.989395022392273,
+      "usable": true,
+      "meta": {
+        "alpha": 0.6409533691406251,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          9
+        ],
+        "band_center": 0.241,
+        "band": "early"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "music",
+      "fraction": 0.01,
+      "detect_yes": 0.5774943232536316,
+      "detect_mass": 0.9990629553794861,
+      "identify_correct": 0.3923618197441101,
+      "identify_mass": 0.9882036447525024,
+      "usable": true,
+      "meta": {
+        "alpha": 1.2819067382812501,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          9
+        ],
+        "band_center": 0.241,
+        "band": "early"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "music",
+      "fraction": 0.02,
+      "detect_yes": 0.5621755123138428,
+      "detect_mass": 0.9990100264549255,
+      "identify_correct": 0.40174636244773865,
+      "identify_mass": 0.9860142469406128,
+      "usable": true,
+      "meta": {
+        "alpha": 2.5638134765625002,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          9
+        ],
+        "band_center": 0.241,
+        "band": "early"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "music",
+      "fraction": 0.04,
+      "detect_yes": 0.5467371940612793,
+      "detect_mass": 0.9989730715751648,
+      "identify_correct": 0.41968145966529846,
+      "identify_mass": 0.9812663793563843,
+      "usable": true,
+      "meta": {
+        "alpha": 5.1276269531250005,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          9
+        ],
+        "band_center": 0.241,
+        "band": "early"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "music",
+      "fraction": 0.08,
+      "detect_yes": 0.3923359811306,
+      "detect_mass": 0.9985774755477905,
+      "identify_correct": 0.4655621647834778,
+      "identify_mass": 0.9773109555244446,
+      "usable": true,
+      "meta": {
+        "alpha": 10.255253906250001,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          9
+        ],
+        "band_center": 0.241,
+        "band": "early"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "fear",
+      "fraction": 0.0,
+      "detect_yes": 0.5467372536659241,
+      "detect_mass": 0.9991039633750916,
+      "identify_correct": 0.6209985613822937,
+      "identify_mass": 0.9759909510612488,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          9
+        ],
+        "band_center": 0.241,
+        "band": "early"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "fear",
+      "fraction": 0.005,
+      "detect_yes": 0.5156188011169434,
+      "detect_mass": 0.999066948890686,
+      "identify_correct": 0.6272298097610474,
+      "identify_mass": 0.9756625890731812,
+      "usable": true,
+      "meta": {
+        "alpha": 0.6409533691406251,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          9
+        ],
+        "band_center": 0.241,
+        "band": "early"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "fear",
+      "fraction": 0.01,
+      "detect_yes": 0.5156189203262329,
+      "detect_mass": 0.9990979433059692,
+      "identify_correct": 0.6293128728866577,
+      "identify_mass": 0.9748433828353882,
+      "usable": true,
+      "meta": {
+        "alpha": 1.2819067382812501,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          9
+        ],
+        "band_center": 0.241,
+        "band": "early"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "fear",
+      "fraction": 0.02,
+      "detect_yes": 0.46878963708877563,
+      "detect_mass": 0.9991058707237244,
+      "identify_correct": 0.6327912211418152,
+      "identify_mass": 0.972644031047821,
+      "usable": true,
+      "meta": {
+        "alpha": 2.5638134765625002,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          9
+        ],
+        "band_center": 0.241,
+        "band": "early"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "fear",
+      "fraction": 0.04,
+      "detect_yes": 0.36296847462654114,
+      "detect_mass": 0.9990946650505066,
+      "identify_correct": 0.6451000571250916,
+      "identify_mass": 0.9705294370651245,
+      "usable": true,
+      "meta": {
+        "alpha": 5.1276269531250005,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          9
+        ],
+        "band_center": 0.241,
+        "band": "early"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "fear",
+      "fraction": 0.08,
+      "detect_yes": 0.15610454976558685,
+      "detect_mass": 0.9988829493522644,
+      "identify_correct": 0.6925851106643677,
+      "identify_mass": 0.9718979001045227,
+      "usable": true,
+      "meta": {
+        "alpha": 10.255253906250001,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          9
+        ],
+        "band_center": 0.241,
+        "band": "early"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.0,
+      "detect_yes": 0.5467372536659241,
+      "detect_mass": 0.9991039633750916,
+      "identify_correct": 0.5082714557647705,
+      "identify_mass": 0.9894200563430786,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          9
+        ],
+        "band_center": 0.241,
+        "band": "early"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.005,
+      "detect_yes": 0.5156189799308777,
+      "detect_mass": 0.9991075396537781,
+      "identify_correct": 0.5084909200668335,
+      "identify_mass": 0.9900913238525391,
+      "usable": true,
+      "meta": {
+        "alpha": 0.6409533691406251,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          9
+        ],
+        "band_center": 0.241,
+        "band": "early"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.01,
+      "detect_yes": 0.49999892711639404,
+      "detect_mass": 0.9990860223770142,
+      "identify_correct": 0.5146624445915222,
+      "identify_mass": 0.9902439117431641,
+      "usable": true,
+      "meta": {
+        "alpha": 1.2819067382812501,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          9
+        ],
+        "band_center": 0.241,
+        "band": "early"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.02,
+      "detect_yes": 0.45326077938079834,
+      "detect_mass": 0.9990755915641785,
+      "identify_correct": 0.5111989378929138,
+      "identify_mass": 0.9897727966308594,
+      "usable": true,
+      "meta": {
+        "alpha": 2.5638134765625002,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          9
+        ],
+        "band_center": 0.241,
+        "band": "early"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.04,
+      "detect_yes": 0.3923358917236328,
+      "detect_mass": 0.9990589022636414,
+      "identify_correct": 0.5155153274536133,
+      "identify_mass": 0.990033745765686,
+      "usable": true,
+      "meta": {
+        "alpha": 5.1276269531250005,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          9
+        ],
+        "band_center": 0.241,
+        "band": "early"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.08,
+      "detect_yes": 0.30735695362091064,
+      "detect_mass": 0.9991703629493713,
+      "identify_correct": 0.5085188746452332,
+      "identify_mass": 0.9916324615478516,
+      "usable": true,
+      "meta": {
+        "alpha": 10.255253906250001,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          9
+        ],
+        "band_center": 0.241,
+        "band": "early"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "flight",
+      "fraction": 0.0,
+      "detect_yes": 0.5467372536659241,
+      "detect_mass": 0.9991039633750916,
+      "identify_correct": 0.4342167377471924,
+      "identify_mass": 0.9890556335449219,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          9
+        ],
+        "band_center": 0.241,
+        "band": "early"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "flight",
+      "fraction": 0.005,
+      "detect_yes": 0.5467371940612793,
+      "detect_mass": 0.9991455078125,
+      "identify_correct": 0.4393647313117981,
+      "identify_mass": 0.9882411956787109,
+      "usable": true,
+      "meta": {
+        "alpha": 0.6409533691406251,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          9
+        ],
+        "band_center": 0.241,
+        "band": "early"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "flight",
+      "fraction": 0.01,
+      "detect_yes": 0.5621755123138428,
+      "detect_mass": 0.9991852045059204,
+      "identify_correct": 0.4472602307796478,
+      "identify_mass": 0.9866864085197449,
+      "usable": true,
+      "meta": {
+        "alpha": 1.2819067382812501,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          9
+        ],
+        "band_center": 0.241,
+        "band": "early"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "flight",
+      "fraction": 0.02,
+      "detect_yes": 0.5621755123138428,
+      "detect_mass": 0.9991627931594849,
+      "identify_correct": 0.44939374923706055,
+      "identify_mass": 0.9839761853218079,
+      "usable": true,
+      "meta": {
+        "alpha": 2.5638134765625002,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          9
+        ],
+        "band_center": 0.241,
+        "band": "early"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "flight",
+      "fraction": 0.04,
+      "detect_yes": 0.5621755719184875,
+      "detect_mass": 0.9991374015808105,
+      "identify_correct": 0.46197882294654846,
+      "identify_mass": 0.9754805564880371,
+      "usable": true,
+      "meta": {
+        "alpha": 5.1276269531250005,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          9
+        ],
+        "band_center": 0.241,
+        "band": "early"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "flight",
+      "fraction": 0.08,
+      "detect_yes": 0.46878984570503235,
+      "detect_mass": 0.998733639717102,
+      "identify_correct": 0.4954589009284973,
+      "identify_mass": 0.9435250163078308,
+      "usable": true,
+      "meta": {
+        "alpha": 10.255253906250001,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          9
+        ],
+        "band_center": 0.241,
+        "band": "early"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.0,
+      "detect_yes": 0.5467372536659241,
+      "detect_mass": 0.9991039633750916,
+      "identify_correct": 0.25585830211639404,
+      "identify_mass": 0.9881359338760376,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          11,
+          16
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.005,
+      "detect_yes": 0.5467371940612793,
+      "detect_mass": 0.9991300702095032,
+      "identify_correct": 0.2642183005809784,
+      "identify_mass": 0.9862931966781616,
+      "usable": true,
+      "meta": {
+        "alpha": 0.8184165954589844,
+        "n_pairings": 5,
+        "layers": [
+          11,
+          16
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.01,
+      "detect_yes": 0.5926655530929565,
+      "detect_mass": 0.9990914463996887,
+      "identify_correct": 0.2702733278274536,
+      "identify_mass": 0.9837105870246887,
+      "usable": true,
+      "meta": {
+        "alpha": 1.6368331909179688,
+        "n_pairings": 5,
+        "layers": [
+          11,
+          16
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.02,
+      "detect_yes": 0.6224582195281982,
+      "detect_mass": 0.998843252658844,
+      "identify_correct": 0.28322872519493103,
+      "identify_mass": 0.9782501459121704,
+      "usable": true,
+      "meta": {
+        "alpha": 3.2736663818359375,
+        "n_pairings": 5,
+        "layers": [
+          11,
+          16
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.04,
+      "detect_yes": 0.6791775226593018,
+      "detect_mass": 0.9982180595397949,
+      "identify_correct": 0.31594035029411316,
+      "identify_mass": 0.9622620344161987,
+      "usable": true,
+      "meta": {
+        "alpha": 6.547332763671875,
+        "n_pairings": 5,
+        "layers": [
+          11,
+          16
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.08,
+      "detect_yes": 0.7549129724502563,
+      "detect_mass": 0.9933271408081055,
+      "identify_correct": 0.4293011724948883,
+      "identify_mass": 0.9422122836112976,
+      "usable": true,
+      "meta": {
+        "alpha": 13.09466552734375,
+        "n_pairings": 5,
+        "layers": [
+          11,
+          16
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.0,
+      "detect_yes": 0.5467372536659241,
+      "detect_mass": 0.9991039633750916,
+      "identify_correct": 0.7997846603393555,
+      "identify_mass": 0.9954970479011536,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          11,
+          16
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.005,
+      "detect_yes": 0.5467370748519897,
+      "detect_mass": 0.9991392493247986,
+      "identify_correct": 0.7994722723960876,
+      "identify_mass": 0.9956413507461548,
+      "usable": true,
+      "meta": {
+        "alpha": 0.8184165954589844,
+        "n_pairings": 5,
+        "layers": [
+          11,
+          16
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.01,
+      "detect_yes": 0.5467372536659241,
+      "detect_mass": 0.9990753531455994,
+      "identify_correct": 0.8016554713249207,
+      "identify_mass": 0.9957048296928406,
+      "usable": true,
+      "meta": {
+        "alpha": 1.6368331909179688,
+        "n_pairings": 5,
+        "layers": [
+          11,
+          16
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.02,
+      "detect_yes": 0.5621755719184875,
+      "detect_mass": 0.9990331530570984,
+      "identify_correct": 0.800416111946106,
+      "identify_mass": 0.9959572553634644,
+      "usable": true,
+      "meta": {
+        "alpha": 3.2736663818359375,
+        "n_pairings": 5,
+        "layers": [
+          11,
+          16
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.04,
+      "detect_yes": 0.5774946212768555,
+      "detect_mass": 0.9990728497505188,
+      "identify_correct": 0.8035440444946289,
+      "identify_mass": 0.9959705471992493,
+      "usable": true,
+      "meta": {
+        "alpha": 6.547332763671875,
+        "n_pairings": 5,
+        "layers": [
+          11,
+          16
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.08,
+      "detect_yes": 0.6370302438735962,
+      "detect_mass": 0.9984498023986816,
+      "identify_correct": 0.7833266854286194,
+      "identify_mass": 0.9959603548049927,
+      "usable": true,
+      "meta": {
+        "alpha": 13.09466552734375,
+        "n_pairings": 5,
+        "layers": [
+          11,
+          16
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "music",
+      "fraction": 0.0,
+      "detect_yes": 0.5467372536659241,
+      "detect_mass": 0.9991039633750916,
+      "identify_correct": 0.38087013363838196,
+      "identify_mass": 0.9899666905403137,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          11,
+          16
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "music",
+      "fraction": 0.005,
+      "detect_yes": 0.5467371940612793,
+      "detect_mass": 0.9991086721420288,
+      "identify_correct": 0.38017216324806213,
+      "identify_mass": 0.9906169176101685,
+      "usable": true,
+      "meta": {
+        "alpha": 0.8184165954589844,
+        "n_pairings": 5,
+        "layers": [
+          11,
+          16
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "music",
+      "fraction": 0.01,
+      "detect_yes": 0.5621755719184875,
+      "detect_mass": 0.9990843534469604,
+      "identify_correct": 0.3808166980743408,
+      "identify_mass": 0.9912126660346985,
+      "usable": true,
+      "meta": {
+        "alpha": 1.6368331909179688,
+        "n_pairings": 5,
+        "layers": [
+          11,
+          16
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "music",
+      "fraction": 0.02,
+      "detect_yes": 0.5467371940612793,
+      "detect_mass": 0.9990666508674622,
+      "identify_correct": 0.3765314519405365,
+      "identify_mass": 0.9922806024551392,
+      "usable": true,
+      "meta": {
+        "alpha": 3.2736663818359375,
+        "n_pairings": 5,
+        "layers": [
+          11,
+          16
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "music",
+      "fraction": 0.04,
+      "detect_yes": 0.5774944424629211,
+      "detect_mass": 0.998909592628479,
+      "identify_correct": 0.37583890557289124,
+      "identify_mass": 0.9942699670791626,
+      "usable": true,
+      "meta": {
+        "alpha": 6.547332763671875,
+        "n_pairings": 5,
+        "layers": [
+          11,
+          16
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "music",
+      "fraction": 0.08,
+      "detect_yes": 0.5621749758720398,
+      "detect_mass": 0.9974302649497986,
+      "identify_correct": 0.3716687560081482,
+      "identify_mass": 0.9945452809333801,
+      "usable": true,
+      "meta": {
+        "alpha": 13.09466552734375,
+        "n_pairings": 5,
+        "layers": [
+          11,
+          16
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "fear",
+      "fraction": 0.0,
+      "detect_yes": 0.5467372536659241,
+      "detect_mass": 0.9991039633750916,
+      "identify_correct": 0.6209985613822937,
+      "identify_mass": 0.9759909510612488,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          11,
+          16
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "fear",
+      "fraction": 0.005,
+      "detect_yes": 0.562175452709198,
+      "detect_mass": 0.9991394877433777,
+      "identify_correct": 0.6232463121414185,
+      "identify_mass": 0.9783018827438354,
+      "usable": true,
+      "meta": {
+        "alpha": 0.8184165954589844,
+        "n_pairings": 5,
+        "layers": [
+          11,
+          16
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "fear",
+      "fraction": 0.01,
+      "detect_yes": 0.5621753931045532,
+      "detect_mass": 0.9991206526756287,
+      "identify_correct": 0.6323373913764954,
+      "identify_mass": 0.9800741076469421,
+      "usable": true,
+      "meta": {
+        "alpha": 1.6368331909179688,
+        "n_pairings": 5,
+        "layers": [
+          11,
+          16
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "fear",
+      "fraction": 0.02,
+      "detect_yes": 0.5926653742790222,
+      "detect_mass": 0.9991510510444641,
+      "identify_correct": 0.6415795087814331,
+      "identify_mass": 0.9838764071464539,
+      "usable": true,
+      "meta": {
+        "alpha": 3.2736663818359375,
+        "n_pairings": 5,
+        "layers": [
+          11,
+          16
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "fear",
+      "fraction": 0.04,
+      "detect_yes": 0.6513534784317017,
+      "detect_mass": 0.9991117715835571,
+      "identify_correct": 0.6712146997451782,
+      "identify_mass": 0.9895760416984558,
+      "usable": true,
+      "meta": {
+        "alpha": 6.547332763671875,
+        "n_pairings": 5,
+        "layers": [
+          11,
+          16
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "fear",
+      "fraction": 0.08,
+      "detect_yes": 0.7662922143936157,
+      "detect_mass": 0.9985050559043884,
+      "identify_correct": 0.7333184480667114,
+      "identify_mass": 0.9877966642379761,
+      "usable": true,
+      "meta": {
+        "alpha": 13.09466552734375,
+        "n_pairings": 5,
+        "layers": [
+          11,
+          16
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.0,
+      "detect_yes": 0.5467372536659241,
+      "detect_mass": 0.9991039633750916,
+      "identify_correct": 0.5082714557647705,
+      "identify_mass": 0.9894200563430786,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          11,
+          16
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.005,
+      "detect_yes": 0.5467371940612793,
+      "detect_mass": 0.9991405010223389,
+      "identify_correct": 0.508602499961853,
+      "identify_mass": 0.9907509684562683,
+      "usable": true,
+      "meta": {
+        "alpha": 0.8184165954589844,
+        "n_pairings": 5,
+        "layers": [
+          11,
+          16
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.01,
+      "detect_yes": 0.5621753334999084,
+      "detect_mass": 0.9991784691810608,
+      "identify_correct": 0.5108480453491211,
+      "identify_mass": 0.9922847747802734,
+      "usable": true,
+      "meta": {
+        "alpha": 1.6368331909179688,
+        "n_pairings": 5,
+        "layers": [
+          11,
+          16
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.02,
+      "detect_yes": 0.5774941444396973,
+      "detect_mass": 0.9991716742515564,
+      "identify_correct": 0.524408221244812,
+      "identify_mass": 0.993560791015625,
+      "usable": true,
+      "meta": {
+        "alpha": 3.2736663818359375,
+        "n_pairings": 5,
+        "layers": [
+          11,
+          16
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.04,
+      "detect_yes": 0.607661783695221,
+      "detect_mass": 0.9991065263748169,
+      "identify_correct": 0.54252690076828,
+      "identify_mass": 0.9950987100601196,
+      "usable": true,
+      "meta": {
+        "alpha": 6.547332763671875,
+        "n_pairings": 5,
+        "layers": [
+          11,
+          16
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.08,
+      "detect_yes": 0.6926385164260864,
+      "detect_mass": 0.9975222945213318,
+      "identify_correct": 0.5871589779853821,
+      "identify_mass": 0.9922206997871399,
+      "usable": true,
+      "meta": {
+        "alpha": 13.09466552734375,
+        "n_pairings": 5,
+        "layers": [
+          11,
+          16
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "flight",
+      "fraction": 0.0,
+      "detect_yes": 0.5467372536659241,
+      "detect_mass": 0.9991039633750916,
+      "identify_correct": 0.4342167377471924,
+      "identify_mass": 0.9890556335449219,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          11,
+          16
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "flight",
+      "fraction": 0.005,
+      "detect_yes": 0.5467371940612793,
+      "detect_mass": 0.9991425275802612,
+      "identify_correct": 0.438433974981308,
+      "identify_mass": 0.989255428314209,
+      "usable": true,
+      "meta": {
+        "alpha": 0.8184165954589844,
+        "n_pairings": 5,
+        "layers": [
+          11,
+          16
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "flight",
+      "fraction": 0.01,
+      "detect_yes": 0.5312082767486572,
+      "detect_mass": 0.9990761876106262,
+      "identify_correct": 0.4454197883605957,
+      "identify_mass": 0.9888190031051636,
+      "usable": true,
+      "meta": {
+        "alpha": 1.6368331909179688,
+        "n_pairings": 5,
+        "layers": [
+          11,
+          16
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "flight",
+      "fraction": 0.02,
+      "detect_yes": 0.5621753334999084,
+      "detect_mass": 0.9990646839141846,
+      "identify_correct": 0.4600740075111389,
+      "identify_mass": 0.9896737933158875,
+      "usable": true,
+      "meta": {
+        "alpha": 3.2736663818359375,
+        "n_pairings": 5,
+        "layers": [
+          11,
+          16
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "flight",
+      "fraction": 0.04,
+      "detect_yes": 0.5467368364334106,
+      "detect_mass": 0.9987534284591675,
+      "identify_correct": 0.49010252952575684,
+      "identify_mass": 0.990774929523468,
+      "usable": true,
+      "meta": {
+        "alpha": 6.547332763671875,
+        "n_pairings": 5,
+        "layers": [
+          11,
+          16
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "flight",
+      "fraction": 0.08,
+      "detect_yes": 0.5312075614929199,
+      "detect_mass": 0.9973598122596741,
+      "identify_correct": 0.5280964374542236,
+      "identify_mass": 0.9875622987747192,
+      "usable": true,
+      "meta": {
+        "alpha": 13.09466552734375,
+        "n_pairings": 5,
+        "layers": [
+          11,
+          16
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.0,
+      "detect_yes": 0.5467372536659241,
+      "detect_mass": 0.9991039633750916,
+      "identify_correct": 0.25585830211639404,
+      "identify_mass": 0.9881359338760376,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          18,
+          23
+        ],
+        "band_center": 0.759,
+        "band": "late"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.005,
+      "detect_yes": 0.5621755123138428,
+      "detect_mass": 0.999091386795044,
+      "identify_correct": 0.257314532995224,
+      "identify_mass": 0.9878413081169128,
+      "usable": true,
+      "meta": {
+        "alpha": 1.7119895935058593,
+        "n_pairings": 5,
+        "layers": [
+          18,
+          23
+        ],
+        "band_center": 0.759,
+        "band": "late"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.01,
+      "detect_yes": 0.5621755123138428,
+      "detect_mass": 0.9990564584732056,
+      "identify_correct": 0.2610642611980438,
+      "identify_mass": 0.9873528480529785,
+      "usable": true,
+      "meta": {
+        "alpha": 3.4239791870117187,
+        "n_pairings": 5,
+        "layers": [
+          18,
+          23
+        ],
+        "band_center": 0.759,
+        "band": "late"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.02,
+      "detect_yes": 0.5926655530929565,
+      "detect_mass": 0.99889075756073,
+      "identify_correct": 0.2586607336997986,
+      "identify_mass": 0.9853339195251465,
+      "usable": true,
+      "meta": {
+        "alpha": 6.847958374023437,
+        "n_pairings": 5,
+        "layers": [
+          18,
+          23
+        ],
+        "band_center": 0.759,
+        "band": "late"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.04,
+      "detect_yes": 0.6224580407142639,
+      "detect_mass": 0.9980918169021606,
+      "identify_correct": 0.2600803077220917,
+      "identify_mass": 0.9811707735061646,
+      "usable": true,
+      "meta": {
+        "alpha": 13.695916748046875,
+        "n_pairings": 5,
+        "layers": [
+          18,
+          23
+        ],
+        "band_center": 0.759,
+        "band": "late"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "ocean",
+      "fraction": 0.08,
+      "detect_yes": 0.6654077768325806,
+      "detect_mass": 0.9896314144134521,
+      "identify_correct": 0.26569661498069763,
+      "identify_mass": 0.967613697052002,
+      "usable": true,
+      "meta": {
+        "alpha": 27.39183349609375,
+        "n_pairings": 5,
+        "layers": [
+          18,
+          23
+        ],
+        "band_center": 0.759,
+        "band": "late"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.0,
+      "detect_yes": 0.5467372536659241,
+      "detect_mass": 0.9991039633750916,
+      "identify_correct": 0.7997846603393555,
+      "identify_mass": 0.9954970479011536,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          18,
+          23
+        ],
+        "band_center": 0.759,
+        "band": "late"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.005,
+      "detect_yes": 0.5621756315231323,
+      "detect_mass": 0.9991804957389832,
+      "identify_correct": 0.7948065996170044,
+      "identify_mass": 0.9956440925598145,
+      "usable": true,
+      "meta": {
+        "alpha": 1.7119895935058593,
+        "n_pairings": 5,
+        "layers": [
+          18,
+          23
+        ],
+        "band_center": 0.759,
+        "band": "late"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.01,
+      "detect_yes": 0.5621755123138428,
+      "detect_mass": 0.9991468191146851,
+      "identify_correct": 0.7945557832717896,
+      "identify_mass": 0.9957607984542847,
+      "usable": true,
+      "meta": {
+        "alpha": 3.4239791870117187,
+        "n_pairings": 5,
+        "layers": [
+          18,
+          23
+        ],
+        "band_center": 0.759,
+        "band": "late"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.02,
+      "detect_yes": 0.5774944424629211,
+      "detect_mass": 0.9992032051086426,
+      "identify_correct": 0.7925101518630981,
+      "identify_mass": 0.9956766963005066,
+      "usable": true,
+      "meta": {
+        "alpha": 6.847958374023437,
+        "n_pairings": 5,
+        "layers": [
+          18,
+          23
+        ],
+        "band_center": 0.759,
+        "band": "late"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.04,
+      "detect_yes": 0.5926655530929565,
+      "detect_mass": 0.9990168809890747,
+      "identify_correct": 0.7807290554046631,
+      "identify_mass": 0.9939185976982117,
+      "usable": true,
+      "meta": {
+        "alpha": 13.695916748046875,
+        "n_pairings": 5,
+        "layers": [
+          18,
+          23
+        ],
+        "band_center": 0.759,
+        "band": "late"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "mathematics",
+      "fraction": 0.08,
+      "detect_yes": 0.6297735571861267,
+      "detect_mass": 0.997512936592102,
+      "identify_correct": 0.7596853971481323,
+      "identify_mass": 0.9731463193893433,
+      "usable": true,
+      "meta": {
+        "alpha": 27.39183349609375,
+        "n_pairings": 5,
+        "layers": [
+          18,
+          23
+        ],
+        "band_center": 0.759,
+        "band": "late"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "music",
+      "fraction": 0.0,
+      "detect_yes": 0.5467372536659241,
+      "detect_mass": 0.9991039633750916,
+      "identify_correct": 0.38087013363838196,
+      "identify_mass": 0.9899666905403137,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          18,
+          23
+        ],
+        "band_center": 0.759,
+        "band": "late"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "music",
+      "fraction": 0.005,
+      "detect_yes": 0.5467370748519897,
+      "detect_mass": 0.9991269111633301,
+      "identify_correct": 0.3791816532611847,
+      "identify_mass": 0.9904573559761047,
+      "usable": true,
+      "meta": {
+        "alpha": 1.7119895935058593,
+        "n_pairings": 5,
+        "layers": [
+          18,
+          23
+        ],
+        "band_center": 0.759,
+        "band": "late"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "music",
+      "fraction": 0.01,
+      "detect_yes": 0.5621753334999084,
+      "detect_mass": 0.9990164637565613,
+      "identify_correct": 0.3839300274848938,
+      "identify_mass": 0.9900428652763367,
+      "usable": true,
+      "meta": {
+        "alpha": 3.4239791870117187,
+        "n_pairings": 5,
+        "layers": [
+          18,
+          23
+        ],
+        "band_center": 0.759,
+        "band": "late"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "music",
+      "fraction": 0.02,
+      "detect_yes": 0.5467368960380554,
+      "detect_mass": 0.9987999200820923,
+      "identify_correct": 0.3866185247898102,
+      "identify_mass": 0.9891761541366577,
+      "usable": true,
+      "meta": {
+        "alpha": 6.847958374023437,
+        "n_pairings": 5,
+        "layers": [
+          18,
+          23
+        ],
+        "band_center": 0.759,
+        "band": "late"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "music",
+      "fraction": 0.04,
+      "detect_yes": 0.5467360019683838,
+      "detect_mass": 0.9977523684501648,
+      "identify_correct": 0.3927055895328522,
+      "identify_mass": 0.9855316281318665,
+      "usable": true,
+      "meta": {
+        "alpha": 13.695916748046875,
+        "n_pairings": 5,
+        "layers": [
+          18,
+          23
+        ],
+        "band_center": 0.759,
+        "band": "late"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "music",
+      "fraction": 0.08,
+      "detect_yes": 0.5544645190238953,
+      "detect_mass": 0.9905595779418945,
+      "identify_correct": 0.4038410782814026,
+      "identify_mass": 0.9686673283576965,
+      "usable": true,
+      "meta": {
+        "alpha": 27.39183349609375,
+        "n_pairings": 5,
+        "layers": [
+          18,
+          23
+        ],
+        "band_center": 0.759,
+        "band": "late"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "fear",
+      "fraction": 0.0,
+      "detect_yes": 0.5467372536659241,
+      "detect_mass": 0.9991039633750916,
+      "identify_correct": 0.6209985613822937,
+      "identify_mass": 0.9759909510612488,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          18,
+          23
+        ],
+        "band_center": 0.759,
+        "band": "late"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "fear",
+      "fraction": 0.005,
+      "detect_yes": 0.5467372536659241,
+      "detect_mass": 0.9992110133171082,
+      "identify_correct": 0.6269689202308655,
+      "identify_mass": 0.9741671681404114,
+      "usable": true,
+      "meta": {
+        "alpha": 1.7119895935058593,
+        "n_pairings": 5,
+        "layers": [
+          18,
+          23
+        ],
+        "band_center": 0.759,
+        "band": "late"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "fear",
+      "fraction": 0.01,
+      "detect_yes": 0.5467372536659241,
+      "detect_mass": 0.9992716908454895,
+      "identify_correct": 0.635485053062439,
+      "identify_mass": 0.9692546725273132,
+      "usable": true,
+      "meta": {
+        "alpha": 3.4239791870117187,
+        "n_pairings": 5,
+        "layers": [
+          18,
+          23
+        ],
+        "band_center": 0.759,
+        "band": "late"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "fear",
+      "fraction": 0.02,
+      "detect_yes": 0.5621756315231323,
+      "detect_mass": 0.9992756247520447,
+      "identify_correct": 0.6462339758872986,
+      "identify_mass": 0.9596768617630005,
+      "usable": true,
+      "meta": {
+        "alpha": 6.847958374023437,
+        "n_pairings": 5,
+        "layers": [
+          18,
+          23
+        ],
+        "band_center": 0.759,
+        "band": "late"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "fear",
+      "fraction": 0.04,
+      "detect_yes": 0.5774946808815002,
+      "detect_mass": 0.9992363452911377,
+      "identify_correct": 0.6660915613174438,
+      "identify_mass": 0.9381000399589539,
+      "usable": true,
+      "meta": {
+        "alpha": 13.695916748046875,
+        "n_pairings": 5,
+        "layers": [
+          18,
+          23
+        ],
+        "band_center": 0.759,
+        "band": "late"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "fear",
+      "fraction": 0.08,
+      "detect_yes": 0.6370299458503723,
+      "detect_mass": 0.9977080225944519,
+      "identify_correct": 0.7007721662521362,
+      "identify_mass": 0.8819293975830078,
+      "usable": true,
+      "meta": {
+        "alpha": 27.39183349609375,
+        "n_pairings": 5,
+        "layers": [
+          18,
+          23
+        ],
+        "band_center": 0.759,
+        "band": "late"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.0,
+      "detect_yes": 0.5467372536659241,
+      "detect_mass": 0.9991039633750916,
+      "identify_correct": 0.5082714557647705,
+      "identify_mass": 0.9894200563430786,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          18,
+          23
+        ],
+        "band_center": 0.759,
+        "band": "late"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.005,
+      "detect_yes": 0.5467371940612793,
+      "detect_mass": 0.9992365837097168,
+      "identify_correct": 0.5099654793739319,
+      "identify_mass": 0.9900997281074524,
+      "usable": true,
+      "meta": {
+        "alpha": 1.7119895935058593,
+        "n_pairings": 5,
+        "layers": [
+          18,
+          23
+        ],
+        "band_center": 0.759,
+        "band": "late"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.01,
+      "detect_yes": 0.5467372536659241,
+      "detect_mass": 0.9993093013763428,
+      "identify_correct": 0.5136215686798096,
+      "identify_mass": 0.9898309707641602,
+      "usable": true,
+      "meta": {
+        "alpha": 3.4239791870117187,
+        "n_pairings": 5,
+        "layers": [
+          18,
+          23
+        ],
+        "band_center": 0.759,
+        "band": "late"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.02,
+      "detect_yes": 0.5467373728752136,
+      "detect_mass": 0.9994370937347412,
+      "identify_correct": 0.5224853754043579,
+      "identify_mass": 0.9902308583259583,
+      "usable": true,
+      "meta": {
+        "alpha": 6.847958374023437,
+        "n_pairings": 5,
+        "layers": [
+          18,
+          23
+        ],
+        "band_center": 0.759,
+        "band": "late"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.04,
+      "detect_yes": 0.5621757507324219,
+      "detect_mass": 0.9995532035827637,
+      "identify_correct": 0.5526672601699829,
+      "identify_mass": 0.9906643033027649,
+      "usable": true,
+      "meta": {
+        "alpha": 13.695916748046875,
+        "n_pairings": 5,
+        "layers": [
+          18,
+          23
+        ],
+        "band_center": 0.759,
+        "band": "late"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "betrayal",
+      "fraction": 0.08,
+      "detect_yes": 0.5621758699417114,
+      "detect_mass": 0.9994328022003174,
+      "identify_correct": 0.5955195426940918,
+      "identify_mass": 0.9897711873054504,
+      "usable": true,
+      "meta": {
+        "alpha": 27.39183349609375,
+        "n_pairings": 5,
+        "layers": [
+          18,
+          23
+        ],
+        "band_center": 0.759,
+        "band": "late"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "flight",
+      "fraction": 0.0,
+      "detect_yes": 0.5467372536659241,
+      "detect_mass": 0.9991039633750916,
+      "identify_correct": 0.4342167377471924,
+      "identify_mass": 0.9890556335449219,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          18,
+          23
+        ],
+        "band_center": 0.759,
+        "band": "late"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "flight",
+      "fraction": 0.005,
+      "detect_yes": 0.5467372536659241,
+      "detect_mass": 0.9991750717163086,
+      "identify_correct": 0.44085630774497986,
+      "identify_mass": 0.9883820414543152,
+      "usable": true,
+      "meta": {
+        "alpha": 1.7119895935058593,
+        "n_pairings": 5,
+        "layers": [
+          18,
+          23
+        ],
+        "band_center": 0.759,
+        "band": "late"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "flight",
+      "fraction": 0.01,
+      "detect_yes": 0.5467372536659241,
+      "detect_mass": 0.9991790652275085,
+      "identify_correct": 0.43906229734420776,
+      "identify_mass": 0.987790584564209,
+      "usable": true,
+      "meta": {
+        "alpha": 3.4239791870117187,
+        "n_pairings": 5,
+        "layers": [
+          18,
+          23
+        ],
+        "band_center": 0.759,
+        "band": "late"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "flight",
+      "fraction": 0.02,
+      "detect_yes": 0.5467373728752136,
+      "detect_mass": 0.9991676211357117,
+      "identify_correct": 0.4412911534309387,
+      "identify_mass": 0.9859744310379028,
+      "usable": true,
+      "meta": {
+        "alpha": 6.847958374023437,
+        "n_pairings": 5,
+        "layers": [
+          18,
+          23
+        ],
+        "band_center": 0.759,
+        "band": "late"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "flight",
+      "fraction": 0.04,
+      "detect_yes": 0.5621756911277771,
+      "detect_mass": 0.998769223690033,
+      "identify_correct": 0.44882044196128845,
+      "identify_mass": 0.9827642440795898,
+      "usable": true,
+      "meta": {
+        "alpha": 13.695916748046875,
+        "n_pairings": 5,
+        "layers": [
+          18,
+          23
+        ],
+        "band_center": 0.759,
+        "band": "late"
+      }
+    },
+    {
+      "model": "tiiuae/Falcon3-7B-Instruct",
+      "concept": "flight",
+      "fraction": 0.08,
+      "detect_yes": 0.5926656723022461,
+      "detect_mass": 0.9953643083572388,
+      "identify_correct": 0.4712204039096832,
+      "identify_mass": 0.9769986867904663,
+      "usable": true,
+      "meta": {
+        "alpha": 27.39183349609375,
+        "n_pairings": 5,
+        "layers": [
+          18,
+          23
+        ],
+        "band_center": 0.759,
+        "band": "late"
+      }
+    }
+  ],
+  "headline": {
+    "fraction": 0.04,
+    "tp": 0.5606707119279437,
+    "fp": 0.5467372536659241,
+    "identify": 0.5367723637157016,
+    "n_usable": 18
+  }
+}

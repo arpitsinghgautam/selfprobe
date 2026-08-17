@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Model weights and HF cache — never commit
+*.safetensors
+*.bin
+*.gguf
+.cache/
+hf_cache/
+
+# Superseded pre-diagnostic run, kept locally as a backup only. The current
+# results/ supersede it; the differences are documented in report/audit_log.md.
+results_v0_pre_diagnostic/
+
+# Intermediate TTS clips. The assembled video/presentation.mp4 IS committed;
+# these regenerate from scripts/13_video.py.
+video/audio/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# results/ and figures/ ARE committed on purpose: the JSON is ~5MB and lets a
+# reader verify every number in the report without a GPU, and report/tables.md
+# is generated from it rather than transcribed by hand.

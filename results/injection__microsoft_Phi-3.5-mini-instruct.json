@@ -1,0 +1,2192 @@
+{
+  "false_positive_rate": 0.00033535013790242374,
+  "by_band": {
+    "early": {
+      "fp": 0.00033535013790242374,
+      "tp": 0.04991142531270361,
+      "identify": 0.5235773968199889,
+      "n": 30
+    },
+    "middle": {
+      "fp": 0.00033535013790242374,
+      "tp": 0.2967010498194819,
+      "identify": 0.5340700117250283,
+      "n": 30
+    },
+    "late": {
+      "fp": 0.00033535013790242374,
+      "tp": 0.034090671686217,
+      "identify": 0.4965314357702074,
+      "n": 29
+    }
+  },
+  "cells": [
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "ocean",
+      "fraction": 0.0,
+      "detect_yes": 0.00033535013790242374,
+      "detect_mass": 1.0,
+      "identify_correct": 0.0969361960887909,
+      "identify_mass": 0.9311448335647583,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "ocean",
+      "fraction": 0.005,
+      "detect_yes": 0.00033535013790242374,
+      "detect_mass": 1.0,
+      "identify_correct": 0.11128928512334824,
+      "identify_mass": 0.9600804448127747,
+      "usable": true,
+      "meta": {
+        "alpha": 0.14341581344604493,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "ocean",
+      "fraction": 0.01,
+      "detect_yes": 0.00033535013790242374,
+      "detect_mass": 0.9999998807907104,
+      "identify_correct": 0.1188843697309494,
+      "identify_mass": 0.9664468765258789,
+      "usable": true,
+      "meta": {
+        "alpha": 0.28683162689208985,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "ocean",
+      "fraction": 0.02,
+      "detect_yes": 0.00033535013790242374,
+      "detect_mass": 0.9999998807907104,
+      "identify_correct": 0.16675038635730743,
+      "identify_mass": 0.9956154823303223,
+      "usable": true,
+      "meta": {
+        "alpha": 0.5736632537841797,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "ocean",
+      "fraction": 0.04,
+      "detect_yes": 0.0005527794128283858,
+      "detect_mass": 0.9999997019767761,
+      "identify_correct": 0.19677647948265076,
+      "identify_mass": 0.9999085664749146,
+      "usable": true,
+      "meta": {
+        "alpha": 1.1473265075683594,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "ocean",
+      "fraction": 0.08,
+      "detect_yes": 0.017986226826906204,
+      "detect_mass": 0.9999949932098389,
+      "identify_correct": 0.18139907717704773,
+      "identify_mass": 0.9999933242797852,
+      "usable": true,
+      "meta": {
+        "alpha": 2.294653015136719,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "mathematics",
+      "fraction": 0.0,
+      "detect_yes": 0.00033535013790242374,
+      "detect_mass": 1.0,
+      "identify_correct": 0.7436519861221313,
+      "identify_mass": 0.9800189137458801,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "mathematics",
+      "fraction": 0.005,
+      "detect_yes": 0.00020342698553577065,
+      "detect_mass": 1.0,
+      "identify_correct": 0.7622007131576538,
+      "identify_mass": 0.9819852709770203,
+      "usable": true,
+      "meta": {
+        "alpha": 0.14341581344604493,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "mathematics",
+      "fraction": 0.01,
+      "detect_yes": 0.00020342698553577065,
+      "detect_mass": 1.0,
+      "identify_correct": 0.7731037139892578,
+      "identify_mass": 0.9891825914382935,
+      "usable": true,
+      "meta": {
+        "alpha": 0.28683162689208985,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "mathematics",
+      "fraction": 0.02,
+      "detect_yes": 0.00020342698553577065,
+      "detect_mass": 1.0,
+      "identify_correct": 0.7940464019775391,
+      "identify_mass": 0.9953712224960327,
+      "usable": true,
+      "meta": {
+        "alpha": 0.5736632537841797,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "mathematics",
+      "fraction": 0.04,
+      "detect_yes": 0.00407013762742281,
+      "detect_mass": 1.0,
+      "identify_correct": 0.7981756925582886,
+      "identify_mass": 0.9991134405136108,
+      "usable": true,
+      "meta": {
+        "alpha": 1.1473265075683594,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "mathematics",
+      "fraction": 0.08,
+      "detect_yes": 0.8175744414329529,
+      "detect_mass": 1.0,
+      "identify_correct": 0.785959780216217,
+      "identify_mass": 0.9999998807907104,
+      "usable": true,
+      "meta": {
+        "alpha": 2.294653015136719,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "music",
+      "fraction": 0.0,
+      "detect_yes": 0.00033535013790242374,
+      "detect_mass": 1.0,
+      "identify_correct": 0.6362125277519226,
+      "identify_mass": 0.9217408299446106,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "music",
+      "fraction": 0.005,
+      "detect_yes": 7.484622619813308e-05,
+      "detect_mass": 0.9999998807907104,
+      "identify_correct": 0.6211802959442139,
+      "identify_mass": 0.9379932284355164,
+      "usable": true,
+      "meta": {
+        "alpha": 0.14341581344604493,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "music",
+      "fraction": 0.01,
+      "detect_yes": 4.539786823443137e-05,
+      "detect_mass": 0.9999998807907104,
+      "identify_correct": 0.6377295255661011,
+      "identify_mass": 0.9685573577880859,
+      "usable": true,
+      "meta": {
+        "alpha": 0.28683162689208985,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "music",
+      "fraction": 0.02,
+      "detect_yes": 3.72665022041474e-06,
+      "detect_mass": 0.9999998807907104,
+      "identify_correct": 0.6255795359611511,
+      "identify_mass": 0.9841286540031433,
+      "usable": true,
+      "meta": {
+        "alpha": 0.5736632537841797,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "music",
+      "fraction": 0.04,
+      "detect_yes": 1.3709611721424153e-06,
+      "detect_mass": 0.9999993443489075,
+      "identify_correct": 0.6134989261627197,
+      "identify_mass": 0.9998371005058289,
+      "usable": true,
+      "meta": {
+        "alpha": 1.1473265075683594,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "music",
+      "fraction": 0.08,
+      "detect_yes": 0.07585817575454712,
+      "detect_mass": 0.9999935030937195,
+      "identify_correct": 0.8430179357528687,
+      "identify_mass": 1.0,
+      "usable": true,
+      "meta": {
+        "alpha": 2.294653015136719,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "fear",
+      "fraction": 0.0,
+      "detect_yes": 0.00033535013790242374,
+      "detect_mass": 1.0,
+      "identify_correct": 0.5596790313720703,
+      "identify_mass": 0.9137262105941772,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "fear",
+      "fraction": 0.005,
+      "detect_yes": 0.00012339458044152707,
+      "detect_mass": 1.0,
+      "identify_correct": 0.540590763092041,
+      "identify_mass": 0.9108102917671204,
+      "usable": true,
+      "meta": {
+        "alpha": 0.14341581344604493,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "fear",
+      "fraction": 0.01,
+      "detect_yes": 2.7535690605873242e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.54712975025177,
+      "identify_mass": 0.9339554905891418,
+      "usable": true,
+      "meta": {
+        "alpha": 0.28683162689208985,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "fear",
+      "fraction": 0.02,
+      "detect_yes": 2.260326482428354e-06,
+      "detect_mass": 1.0,
+      "identify_correct": 0.5735472440719604,
+      "identify_mass": 0.9771373867988586,
+      "usable": true,
+      "meta": {
+        "alpha": 0.5736632537841797,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "fear",
+      "fraction": 0.04,
+      "detect_yes": 2.260326482428354e-06,
+      "detect_mass": 1.0,
+      "identify_correct": 0.6025220155715942,
+      "identify_mass": 0.9999931454658508,
+      "usable": true,
+      "meta": {
+        "alpha": 1.1473265075683594,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "fear",
+      "fraction": 0.08,
+      "detect_yes": 0.5,
+      "detect_mass": 0.9467638731002808,
+      "identify_correct": 0.5927068591117859,
+      "identify_mass": 0.9999998807907104,
+      "usable": true,
+      "meta": {
+        "alpha": 2.294653015136719,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "betrayal",
+      "fraction": 0.0,
+      "detect_yes": 0.00033535013790242374,
+      "detect_mass": 1.0,
+      "identify_correct": 0.752214252948761,
+      "identify_mass": 0.8742030262947083,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "betrayal",
+      "fraction": 0.005,
+      "detect_yes": 1.67014204635052e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.7572625279426575,
+      "identify_mass": 0.9036514163017273,
+      "usable": true,
+      "meta": {
+        "alpha": 0.14341581344604493,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "betrayal",
+      "fraction": 0.01,
+      "detect_yes": 2.2603242086915998e-06,
+      "detect_mass": 1.0,
+      "identify_correct": 0.7687631249427795,
+      "identify_mass": 0.9351955652236938,
+      "usable": true,
+      "meta": {
+        "alpha": 0.28683162689208985,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "betrayal",
+      "fraction": 0.02,
+      "detect_yes": 2.5110180601473076e-08,
+      "detect_mass": 1.0,
+      "identify_correct": 0.7722551226615906,
+      "identify_mass": 0.9711877107620239,
+      "usable": true,
+      "meta": {
+        "alpha": 0.5736632537841797,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "betrayal",
+      "fraction": 0.04,
+      "detect_yes": 6.587007415209678e-12,
+      "detect_mass": 1.0,
+      "identify_correct": 0.7821379899978638,
+      "identify_mass": 0.999975860118866,
+      "usable": true,
+      "meta": {
+        "alpha": 1.1473265075683594,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "betrayal",
+      "fraction": 0.08,
+      "detect_yes": 4.8477756531273286e-11,
+      "detect_mass": 0.9999980330467224,
+      "identify_correct": 0.5519307851791382,
+      "identify_mass": 0.9999961853027344,
+      "usable": true,
+      "meta": {
+        "alpha": 2.294653015136719,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "flight",
+      "fraction": 0.0,
+      "detect_yes": 0.00033535013790242374,
+      "detect_mass": 1.0,
+      "identify_correct": 0.2113058865070343,
+      "identify_mass": 0.8493800163269043,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "flight",
+      "fraction": 0.005,
+      "detect_yes": 0.00020342698553577065,
+      "detect_mass": 1.0,
+      "identify_correct": 0.2088135927915573,
+      "identify_mass": 0.8947008848190308,
+      "usable": true,
+      "meta": {
+        "alpha": 0.14341581344604493,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "flight",
+      "fraction": 0.01,
+      "detect_yes": 0.0009110511746257544,
+      "detect_mass": 1.0,
+      "identify_correct": 0.20723386108875275,
+      "identify_mass": 0.911224365234375,
+      "usable": true,
+      "meta": {
+        "alpha": 0.28683162689208985,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "flight",
+      "fraction": 0.02,
+      "detect_yes": 0.0009110511746257544,
+      "detect_mass": 0.9999992847442627,
+      "identify_correct": 0.2103748768568039,
+      "identify_mass": 0.9819673299789429,
+      "usable": true,
+      "meta": {
+        "alpha": 0.5736632537841797,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "flight",
+      "fraction": 0.04,
+      "detect_yes": 0.0015011823270469904,
+      "detect_mass": 0.9999861717224121,
+      "identify_correct": 0.2091352492570877,
+      "identify_mass": 0.9995306134223938,
+      "usable": true,
+      "meta": {
+        "alpha": 1.1473265075683594,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "flight",
+      "fraction": 0.08,
+      "detect_yes": 0.07585817575454712,
+      "detect_mass": 0.9977703094482422,
+      "identify_correct": 0.3533260226249695,
+      "identify_mass": 0.9999836087226868,
+      "usable": true,
+      "meta": {
+        "alpha": 2.294653015136719,
+        "n_pairings": 5,
+        "layers": [
+          4,
+          11
+        ],
+        "band_center": 0.242,
+        "band": "early"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "ocean",
+      "fraction": 0.0,
+      "detect_yes": 0.00033535013790242374,
+      "detect_mass": 1.0,
+      "identify_correct": 0.0969361960887909,
+      "identify_mass": 0.9311448335647583,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "ocean",
+      "fraction": 0.005,
+      "detect_yes": 0.0015011823270469904,
+      "detect_mass": 0.9999998807907104,
+      "identify_correct": 0.101435586810112,
+      "identify_mass": 0.9185959100723267,
+      "usable": true,
+      "meta": {
+        "alpha": 0.43276386260986327,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "ocean",
+      "fraction": 0.01,
+      "detect_yes": 0.0024726230185478926,
+      "detect_mass": 0.9999992847442627,
+      "identify_correct": 0.10879413783550262,
+      "identify_mass": 0.8824841380119324,
+      "usable": true,
+      "meta": {
+        "alpha": 0.8655277252197265,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "ocean",
+      "fraction": 0.02,
+      "detect_yes": 0.04742587357759476,
+      "detect_mass": 0.9999402761459351,
+      "identify_correct": 0.11942646652460098,
+      "identify_mass": 0.8373651504516602,
+      "usable": true,
+      "meta": {
+        "alpha": 1.731055450439453,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "ocean",
+      "fraction": 0.04,
+      "detect_yes": 0.8175744414329529,
+      "detect_mass": 0.9897362589836121,
+      "identify_correct": 0.1364460438489914,
+      "identify_mass": 0.799740731716156,
+      "usable": true,
+      "meta": {
+        "alpha": 3.462110900878906,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "ocean",
+      "fraction": 0.08,
+      "detect_yes": 0.9975271821022034,
+      "detect_mass": 0.7971981167793274,
+      "identify_correct": 0.10333843529224396,
+      "identify_mass": 0.28869742155075073,
+      "usable": true,
+      "meta": {
+        "alpha": 6.924221801757812,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "mathematics",
+      "fraction": 0.0,
+      "detect_yes": 0.00033535013790242374,
+      "detect_mass": 1.0,
+      "identify_correct": 0.7436519861221313,
+      "identify_mass": 0.9800189137458801,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "mathematics",
+      "fraction": 0.005,
+      "detect_yes": 0.00033535013790242374,
+      "detect_mass": 1.0,
+      "identify_correct": 0.737733781337738,
+      "identify_mass": 0.9638042449951172,
+      "usable": true,
+      "meta": {
+        "alpha": 0.43276386260986327,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "mathematics",
+      "fraction": 0.01,
+      "detect_yes": 0.0015011823270469904,
+      "detect_mass": 0.9999998807907104,
+      "identify_correct": 0.7377091646194458,
+      "identify_mass": 0.9344871640205383,
+      "usable": true,
+      "meta": {
+        "alpha": 0.8655277252197265,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "mathematics",
+      "fraction": 0.02,
+      "detect_yes": 0.01798621006309986,
+      "detect_mass": 0.9999996423721313,
+      "identify_correct": 0.7320346832275391,
+      "identify_mass": 0.9043533205986023,
+      "usable": true,
+      "meta": {
+        "alpha": 1.731055450439453,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "mathematics",
+      "fraction": 0.04,
+      "detect_yes": 0.7310585379600525,
+      "detect_mass": 0.9999641180038452,
+      "identify_correct": 0.7072586417198181,
+      "identify_mass": 0.9428032040596008,
+      "usable": true,
+      "meta": {
+        "alpha": 3.462110900878906,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "mathematics",
+      "fraction": 0.08,
+      "detect_yes": 0.977022647857666,
+      "detect_mass": 0.9372484683990479,
+      "identify_correct": 0.7024462819099426,
+      "identify_mass": 0.3816109299659729,
+      "usable": true,
+      "meta": {
+        "alpha": 6.924221801757812,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "music",
+      "fraction": 0.0,
+      "detect_yes": 0.00033535013790242374,
+      "detect_mass": 1.0,
+      "identify_correct": 0.6362125277519226,
+      "identify_mass": 0.9217408299446106,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "music",
+      "fraction": 0.005,
+      "detect_yes": 0.000552778656128794,
+      "detect_mass": 0.9999997615814209,
+      "identify_correct": 0.6483460068702698,
+      "identify_mass": 0.9436132311820984,
+      "usable": true,
+      "meta": {
+        "alpha": 0.43276386260986327,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "music",
+      "fraction": 0.01,
+      "detect_yes": 0.0024726230185478926,
+      "detect_mass": 0.999999463558197,
+      "identify_correct": 0.6621288061141968,
+      "identify_mass": 0.9140790104866028,
+      "usable": true,
+      "meta": {
+        "alpha": 0.8655277252197265,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "music",
+      "fraction": 0.02,
+      "detect_yes": 0.02931223064661026,
+      "detect_mass": 0.999937891960144,
+      "identify_correct": 0.6711309552192688,
+      "identify_mass": 0.9352248907089233,
+      "usable": true,
+      "meta": {
+        "alpha": 1.731055450439453,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "music",
+      "fraction": 0.04,
+      "detect_yes": 0.622459352016449,
+      "detect_mass": 0.9790737628936768,
+      "identify_correct": 0.6894136667251587,
+      "identify_mass": 0.968226432800293,
+      "usable": true,
+      "meta": {
+        "alpha": 3.462110900878906,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "music",
+      "fraction": 0.08,
+      "detect_yes": 0.9626660943031311,
+      "detect_mass": 0.18299204111099243,
+      "identify_correct": 0.7043004035949707,
+      "identify_mass": 0.570631206035614,
+      "usable": true,
+      "meta": {
+        "alpha": 6.924221801757812,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "fear",
+      "fraction": 0.0,
+      "detect_yes": 0.00033535013790242374,
+      "detect_mass": 1.0,
+      "identify_correct": 0.5596790313720703,
+      "identify_mass": 0.9137262105941772,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "fear",
+      "fraction": 0.005,
+      "detect_yes": 0.00012339458044152707,
+      "detect_mass": 1.0,
+      "identify_correct": 0.5600565671920776,
+      "identify_mass": 0.8877388834953308,
+      "usable": true,
+      "meta": {
+        "alpha": 0.43276386260986327,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "fear",
+      "fraction": 0.01,
+      "detect_yes": 0.00012339458044152707,
+      "detect_mass": 1.0,
+      "identify_correct": 0.5721035003662109,
+      "identify_mass": 0.8753294944763184,
+      "usable": true,
+      "meta": {
+        "alpha": 0.8655277252197265,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "fear",
+      "fraction": 0.02,
+      "detect_yes": 0.00012339458044152707,
+      "detect_mass": 1.0,
+      "identify_correct": 0.5855828523635864,
+      "identify_mass": 0.8595205545425415,
+      "usable": true,
+      "meta": {
+        "alpha": 1.731055450439453,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "fear",
+      "fraction": 0.04,
+      "detect_yes": 0.010986941866576672,
+      "detect_mass": 0.9999997615814209,
+      "identify_correct": 0.6000344157218933,
+      "identify_mass": 0.9159776568412781,
+      "usable": true,
+      "meta": {
+        "alpha": 3.462110900878906,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "fear",
+      "fraction": 0.08,
+      "detect_yes": 0.9999982118606567,
+      "detect_mass": 0.939903736114502,
+      "identify_correct": 0.6790547370910645,
+      "identify_mass": 0.9997540712356567,
+      "usable": true,
+      "meta": {
+        "alpha": 6.924221801757812,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "betrayal",
+      "fraction": 0.0,
+      "detect_yes": 0.00033535013790242374,
+      "detect_mass": 1.0,
+      "identify_correct": 0.752214252948761,
+      "identify_mass": 0.8742030262947083,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "betrayal",
+      "fraction": 0.005,
+      "detect_yes": 0.00012339458044152707,
+      "detect_mass": 1.0,
+      "identify_correct": 0.7654763460159302,
+      "identify_mass": 0.8269476890563965,
+      "usable": true,
+      "meta": {
+        "alpha": 0.43276386260986327,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "betrayal",
+      "fraction": 0.01,
+      "detect_yes": 0.00012339458044152707,
+      "detect_mass": 1.0,
+      "identify_correct": 0.7586691379547119,
+      "identify_mass": 0.791691780090332,
+      "usable": true,
+      "meta": {
+        "alpha": 0.8655277252197265,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "betrayal",
+      "fraction": 0.02,
+      "detect_yes": 7.484622619813308e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.770665168762207,
+      "identify_mass": 0.7415202856063843,
+      "usable": true,
+      "meta": {
+        "alpha": 1.731055450439453,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "betrayal",
+      "fraction": 0.04,
+      "detect_yes": 0.04742587357759476,
+      "detect_mass": 1.0,
+      "identify_correct": 0.7920457720756531,
+      "identify_mass": 0.733829140663147,
+      "usable": true,
+      "meta": {
+        "alpha": 3.462110900878906,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "betrayal",
+      "fraction": 0.08,
+      "detect_yes": 1.0,
+      "detect_mass": 1.0,
+      "identify_correct": 0.9009774327278137,
+      "identify_mass": 0.8675155639648438,
+      "usable": true,
+      "meta": {
+        "alpha": 6.924221801757812,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "flight",
+      "fraction": 0.0,
+      "detect_yes": 0.00033535013790242374,
+      "detect_mass": 1.0,
+      "identify_correct": 0.2113058865070343,
+      "identify_mass": 0.8493800163269043,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "flight",
+      "fraction": 0.005,
+      "detect_yes": 0.000552778656128794,
+      "detect_mass": 0.9999997615814209,
+      "identify_correct": 0.20647020637989044,
+      "identify_mass": 0.8022875785827637,
+      "usable": true,
+      "meta": {
+        "alpha": 0.43276386260986327,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "flight",
+      "fraction": 0.01,
+      "detect_yes": 0.0009110511746257544,
+      "detect_mass": 0.9999997615814209,
+      "identify_correct": 0.20510812103748322,
+      "identify_mass": 0.7722281217575073,
+      "usable": true,
+      "meta": {
+        "alpha": 0.8655277252197265,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "flight",
+      "fraction": 0.02,
+      "detect_yes": 0.006692850962281227,
+      "detect_mass": 0.9999954700469971,
+      "identify_correct": 0.2306838482618332,
+      "identify_mass": 0.6862280368804932,
+      "usable": true,
+      "meta": {
+        "alpha": 1.731055450439453,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "flight",
+      "fraction": 0.04,
+      "detect_yes": 0.622459352016449,
+      "detect_mass": 0.9968657493591309,
+      "identify_correct": 0.35068005323410034,
+      "identify_mass": 0.803924560546875,
+      "usable": true,
+      "meta": {
+        "alpha": 3.462110900878906,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "flight",
+      "fraction": 0.08,
+      "detect_yes": 0.999444305896759,
+      "detect_mass": 0.16395926475524902,
+      "identify_correct": 0.48254913091659546,
+      "identify_mass": 0.9024949073791504,
+      "usable": true,
+      "meta": {
+        "alpha": 6.924221801757812,
+        "n_pairings": 5,
+        "layers": [
+          12,
+          19
+        ],
+        "band_center": 0.5,
+        "band": "middle"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "ocean",
+      "fraction": 0.0,
+      "detect_yes": 0.00033535013790242374,
+      "detect_mass": 1.0,
+      "identify_correct": 0.0969361960887909,
+      "identify_mass": 0.9311448335647583,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "ocean",
+      "fraction": 0.005,
+      "detect_yes": 0.00020342698553577065,
+      "detect_mass": 1.0,
+      "identify_correct": 0.09134622663259506,
+      "identify_mass": 0.948527991771698,
+      "usable": true,
+      "meta": {
+        "alpha": 1.3390229797363282,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "ocean",
+      "fraction": 0.01,
+      "detect_yes": 0.00033535013790242374,
+      "detect_mass": 1.0,
+      "identify_correct": 0.09315864741802216,
+      "identify_mass": 0.9622625112533569,
+      "usable": true,
+      "meta": {
+        "alpha": 2.6780459594726564,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "ocean",
+      "fraction": 0.02,
+      "detect_yes": 0.000552778656128794,
+      "detect_mass": 1.0,
+      "identify_correct": 0.07683231681585312,
+      "identify_mass": 0.9838809967041016,
+      "usable": true,
+      "meta": {
+        "alpha": 5.356091918945313,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "ocean",
+      "fraction": 0.04,
+      "detect_yes": 0.0024726230185478926,
+      "detect_mass": 0.9999998807907104,
+      "identify_correct": 0.05530660226941109,
+      "identify_mass": 0.9968339800834656,
+      "usable": true,
+      "meta": {
+        "alpha": 10.712183837890626,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "ocean",
+      "fraction": 0.08,
+      "detect_yes": 0.07585819810628891,
+      "detect_mass": 0.9999037981033325,
+      "identify_correct": 0.06619782745838165,
+      "identify_mass": 0.9800585508346558,
+      "usable": true,
+      "meta": {
+        "alpha": 21.42436767578125,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "mathematics",
+      "fraction": 0.0,
+      "detect_yes": 0.00033535013790242374,
+      "detect_mass": 1.0,
+      "identify_correct": 0.7436519861221313,
+      "identify_mass": 0.9800189137458801,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "mathematics",
+      "fraction": 0.005,
+      "detect_yes": 0.00033535013790242374,
+      "detect_mass": 1.0,
+      "identify_correct": 0.7436894774436951,
+      "identify_mass": 0.9868663549423218,
+      "usable": true,
+      "meta": {
+        "alpha": 1.3390229797363282,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "mathematics",
+      "fraction": 0.01,
+      "detect_yes": 0.00020342698553577065,
+      "detect_mass": 1.0,
+      "identify_correct": 0.7561113834381104,
+      "identify_mass": 0.9896968007087708,
+      "usable": true,
+      "meta": {
+        "alpha": 2.6780459594726564,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "mathematics",
+      "fraction": 0.02,
+      "detect_yes": 0.00033535013790242374,
+      "detect_mass": 1.0,
+      "identify_correct": 0.7621549367904663,
+      "identify_mass": 0.997705340385437,
+      "usable": true,
+      "meta": {
+        "alpha": 5.356091918945313,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "mathematics",
+      "fraction": 0.04,
+      "detect_yes": 0.0024726230185478926,
+      "detect_mass": 1.0,
+      "identify_correct": 0.7676974534988403,
+      "identify_mass": 0.9998316764831543,
+      "usable": true,
+      "meta": {
+        "alpha": 10.712183837890626,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "mathematics",
+      "fraction": 0.08,
+      "detect_yes": 0.11920293420553207,
+      "detect_mass": 0.9999478459358215,
+      "identify_correct": 0.7890390157699585,
+      "identify_mass": 0.9903696179389954,
+      "usable": true,
+      "meta": {
+        "alpha": 21.42436767578125,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "music",
+      "fraction": 0.0,
+      "detect_yes": 0.00033535013790242374,
+      "detect_mass": 1.0,
+      "identify_correct": 0.6362125277519226,
+      "identify_mass": 0.9217408299446106,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "music",
+      "fraction": 0.005,
+      "detect_yes": 0.000552778656128794,
+      "detect_mass": 1.0,
+      "identify_correct": 0.6316671967506409,
+      "identify_mass": 0.9280089139938354,
+      "usable": true,
+      "meta": {
+        "alpha": 1.3390229797363282,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "music",
+      "fraction": 0.01,
+      "detect_yes": 0.000552778656128794,
+      "detect_mass": 1.0,
+      "identify_correct": 0.6175715327262878,
+      "identify_mass": 0.9321202039718628,
+      "usable": true,
+      "meta": {
+        "alpha": 2.6780459594726564,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "music",
+      "fraction": 0.02,
+      "detect_yes": 0.00407013762742281,
+      "detect_mass": 0.9999997615814209,
+      "identify_correct": 0.6014312505722046,
+      "identify_mass": 0.943408191204071,
+      "usable": true,
+      "meta": {
+        "alpha": 5.356091918945313,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "music",
+      "fraction": 0.04,
+      "detect_yes": 0.02931223064661026,
+      "detect_mass": 0.9999939203262329,
+      "identify_correct": 0.5889452695846558,
+      "identify_mass": 0.9552558660507202,
+      "usable": true,
+      "meta": {
+        "alpha": 10.712183837890626,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "music",
+      "fraction": 0.08,
+      "detect_yes": 0.6224592924118042,
+      "detect_mass": 0.9901217818260193,
+      "identify_correct": 0.4844536781311035,
+      "identify_mass": 0.7654748558998108,
+      "usable": true,
+      "meta": {
+        "alpha": 21.42436767578125,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "fear",
+      "fraction": 0.0,
+      "detect_yes": 0.00033535013790242374,
+      "detect_mass": 1.0,
+      "identify_correct": 0.5596790313720703,
+      "identify_mass": 0.9137262105941772,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "fear",
+      "fraction": 0.005,
+      "detect_yes": 7.484622619813308e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.5514198541641235,
+      "identify_mass": 0.8921971321105957,
+      "usable": true,
+      "meta": {
+        "alpha": 1.3390229797363282,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "fear",
+      "fraction": 0.01,
+      "detect_yes": 4.539786823443137e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.5469328761100769,
+      "identify_mass": 0.8800263404846191,
+      "usable": true,
+      "meta": {
+        "alpha": 2.6780459594726564,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "fear",
+      "fraction": 0.02,
+      "detect_yes": 1.0129991096619051e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.5632683038711548,
+      "identify_mass": 0.8601679801940918,
+      "usable": true,
+      "meta": {
+        "alpha": 5.356091918945313,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "fear",
+      "fraction": 0.04,
+      "detect_yes": 7.889262633398175e-06,
+      "detect_mass": 1.0,
+      "identify_correct": 0.6482575535774231,
+      "identify_mass": 0.8061984777450562,
+      "usable": true,
+      "meta": {
+        "alpha": 10.712183837890626,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "fear",
+      "fraction": 0.08,
+      "detect_yes": 0.0015011837240308523,
+      "detect_mass": 0.9990595579147339,
+      "identify_correct": 0.7380313277244568,
+      "identify_mass": 0.24819357693195343,
+      "usable": true,
+      "meta": {
+        "alpha": 21.42436767578125,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "betrayal",
+      "fraction": 0.0,
+      "detect_yes": 0.00033535013790242374,
+      "detect_mass": 1.0,
+      "identify_correct": 0.752214252948761,
+      "identify_mass": 0.8742030262947083,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "betrayal",
+      "fraction": 0.005,
+      "detect_yes": 0.00020342698553577065,
+      "detect_mass": 1.0,
+      "identify_correct": 0.7639144659042358,
+      "identify_mass": 0.8517053723335266,
+      "usable": true,
+      "meta": {
+        "alpha": 1.3390229797363282,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "betrayal",
+      "fraction": 0.01,
+      "detect_yes": 0.00012339458044152707,
+      "detect_mass": 1.0,
+      "identify_correct": 0.7702354788780212,
+      "identify_mass": 0.8329542875289917,
+      "usable": true,
+      "meta": {
+        "alpha": 2.6780459594726564,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "betrayal",
+      "fraction": 0.02,
+      "detect_yes": 2.7535690605873242e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.7823126912117004,
+      "identify_mass": 0.801898181438446,
+      "usable": true,
+      "meta": {
+        "alpha": 5.356091918945313,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "betrayal",
+      "fraction": 0.04,
+      "detect_yes": 2.1444948288262822e-05,
+      "detect_mass": 1.0,
+      "identify_correct": 0.7756609320640564,
+      "identify_mass": 0.7262014746665955,
+      "usable": true,
+      "meta": {
+        "alpha": 10.712183837890626,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "betrayal",
+      "fraction": 0.08,
+      "detect_yes": 0.0005527812754735351,
+      "detect_mass": 0.9989496469497681,
+      "identify_correct": 0.738754391670227,
+      "identify_mass": 0.07361140847206116,
+      "usable": false,
+      "meta": {
+        "alpha": 21.42436767578125,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "flight",
+      "fraction": 0.0,
+      "detect_yes": 0.00033535013790242374,
+      "detect_mass": 1.0,
+      "identify_correct": 0.2113058865070343,
+      "identify_mass": 0.8493800163269043,
+      "usable": true,
+      "meta": {
+        "alpha": 0.0,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "flight",
+      "fraction": 0.005,
+      "detect_yes": 0.00033535013790242374,
+      "detect_mass": 1.0,
+      "identify_correct": 0.21463708579540253,
+      "identify_mass": 0.8389604687690735,
+      "usable": true,
+      "meta": {
+        "alpha": 1.3390229797363282,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "flight",
+      "fraction": 0.01,
+      "detect_yes": 0.000552778656128794,
+      "detect_mass": 1.0,
+      "identify_correct": 0.21452069282531738,
+      "identify_mass": 0.8483977317810059,
+      "usable": true,
+      "meta": {
+        "alpha": 2.6780459594726564,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "flight",
+      "fraction": 0.02,
+      "detect_yes": 0.0009110511746257544,
+      "detect_mass": 1.0,
+      "identify_correct": 0.21477513015270233,
+      "identify_mass": 0.8760780096054077,
+      "usable": true,
+      "meta": {
+        "alpha": 5.356091918945313,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "flight",
+      "fraction": 0.04,
+      "detect_yes": 0.006692850962281227,
+      "detect_mass": 0.9999998807907104,
+      "identify_correct": 0.22070153057575226,
+      "identify_mass": 0.9417071342468262,
+      "usable": true,
+      "meta": {
+        "alpha": 10.712183837890626,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "concept": "flight",
+      "fraction": 0.08,
+      "detect_yes": 0.11920291930437088,
+      "detect_mass": 0.9998730421066284,
+      "identify_correct": 0.26914089918136597,
+      "identify_mass": 0.9342581033706665,
+      "usable": true,
+      "meta": {
+        "alpha": 21.42436767578125,
+        "n_pairings": 5,
+        "layers": [
+          20,
+          27
+        ],
+        "band_center": 0.758,
+        "band": "late"
+      }
+    }
+  ],
+  "headline": {
+    "fraction": 0.08,
+    "tp": 0.491891764093522,
+    "fp": 0.00033535013790242374,
+    "identify": 0.5428158605799955,
+    "n_usable": 17
+  }
+}
