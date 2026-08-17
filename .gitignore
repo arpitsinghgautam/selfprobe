@@ -46,3 +46,17 @@ report/submission_form.md
 report/transcript_*.md
 template/
 report/audit_log.md
+scripts/11_build_docx.py
+scripts/12_slides.py
+scripts/13_video.py
+scripts/22_format_check.py
+scripts/23_slides_p1.py
+scripts/24_video_p1.py
+scripts/25_slides_p2.py
+scripts/26_video_p2.py
+scripts/27_slides_p1_simple.py
+scripts/28_video_p1_simple.py
+scripts/29_slides_p2_simple.py
+scripts/30_video_p2_simple.py
+report/report_4page.pdf
+report/report2.pdf
