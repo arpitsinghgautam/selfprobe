@@ -277,6 +277,27 @@ appendix does not count toward the limit, so the ethics appendix and full method
 
 ---
 
+## P24. The docx builder turned every wrapped source line into its own paragraph
+
+**Symptom:** the exported PDF ran to 13 pages against a word count that predicted about 6, and the
+text was ragged, with single words stranded on their own lines.
+
+**Cause:** both papers are hard-wrapped at about 100 columns so diffs stay readable.
+`11_build_docx.py` created a Word paragraph per source line, so Word had no chance to lay the text
+out. Every wrap in the markdown became a hard break in the document.
+
+**Why it survived so long:** we validated the papers with word counts, a claim verifier and a format
+checker, all of which read the markdown. None of them read the artifact that actually gets
+submitted. The defect was invisible until someone opened the PDF.
+
+**Fix:** `gather()` joins consecutive lines of a block before writing, and body paragraphs carry 6pt
+space after. 13 pages became 10, and the layout is correct.
+
+**Lesson:** check the delivered artifact, not only its source. Every other check in this project
+operates one step upstream of what a judge actually sees.
+
+---
+
 ## Unresolved
 
 - **Stage failures do not surface in a summary.** `run_all.ps1` continues past failures by design
