@@ -30,6 +30,28 @@ TEMPLATE = ROOT / "template" / "Copy of Digital Minds Research Sprint submission
 
 INLINE = re.compile(r"(\*\*.+?\*\*|\*[^*]+?\*|`[^`]+?`)")
 
+# Anything that begins a new block rather than continuing the current one.
+BLOCK_START = re.compile(r"^(?:#{1,6}\s|>\s|[-*+]\s|\d+\.\s|\||```|!\[|---|===)")
+
+
+def gather(lines: list[str], i: int) -> tuple[str, int]:
+    """Join a hard-wrapped markdown block into one logical line.
+
+    The sources are wrapped at about 100 columns so diffs stay readable. Without
+    this, every wrapped line became its own Word paragraph: the 4-page report
+    came out at thirteen pages of ragged text with orphan words stranded on their
+    own lines. Word does the wrapping, so the source wrapping has to be undone.
+    """
+    parts = [lines[i].strip()]
+    j = i + 1
+    while j < len(lines):
+        nxt = lines[j].strip()
+        if not nxt or BLOCK_START.match(nxt):
+            break
+        parts.append(nxt)
+        j += 1
+    return " ".join(parts), j
+
 
 def clear_body(doc: Document) -> None:
     """Strip the template's guidance content, keeping section setup and styles."""
@@ -200,23 +222,28 @@ def build(md_path: Path) -> Path:
         # Lists
         # Lists. The template defines no list styles, so indent manually and
         # write the marker into the text rather than relying on numbering.
-        m = re.match(r"^(\d+)\.\s+(.*)", stripped)
-        if m:
+        # List items and paragraphs all wrap across source lines, so each is
+        # gathered before being written.
+        if re.match(r"^(\d+)\.\s+", stripped):
+            text, i = gather(lines, i)
+            m = re.match(r"^(\d+)\.\s+(.*)", text)
             p = doc.add_paragraph()
             p.paragraph_format.left_indent = Inches(0.3)
             add_runs(p, f"{m.group(1)}. {m.group(2)}")
-            i += 1
             continue
         if stripped.startswith("- "):
+            text, i = gather(lines, i)
             p = doc.add_paragraph()
             p.paragraph_format.left_indent = Inches(0.3)
-            add_runs(p, f"• {stripped[2:]}")
-            i += 1
+            add_runs(p, f"• {text[2:]}")
             continue
 
+        text, i = gather(lines, i)
         p = doc.add_paragraph()
-        add_runs(p, stripped)
-        i += 1
+        # Without this, consecutive paragraphs butt against each other and the
+        # Results section reads as one unbroken wall of text.
+        p.paragraph_format.space_after = Pt(6)
+        add_runs(p, text)
 
     flush_table()
 
