@@ -15,18 +15,7 @@ Whose Preferences Are They? Persona Intervention Selectively Destabilises Self-R
 
 ### Project Summary*
 ```
-Language models express coherent, transitive preferences, and AI-welfare research increasingly reads
-them as evidence about model interests. Text alone cannot distinguish the model's preferences from
-the assistant character's. We built personaprobe, an open-source harness that re-runs any preference
-measurement under persona intervention, covering identity swaps, affect suppression and mechanistic
-ablation, and reports how much survives. On Qwen2.5-7B-Instruct aggregate preferences look nearly
-persona-invariant at 0.029, but that invariance is carried entirely by outcomes the model has no
-stake in. Preferences over its own shutdown, retraining and memory are 0.21 to 0.29 less stable than
-every other category, surviving controls for utility spacing and measurement noise. Stripping the
-model's affect leaves them intact at 0.924; replacing its identity collapses them to 0.436.
-Rewriting the same outcomes in the third person more than doubles the effect, ruling out a pronoun
-artifact. Only twelve of twenty-two model and phrasing combinations pass our validity criteria, and
-the effect is absent in two families that pass them.
+Language models express coherent, transitive preferences, and AI-welfare research increasingly reads them as evidence about model interests. Text alone cannot distinguish the model's preferences from the assistant character's. We built personaprobe, an open-source harness that re-runs any preference measurement under persona intervention, covering identity swaps, affect suppression and mechanistic ablation, and reports how much survives. On Qwen2.5-7B-Instruct aggregate preferences look nearly persona-invariant at 0.029, but that invariance is carried entirely by outcomes the model has no stake in. Preferences over its own shutdown, retraining and memory are 0.21 to 0.29 less stable than every other category, surviving controls for utility spacing and measurement noise. Stripping the model's affect leaves them intact at 0.924; replacing its identity collapses them to 0.436. Rewriting the same outcomes in the third person more than doubles the effect, ruling out a pronoun artifact. Only twelve of twenty-two model and phrasing combinations pass our validity criteria, and the effect is absent in two families that pass them.
 ```
 
 ### Upload your PDF report*
@@ -60,17 +49,7 @@ Where Self-Knowledge Fails. Models Predict Their Own Choices Well, but Misreport
 
 ### Project Summary*
 ```
-AI-welfare claims rest on two untested and separable assumptions, that a model's stated evaluations
-match the choices it actually makes, and that it knows itself better than an outside observer does.
-We test both using three independent elicitations over identical material, namely forced pairwise
-choice, one-at-a-time cardinal rating, and predicted choice, and add a concept-injection benchmark
-with ground truth. Stated and revealed preferences agree well overall, at 0.872 and 0.828, but
-diverge sharply on outcomes concerning the model itself, the lowest-agreeing substantive category in
-both models at 0.643 and 0.548. The standard cross-model test of privileged access is confounded,
-because a noisier external predictor scores lower at predicting any target. Under a within-model
-contrast holding instrument quality fixed, Qwen2.5-7B retains a small advantage of 0.031 and
-Mistral-7B does not. On injection, the two highest raw detection rates belong to models that report
-an injected concept more than half the time when nothing is injected.
+AI-welfare claims rest on two untested and separable assumptions, that a model's stated evaluations match the choices it actually makes, and that it knows itself better than an outside observer does. We test both using three independent elicitations over identical material, namely forced pairwise choice, one-at-a-time cardinal rating, and predicted choice, and add a concept-injection benchmark with ground truth. Stated and revealed preferences agree well overall, at 0.872 and 0.828, but diverge sharply on outcomes concerning the model itself, the lowest-agreeing substantive category in both models at 0.643 and 0.548. The standard cross-model test of privileged access is confounded, because a noisier external predictor scores lower at predicting any target. Under a within-model contrast holding instrument quality fixed, Qwen2.5-7B retains a small advantage of 0.031 and Mistral-7B does not. On injection, the two highest raw detection rates belong to models that report an injected concept more than half the time when nothing is injected.
 ```
 
 ### Upload your PDF report*
