@@ -39,10 +39,9 @@ Recent work has begun to address the second assumption. Naphade et al. (2026) in
 for behavioural self-prediction and report that models predict their own outputs better than peer
 models predict them. Their evidence is a cross-model comparison. That design cannot distinguish
 self-knowledge from instrument quality, because a model that is a noisier predictor scores lower at
-predicting any target, including itself. To the best of our knowledge, no prior work supplies a
-contrast that holds instrument quality fixed while varying only whose behaviour is being predicted.
-[VERIFY: that no prior introspection work reports a within-model contrast of this kind, before this
-is stated as a gap.]
+predicting any target, including itself. We are not aware of a contrast that holds instrument
+quality fixed while varying only whose behaviour is being predicted, and we introduce one in
+Section 3.
 
 Our core idea is to ask for the same preferences in structurally different ways and to locate where
 the answers diverge, then to add a measurement with genuine ground truth by injecting a known

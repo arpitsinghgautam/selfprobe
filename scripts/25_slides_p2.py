@@ -252,7 +252,7 @@ def slide_05():
         "the same model and template, predicting a different AI assistant", 28)),
         fontsize=20, color=MUTED, ha="center", va="top", linespacing=1.4)
     ax.plot([0.30, 0.70], [0.345, 0.345], color="#d8d8d6", lw=1.2)
-    ax.text(0.5, 0.285, "self-specific advantage   0.031   (0.017 – 0.046)",
+    ax.text(0.5, 0.285, "self-specific advantage   0.031   (0.017 to 0.046)",
             fontsize=27, color=RED, weight="bold", ha="center", va="center")
     note(ax, "The naive cross-model test scores 0.948 against 0.862 for another model predicting "
              "it, but that predictor reaches order bias 0.561 and answer mass 0.538, against "

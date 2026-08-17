@@ -82,8 +82,7 @@ model.
 ## Layout
 
 ```
-src/personaprobe/   shared measurement core (yes, the package name differs from the repo -
-                    both projects are built on the same harness)
+src/personaprobe/   the measurement core (the package name differs from the repo name)
 scripts/            00 smoke, 01 elicit, 08 stated, 09 self-knowledge, 20-21 injection
 results/            committed, so every number is checkable without a GPU
 report/             the paper, ethics appendix, and development record
@@ -91,13 +90,6 @@ report/             the paper, ethics appendix, and development record
 
 `report/problems.md` and `report/audit_log.md` record every defect found during development,
 including the ones that changed a conclusion.
-
-## Companion project
-
-[personaprobe](https://github.com/arpitsinghgautam/personaprobe) asks whether a model's preferences
-belong to it or to the assistant character it plays. It finds the same category, self-relevant
-outcomes, is the least stable one, by a completely different method. That the two converge is the
-main reason I believe either.
 
 Built for the [Digital Minds Research
 Sprint](https://apartresearch.com/sprints/digital-minds-research-sprint-2026-08-14-to-2026-08-16),
